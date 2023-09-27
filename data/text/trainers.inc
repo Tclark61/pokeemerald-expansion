@@ -1,15 +1,18 @@
 Route102_Text_CalvinIntro:
-	.string "If you have POKéMON with you, then\n"
-	.string "you're an official POKéMON TRAINER!\l"
-	.string "You can't say no to my challenge!$"
+	.string "I'm the first boss!\n"
+	.string "You can't move on until\l"
+	.string "You pass through my unstoppable\n!"
+	.string "defensive stalling prowess!$"
 
 Route102_Text_CalvinDefeated:
 	.string "Arrgh, I lost…\n"
-	.string "I should have trained mine more…$"
+	.string "How'd you beat the ultimate defense?$"
 
 Route102_Text_CalvinPostBattle:
-	.string "Listen, you. If you're strong,\n"
-	.string "you should have told me before!$"
+	.string "If you thought I was difficult,\n"
+	.string "you should see Brock Hard!\p"
+	.string "If you make it past this maze,\n"
+	.string "He'll show you what's up!$"
 
 Route102_Text_CalvinRegister:
 	.string "I've been working hard at this since\n"
@@ -3826,18 +3829,16 @@ Route125_Text_SharonPostBattle:
 	.string "I'm amazed!$"
 
 Route125_Text_ErnestIntro:
-	.string "Ahoy! I'm a buff, tough SAILOR!\n"
-	.string "I've braved the world's seas!$"
+	.string "This maze is tough!\n"
+	.string "I've been stuck here for hours!$"
 
 Route125_Text_ErnestDefeat:
-	.string "Gwrroooar!\n"
-	.string "I couldn't win!$"
+	.string "What?\n"
+	.string "Ziggy, let's fight them again!$"
 
 Route125_Text_ErnestPostBattle:
-	.string "The tide ebbs and flows inside the\n"
-	.string "SHOAL CAVE.\p"
-	.string "By the way, it's about six hours from\n"
-	.string "high tide to low tide. Did you know?$"
+	.string "I'll fight you again!\n"
+	.string "This time, Ziggy won't lose!$"
 
 Route125_Text_ErnestRegister:
 	.string "Register me in your POKéNAV,\n"

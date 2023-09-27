@@ -17,6 +17,29 @@ Route102_EventScript_Boy::
 	msgbox Route102_Text_CatchWholeBunchOfPokemon, MSGBOX_NPC
 	end
 
+Route125_EventScript_Ernest::
+	trainerbattle_single TRAINER_ERNEST_1, Route125_Text_ErnestIntro, Route125_Text_ErnestDefeat, Route125_EventScript_RegisterErnest
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route125_EventScript_RematchErnest
+	msgbox Route125_Text_ErnestPostBattle, MSGBOX_DEFAULT
+	ClearTrainerFlag(TRAINER_ERNEST_1)
+	trainerbattle_single TRAINER_ERNEST_1, Route125_Text_ErnestIntro, Route125_Text_ErnestDefeat, Route125_EventScript_RegisterErnest
+	release
+	end
+
+Route125_EventScript_RegisterErnest::
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	msgbox Route125_Text_ErnestRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_ERNEST_1
+	release
+	end
+
+Route125_EventScript_RematchErnest::
+	trainerbattle_rematch TRAINER_ERNEST_1, Route125_Text_ErnestRematchIntro, Route125_Text_ErnestRematchDefeat
+	msgbox Route125_Text_ErnestRematchPostBattle, MSGBOX_AUTOCLOSE
+	end
+
 Route102_EventScript_Calvin::
 	trainerbattle_single TRAINER_CALVIN_1, Route102_Text_CalvinIntro, Route102_Text_CalvinDefeated, Route102_EventScript_CalvinRegisterMatchCallAfterBattle
 	specialvar VAR_RESULT, ShouldTryRematchBattle
@@ -72,6 +95,22 @@ Route102_EventScript_Allen::
 	trainerbattle_single TRAINER_ALLEN, Route102_Text_AllenIntro, Route102_Text_AllenDefeated
 	msgbox Route102_Text_AllenPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+Route102_EventScript_SmeargleSign::
+	msgbox Route102_Text_SmeargleSign, MSGBOX_SIGN
+	end
+
+Route102_EventScript_RematchSign::
+	msgbox Route102_Text_RematchSign, MSGBOX_SIGN
+	end
+
+Route102_Text_SmeargleSign:
+	.string "Did you know? Smeargle can copy\n"
+	.string "any move and permanently keep it!$"
+
+Route102_Text_RematchSign:
+	.string "This trainer can be re-matched infinitely.\n"
+	.string "I wonder why...$"
 
 Route102_Text_WatchMeCatchPokemon:
 	.string "WALLY: {PLAYER}…\n"

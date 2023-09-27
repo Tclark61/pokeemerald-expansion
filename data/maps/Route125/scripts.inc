@@ -40,27 +40,6 @@ Route125_EventScript_Sharon::
 	msgbox Route125_Text_SharonPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route125_EventScript_Ernest::
-	trainerbattle_single TRAINER_ERNEST_1, Route125_Text_ErnestIntro, Route125_Text_ErnestDefeat, Route125_EventScript_RegisterErnest
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route125_EventScript_RematchErnest
-	msgbox Route125_Text_ErnestPostBattle, MSGBOX_DEFAULT
-	release
-	end
-
-Route125_EventScript_RegisterErnest::
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route125_Text_ErnestRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_ERNEST_1
-	release
-	end
-
-Route125_EventScript_RematchErnest::
-	trainerbattle_rematch TRAINER_ERNEST_1, Route125_Text_ErnestRematchIntro, Route125_Text_ErnestRematchDefeat
-	msgbox Route125_Text_ErnestRematchPostBattle, MSGBOX_AUTOCLOSE
-	end
-
 Route125_EventScript_Kim::
 	trainerbattle_double TRAINER_KIM_AND_IRIS, Route125_Text_KimIntro, Route125_Text_KimDefeat, Route125_Text_KimNotEnoughMons
 	msgbox Route125_Text_KimPostBattle, MSGBOX_AUTOCLOSE

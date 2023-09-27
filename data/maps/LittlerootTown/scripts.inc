@@ -246,6 +246,32 @@ LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeFemale::
 	setobjectxy LOCALID_BIRCH, 14, 10
 	end
 
+LittlerootTown_EventScript_Tyler::
+	lock
+	msgbox LittlerootTown_Tyler_AskIfReady, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, LittlerootTown_Tyler_EndConversation
+	msgbox LittlerootTown_Tyler_GiveStartingItems_Text, MSGBOX_NPC
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	special EnableNationalPokedex
+	setflag FLAG_SYS_B_DASH
+	setvar VAR_TEMP_1, SPECIES_EEVEE
+	givemon SPECIES_EEVEE, 5, ITEM_MASTER_BALL
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_BADGE01_GET
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	giveitem ITEM_RARE_CANDY, 5
+	removeobject 4
+	setflag FLAG_RIVAL_LEFT_FOR_ROUTE103
+	release
+	end
+
+LittlerootTown_Tyler_EndConversation::
+	msgbox LittlerootTown_Tyler_EndConversation_Text, MSGBOX_NPC
+	release
+	end
+
 LittlerootTown_EventScript_FatMan::
 	msgbox LittlerootTown_Text_CanUsePCToStoreItems, MSGBOX_NPC
 	end
@@ -390,6 +416,22 @@ LittlerootTown_EventScript_GoSaveBirchTrigger::
 	waitmovement 0
 	setvar VAR_LITTLEROOT_TOWN_STATE, 2
 	releaseall
+	end
+
+LittlerootTown_EventScript_FirstTutorial::
+	msgbox LittlerootTown_Text_FirstTutorial, MSGBOX_SIGN
+	end
+
+LittlerootTown_EventScript_SecondTutorial::
+	msgbox LittlerootTown_Text_SecondTutorial, MSGBOX_SIGN
+	end
+
+LittlerootTown_EventScript_ThirdTutorial::
+	msgbox LittlerootTown_Text_ThirdTutorial, MSGBOX_SIGN
+	end
+
+LittlerootTown_EventScript_FourthTutorial::
+	msgbox LittlerootTown_Text_FourthTutorial, MSGBOX_SIGN
 	end
 
 LittlerootTown_EventScript_TownSign::
@@ -957,6 +999,19 @@ LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "If anything happens, you can come home.\p"
 	.string "Go on, go get them, honey!$"
 
+LittlerootTown_Tyler_AskIfReady::
+	.string "{PLAYER}! Are you ready to begin\n your journey?\p"
+	.string "If you say yes, I'll step aside\n"
+	.string "And you can begin the gauntlet!"
+
+LittlerootTown_Tyler_GiveStartingItems_Text:
+	.string "Good luck! Remember to think carefully!\n"
+	.string "and if you get stuck, read a sign!$"
+
+LittlerootTown_Tyler_EndConversation_Text:
+	.string "Aw, bummer...\n"
+	.string "Let me know when you're ready.$"
+
 LittlerootTown_Text_CanUsePCToStoreItems:
 	.string "If you use a PC, you can store items\n"
 	.string "and POKéMON.\p"
@@ -994,6 +1049,34 @@ LittlerootTown_Text_YouSavedBirch:
 LittlerootTown_Text_GoodLuckCatchingPokemon:
 	.string "Are you going to catch POKéMON?\n"
 	.string "Good luck!$"
+
+LittlerootTown_Text_FirstTutorial:
+	.string "Welcome! This is my attempt at trying\n"
+	.string "to show off the parts of pokemon\p"
+	.string "that I think are cool.\n"
+	.string "There's a few notable changes.\p"
+	.string "Firstly, there's no EXP gain.\n"
+	.string "If you want to level up,\p"
+	.string "use your Rare Candy!$"
+
+LittlerootTown_Text_SecondTutorial:
+	.string "Next, the game has been shortened\n"
+	.string "to be beaten in an hour or so.\p"
+	.string "As such, the path is streamlined\n"
+	.string "and battles are carefully planned.$"
+
+LittlerootTown_Text_ThirdTutorial:
+	.string "Most obstacles in this game\n"
+	.string "are puzzle-esque: If you're stuck\p"
+	.string "try examining your surroundings,\n"
+	.string "or seeing if a different pokemon\p"
+	.string "could help the situation!$"
+
+LittlerootTown_Text_FourthTutorial:
+	.string "On that note, be careful! If you \n"
+	.string "spend your resources carelessly,\p"
+	.string "you might find yourself stuck!\n"
+	.string "Consider saving before decisions.$"
 
 LittlerootTown_Text_TownSign:
 	.string "LITTLEROOT TOWN\n"

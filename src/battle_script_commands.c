@@ -4264,6 +4264,8 @@ static void Cmd_jumpbasedontype(void)
     }
 }
 
+
+
 static void Cmd_getexp(void)
 {
     CMD_ARGS(u8 battler);
@@ -4274,10 +4276,10 @@ static void Cmd_getexp(void)
     s32 sentIn;
     s32 viaExpShare = 0;
     u32 *exp = &gBattleStruct->expValue;
+    double expMultiplier = 0;
 
     gBattlerFainted = GetBattlerForBattleScript(cmd->battler);
     sentIn = gSentPokesToOpponent[(gBattlerFainted & 2) >> 1];
-
     switch (gBattleScripting.getexpState)
     {
     case 0: // check if should receive exp at all
@@ -4321,9 +4323,9 @@ static void Cmd_getexp(void)
                     viaExpShare++;
             }
             #if (B_SCALED_EXP >= GEN_5) && (B_SCALED_EXP != GEN_6)
-                calculatedExp = gSpeciesInfo[gBattleMons[gBattlerFainted].species].expYield * gBattleMons[gBattlerFainted].level / 5;
+                calculatedExp = (gSpeciesInfo[gBattleMons[gBattlerFainted].species].expYield * gBattleMons[gBattlerFainted].level / 5) * expMultiplier;
             #else
-                calculatedExp = gSpeciesInfo[gBattleMons[gBattlerFainted].species].expYield * gBattleMons[gBattlerFainted].level / 7;
+                calculatedExp = (gSpeciesInfo[gBattleMons[gBattlerFainted].species].expYield * gBattleMons[gBattlerFainted].level / 7) * expMultiplier;
             #endif
 
             #if B_SPLIT_EXP < GEN_6
