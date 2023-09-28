@@ -256,8 +256,8 @@ Route104_Text_GinaDefeat:
 	.string "GINA: Losing upsets me!$"
 
 Route104_Text_GinaPostBattle:
-	.string "GINA: You are strong!\n"
-	.string "We have to train lots more!$"
+	.string "GINA: I can't believe you beat us!\n"
+	.string "I thought trick room was unbeatable!$"
 
 Route104_Text_GinaNotEnoughMons:
 	.string "GINA: Oh? Only one POKéMON?\n"
@@ -266,16 +266,20 @@ Route104_Text_GinaNotEnoughMons:
 	.string "be lonesome. That's not nice.$"
 
 Route104_Text_MiaIntro:
-	.string "MIA: We are twins, so we battle\n"
-	.string "POKéMON together.$"
+	.string "MIA: The cave ahead is brutal!\n"
+	.string "If you can't be us, there's no way\p"
+	.string "you'll survive in there! Hope you're\n"
+	.string "ready for a double battle!$"
 
 Route104_Text_MiaDefeat:
-	.string "MIA: We battled together, but we\n"
-	.string "both lost…$"
+	.string "MIA: You beat us both at the same time...\n"
+	.string "You might be ready for the cave...$"
 
 Route104_Text_MiaPostBattle:
-	.string "MIA: We will train our POKéMON more\n"
-	.string "and be strong like you.$"
+	.string "MIA: If you're going in the cave\n"
+	.string "try bringing repel. The zubat can't\p"
+	.string "be ran away from, so it wears down\n"
+	.string "on your team."
 
 Route104_Text_MiaNotEnoughMons:
 	.string "MIA: You want to battle with us?\p"

@@ -3390,25 +3390,39 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
 
 static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     {
-    .iv = 100,
-    .lvl = 16,
-    .species = SPECIES_MACHOP,
+    .iv = 50,
+    .lvl = 7,
+    .species = SPECIES_SHEDINJA,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_KARATE_CHOP, MOVE_LOW_KICK, MOVE_SEISMIC_TOSS, MOVE_BULK_UP}
+    .moves = {MOVE_TOXIC, MOVE_FURY_CUTTER, MOVE_PURSUIT, MOVE_NONE}
     },
     {
     .iv = 100,
-    .lvl = 16,
-    .species = SPECIES_MEDITITE,
+    .lvl = 12,
+    .species = SPECIES_GEODUDE,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_FOCUS_PUNCH, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_BULK_UP}
+    .moves = {MOVE_TACKLE, MOVE_STEALTH_ROCK, MOVE_DEFENSE_CURL, MOVE_ROLLOUT}
+    },
+    {
+    .iv = 50,
+    .lvl = 16,
+    .species = SPECIES_PINECO,
+    .heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_EXPLOSION, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_VOLTORB,
+    .heldItem = ITEM_MAGNET,
+    .moves = {MOVE_SHOCK_WAVE, MOVE_SELF_DESTRUCT, MOVE_CHARGE, MOVE_NONE}
     },
     {
     .iv = 200,
-    .lvl = 19,
-    .species = SPECIES_MAKUHITA,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_ARM_THRUST, MOVE_VITAL_THROW, MOVE_REVERSAL, MOVE_BULK_UP}
+    .lvl = 20,
+    .species = SPECIES_ONIX,
+    .heldItem = ITEM_EVIOLITE,
+    .moves = {MOVE_SCREECH, MOVE_BIND, MOVE_ROCK_TOMB, MOVE_DRAGON_BREATH}
     }
 };
 
@@ -6268,17 +6282,33 @@ static const struct TrainerMonNoItemDefaultMoves sParty_AmyAndLiv2[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GinaAndMia1[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_GinaAndMia1[] = { //here
     {
-    .iv = 0,
-    .lvl = 6,
-    .species = SPECIES_SEEDOT,
+    .iv = 100,
+    .lvl = 15,
+    .species = SPECIES_SLOWPOKE,
+    .moves = {MOVE_CONFUSION, MOVE_AMNESIA, MOVE_YAWN, MOVE_SLACK_OFF}
     },
     {
     .iv = 0,
-    .lvl = 6,
-    .species = SPECIES_LOTAD,
-    }
+    .lvl = 15,
+    .species = SPECIES_STANTLER,
+    .moves = {MOVE_TRICK_ROOM, MOVE_HYPNOSIS, MOVE_ASTONISH, MOVE_TACKLE}
+    },
+    {
+    .iv = 100,
+    .lvl = 15,
+    .species = SPECIES_MR_MIME_GALARIAN,
+    .moves = {MOVE_CONFUSION, MOVE_REFLECT, MOVE_DAZZLING_GLEAM, MOVE_TRICK_ROOM}
+    },
+    {
+    .iv = 100,
+    .lvl = 22,
+    .species = SPECIES_XATU,
+    .moves = {MOVE_WISH, MOVE_CALM_MIND, MOVE_PSYBEAM, MOVE_STORED_POWER}
+    },
+    
+
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_MiuAndYuki[] = {

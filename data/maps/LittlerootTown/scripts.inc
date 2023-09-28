@@ -1002,7 +1002,7 @@ LittlerootTown_Text_ComeHomeIfAnythingHappens:
 LittlerootTown_Tyler_AskIfReady::
 	.string "{PLAYER}! Are you ready to begin\n your journey?\p"
 	.string "If you say yes, I'll step aside\n"
-	.string "And you can begin the gauntlet!"
+	.string "And you can begin the gauntlet!$"
 
 LittlerootTown_Tyler_GiveStartingItems_Text:
 	.string "Good luck! Remember to think carefully!\n"

@@ -33,8 +33,13 @@ OldaleTown_EventScript_TownSign::
 	msgbox OldaleTown_Text_TownSign, MSGBOX_SIGN
 	end
 
+OldaleTown_EventScript_StoneHouseSign::
+	msgbox OldaleTown_Text_StoneHouseSign, MSGBOX_SIGN
+	end
+
 OldaleTown_EventScript_WarningSign::
 	msgbox OldaleTown_Text_WarningSign, MSGBOX_SIGN
+	end
 
 OldaleTown_EventScript_Girl::
 	msgbox OldaleTown_Text_SavingMyProgress, MSGBOX_NPC
@@ -402,6 +407,9 @@ OldaleTown_Text_TownSign:
 	.string "Stuck? Most pokemon gain a new\n"
 	.string "move at level 6!$"
 
+OldaleTown_Text_StoneHouseSign:
+	.string "THE EVOLUTION HOUSE$"
+
 OldaleTown_Text_WarningSign:
 	.string "The trainer up ahead is a pain!\n"
-	.string "His pokemon has high defense."
+	.string "His pokemon has high defense.$"

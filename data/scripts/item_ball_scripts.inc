@@ -20,7 +20,9 @@ Route104_EventScript_ItemPokeBall::
 	end
 
 Route104_EventScript_ItemXAccuracy::
-	finditem ITEM_X_ACCURACY
+	finditem ITEM_RARE_CANDY 8
+	finditem ITEM_DAMP_ROCK
+	finditem ITEM_HEAT_ROCK
 	end
 
 Route104_EventScript_ItemPotion::
@@ -284,7 +286,7 @@ Route132_EventScript_ItemProtein::
 	end
 
 Route133_EventScript_ItemBigPearl::
-	finditem ITEM_BIG_PEARL
+	finditem ITEM_FOCUS_SASH
 	end
 
 Route133_EventScript_ItemStarPiece::
@@ -296,11 +298,11 @@ Route133_EventScript_ItemMaxRevive::
 	end
 
 Route134_EventScript_ItemCarbos::
-	finditem ITEM_CARBOS
+	finditem ITEM_QUICK_CLAW
 	end
 
 Route134_EventScript_ItemStarPiece::
-	finditem ITEM_STAR_PIECE
+	finditem ITEM_IRON_BALL
 	end
 
 PetalburgCity_EventScript_ItemMaxRevive::
@@ -308,7 +310,8 @@ PetalburgCity_EventScript_ItemMaxRevive::
 	end
 
 PetalburgCity_EventScript_ItemEther::
-	finditem ITEM_ETHER
+	finditem ITEM_RARE_CANDY 3
+	finditem ITEM_CHARCOAL
 	end
 
 MauvilleCity_EventScript_ItemXSpeed::
@@ -352,7 +355,9 @@ RusturfTunnel_EventScript_ItemMaxEther::
 	end
 
 GraniteCave_1F_EventScript_ItemEscapeRope::
-	finditem ITEM_ESCAPE_ROPE
+	finditem ITEM_ESCAPE_ROPE 5
+	finditem ITEM_TM31_BRICK_BREAK
+	finditem ITEM_ANTIDOTE
 	end
 
 GraniteCave_B1F_EventScript_ItemPokeBall::

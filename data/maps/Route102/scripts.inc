@@ -96,6 +96,10 @@ Route102_EventScript_Allen::
 	msgbox Route102_Text_AllenPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route102_EventScript_WeirdTreeSign::
+	msgbox Route102_Text_WeirdTreeSign, MSGBOX_SIGN
+	end
+
 Route102_EventScript_SmeargleSign::
 	msgbox Route102_Text_SmeargleSign, MSGBOX_SIGN
 	end
@@ -109,8 +113,11 @@ Route102_Text_SmeargleSign:
 	.string "any move and permanently keep it!$"
 
 Route102_Text_RematchSign:
-	.string "This trainer can be re-matched infinitely.\n"
-	.string "I wonder why...$"
+	.string "This trainer can be re-matched\n"
+	.string "infinitely. I wonder why...$"
+
+Route102_Text_WeirdTreeSign:
+	.string "This tree is different than the others!$"
 
 Route102_Text_WatchMeCatchPokemon:
 	.string "WALLY: {PLAYER}…\n"

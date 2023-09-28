@@ -979,6 +979,18 @@ Route104_EventScript_RematchCindy::
 	msgbox Route104_Text_CindyPostRematch, MSGBOX_AUTOCLOSE
 	end
 
+Route104_EventScript_CaveSign::
+	msgbox Route104_Text_CaveSign, MSGBOX_SIGN
+	end
+
+Route104_EventScript_DoubleBattleSign::
+	msgbox Route104_Text_DoubleBattleSign, MSGBOX_SIGN
+	end
+
+Route104_EventScript_TrickRoomSign::
+	msgbox Route104_Text_TrickRoomSign, MSGBOX_SIGN
+	end
+
 Route104_EventScript_Gina::
 	trainerbattle_double TRAINER_GINA_AND_MIA_1, Route104_Text_GinaIntro, Route104_Text_GinaDefeat, Route104_Text_GinaNotEnoughMons
 	special GetPlayerBigGuyGirlString
@@ -997,6 +1009,25 @@ Route104_EventScript_Darian::
 	trainerbattle_single TRAINER_DARIAN, Route104_Text_DarianIntro, Route104_Text_DarianDefeat
 	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+Route104_Text_CaveSign::
+	.string "Granite Cave, up ahead. Make sure...\n"
+	.string "... ... It seems like the text\p"
+	.string "has been scratched off...\l"
+	.string "something about antidotes...$"
+
+Route104_Text_DoubleBattleSign:
+	.string "There's a tough double battle\n"
+	.string "coming up! Make sure you have\p"
+	.string "your two favorite pokemon up\n"
+	.string "front in your party!$"
+
+Route104_Text_TrickRoomSign::
+	.string "Some moves in the game work well\n"
+	.string "if used in double battles.\p"
+	.string "Trick Room swaps the speed order:\n"
+	.string "normally the fastest goes first,\p"
+	.string "but under trick room they go last."
 
 Route104_Text_BrineyLivesInSeasideCottage:
 	.string "That seaside cottage is where\n"

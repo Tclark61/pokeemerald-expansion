@@ -4,6 +4,11 @@
 .set LOCALID_GYM_BOY, 8
 .set LOCALID_SCOTT, 9
 
+
+PetalburgCity_EventScript_EnteringCity::
+	setflag FLAG_PERMANENTLY_CUT_TREE
+	end
+
 PetalburgCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PetalburgCity_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, PetalburgCity_OnFrame
