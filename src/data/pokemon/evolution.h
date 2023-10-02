@@ -16,7 +16,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_SPEAROW]               = {{EVO_LEVEL, 20, SPECIES_FEAROW}},
     [SPECIES_EKANS]                 = {{EVO_LEVEL, 22, SPECIES_ARBOK}},
     [SPECIES_PIKACHU]               = {{EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                       {EVO_NONE, 0, SPECIES_RAICHU_ALOLAN}},
+                                       {EVO_NONE, SPECIES_RAICHU_ALOLAN}},
+    [SPECIES_PIKACHU_ALOLA_CAP]     = {{EVO_MOVE, MOVE_SURF, SPECIES_RAICHU_ALOLAN}},
     [SPECIES_SANDSHREW]             = {{EVO_LEVEL, 22, SPECIES_SANDSLASH}},
     [SPECIES_NIDORAN_F]             = {{EVO_LEVEL, 16, SPECIES_NIDORINA}},
     [SPECIES_NIDORINA]              = {{EVO_ITEM, ITEM_MOON_STONE, SPECIES_NIDOQUEEN}},
@@ -79,7 +80,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_EXEGGCUTE]             = {{EVO_ITEM, ITEM_LEAF_STONE, SPECIES_EXEGGUTOR},
                                        {EVO_NONE, 0, SPECIES_EXEGGUTOR_ALOLAN}},
     [SPECIES_CUBONE]                = {{EVO_LEVEL, 28, SPECIES_MAROWAK},
-                                       {EVO_NONE, 0, SPECIES_MAROWAK_ALOLAN}},
+                                       {EVO_NONE, 0, SPECIES_MAROWAK_ALOLAN},
+                                       {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_MAROWAK_ALOLAN}},
 #if P_GEN_4_POKEMON == TRUE
     [SPECIES_LICKITUNG]             = {{EVO_MOVE, MOVE_ROLLOUT, SPECIES_LICKILICKY}},
 #endif
@@ -101,7 +103,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_STARYU]                = {{EVO_ITEM, ITEM_WATER_STONE, SPECIES_STARMIE}},
     [SPECIES_SCYTHER]               = {{EVO_TRADE_ITEM, ITEM_METAL_COAT, SPECIES_SCIZOR},
                                        {EVO_ITEM, ITEM_BLACK_AUGURITE, SPECIES_KLEAVOR},
-                                       {EVO_ITEM, ITEM_METAL_COAT, SPECIES_SCIZOR}},
+                                       {EVO_ITEM, ITEM_METAL_COAT, SPECIES_SCIZOR},
+                                       {EVO_ITEM, ITEM_SHINY_STONE, SPECIES_SCIZOR}},
 #if P_GEN_4_POKEMON == TRUE
     [SPECIES_ELECTABUZZ]            = {{EVO_TRADE_ITEM, ITEM_ELECTIRIZER, SPECIES_ELECTIVIRE},
                                        {EVO_ITEM, ITEM_ELECTIRIZER, SPECIES_ELECTIVIRE}},
@@ -193,7 +196,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                        {EVO_LEVEL_ATK_EQ_DEF, 20, SPECIES_HITMONTOP}},
     [SPECIES_SMOOCHUM]              = {{EVO_LEVEL, 30, SPECIES_JYNX}},
     [SPECIES_ELEKID]                = {{EVO_LEVEL, 30, SPECIES_ELECTABUZZ}},
-    [SPECIES_MAGBY]                 = {{EVO_LEVEL, 30, SPECIES_MAGMAR}},
+    [SPECIES_MAGBY]                 = {{EVO_LEVEL, 20, SPECIES_MAGMAR}},
     [SPECIES_LARVITAR]              = {{EVO_LEVEL, 30, SPECIES_PUPITAR}},
     [SPECIES_PUPITAR]               = {{EVO_LEVEL, 55, SPECIES_TYRANITAR}},
     [SPECIES_TREECKO]               = {{EVO_LEVEL, 16, SPECIES_GROVYLE}},
@@ -321,7 +324,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_CROAGUNK]              = {{EVO_LEVEL, 37, SPECIES_TOXICROAK}},
     [SPECIES_FINNEON]               = {{EVO_LEVEL, 31, SPECIES_LUMINEON}},
     [SPECIES_MANTYKE]               = {{EVO_SPECIFIC_MON_IN_PARTY, SPECIES_REMORAID, SPECIES_MANTINE}},
-    [SPECIES_SNOVER]                = {{EVO_LEVEL, 40, SPECIES_ABOMASNOW}},
+    [SPECIES_SNOVER]                = {{EVO_LEVEL, 35, SPECIES_ABOMASNOW}},
 #endif
 #if P_GEN_5_POKEMON == TRUE
     [SPECIES_SNIVY]                 = {{EVO_LEVEL, 17, SPECIES_SERVINE}},
@@ -528,7 +531,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                        {EVO_LEVEL, 0, SPECIES_ALCREMIE_RUBY_SWIRL},
                                        {EVO_LEVEL, 0, SPECIES_ALCREMIE_CARAMEL_SWIRL},
                                        {EVO_LEVEL, 0, SPECIES_ALCREMIE_RAINBOW_SWIRL}},
-    [SPECIES_SNOM]                  = {{EVO_FRIENDSHIP_NIGHT, 0, SPECIES_FROSMOTH}},
+    [SPECIES_SNOM]                  = {{EVO_FRIENDSHIP_NIGHT, 0, SPECIES_FROSMOTH},
+                                       {EVO_ITEM, ITEM_ICE_STONE, SPECIES_FROSMOTH}},
     [SPECIES_CUFANT]                = {{EVO_LEVEL, 34, SPECIES_COPPERAJAH}},
     [SPECIES_DREEPY]                = {{EVO_LEVEL, 50, SPECIES_DRAKLOAK}},
     [SPECIES_DRAKLOAK]              = {{EVO_LEVEL, 60, SPECIES_DRAGAPULT}},

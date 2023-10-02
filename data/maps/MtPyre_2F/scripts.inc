@@ -37,11 +37,6 @@ MtPyre_2F_EventScript_Leah::
 	msgbox MtPyre_2F_Text_LeahPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MtPyre_2F_EventScript_Zander::
-	trainerbattle_single TRAINER_ZANDER, MtPyre_2F_Text_ZanderIntro, MtPyre_2F_Text_ZanderDefeat
-	msgbox MtPyre_2F_Text_ZanderPostBattle, MSGBOX_AUTOCLOSE
-	end
-
 MtPyre_2F_Text_MemoriesOfSkitty:
 	.string "Memories of my darling SKITTY…\n"
 	.string "My eyes overflow thinking about it.$"
@@ -119,17 +114,4 @@ MtPyre_2F_Text_LeahPostBattle:
 	.string "since my great-grandmother's time…\p"
 	.string "It is my duty to protect this\n"
 	.string "mountain…$"
-
-MtPyre_2F_Text_ZanderIntro:
-	.string "Kiyaaaaah!\n"
-	.string "I'm terrified!$"
-
-MtPyre_2F_Text_ZanderDefeat:
-	.string "Nooooooo!\n"
-	.string "I lost my wits!$"
-
-MtPyre_2F_Text_ZanderPostBattle:
-	.string "I get freaked out every time I see\n"
-	.string "anything move…\p"
-	.string "I shouldn't have come here to train…$"
 

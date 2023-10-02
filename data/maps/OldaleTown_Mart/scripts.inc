@@ -19,7 +19,7 @@ OldaleTown_Mart_Pokemart_Basic:
 	.2byte ITEM_AWAKENING
 	.2byte ITEM_ORAN_BERRY
 	.2byte ITEM_RARE_CANDY
-	.2byte ITEM_TM17_PROTECT
+	.2byte ITEM_TM46_THIEF
 	.2byte ITEM_MOON_STONE
 	.2byte ITEM_SUN_STONE
 	.2byte ITEM_FIRE_STONE

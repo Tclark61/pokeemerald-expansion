@@ -16,7 +16,6 @@ PetalburgCity_Mart_EventScript_Clerk::
 PetalburgCity_Mart_Pokemart_Basic:
 	.2byte ITEM_MASTER_BALL
 	.2byte ITEM_RARE_CANDY
-	.2byte ITEM_METAL_COAT
 	.2byte ITEM_ORAN_BERRY
 	.2byte ITEM_TM18_RAIN_DANCE
 	.2byte ITEM_TM11_SUNNY_DAY
@@ -62,8 +61,8 @@ PetalburgCity_Mart_EventScript_Man::
 
 PetalburgCity_Mart_Text_WeakWillGrowStronger:
 	.string "This shop has a great selection!,\n"
-	.string "I'm buying a metal coat. My\p"
-	.string "scyther is going to love it!$"
+	.string "I'm buying a SHINY STONE. My\p"
+	.string "Scyther is going to love it!$"
 
 PetalburgCity_Mart_Text_RepelIsUseful:
 	.string "Do you use REPEL?\n"

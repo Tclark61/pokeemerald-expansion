@@ -262,6 +262,7 @@ LittlerootTown_EventScript_Tyler::
 	call Common_EventScript_GetGiftMonPartySlot
 	call Common_EventScript_NameReceivedPartyMon
 	giveitem ITEM_RARE_CANDY, 5
+	giveitem ITEM_TM17_PROTECT
 	removeobject 4
 	setflag FLAG_RIVAL_LEFT_FOR_ROUTE103
 	release
@@ -1057,7 +1058,10 @@ LittlerootTown_Text_FirstTutorial:
 	.string "There's a few notable changes.\p"
 	.string "Firstly, there's no EXP gain.\n"
 	.string "If you want to level up,\p"
-	.string "use your Rare Candy!$"
+	.string "use your Rare Candy!\n"
+	.string "In exchange, there's also\p"
+	.string "a level cap: It starts at 18\n"
+	.string "and goes up at milestones!$"
 
 LittlerootTown_Text_SecondTutorial:
 	.string "Next, the game has been shortened\n"

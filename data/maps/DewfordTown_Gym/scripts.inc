@@ -291,7 +291,7 @@ DewfordTown_Gym_Text_GymGuideAdvice:
 	.string "If you're not ready to dodge his\n"
 	.string "self-destructs, you're in for a \p"
 	.string "rough time! Try using Ghost types\n"
-	.string "or find a way to dodge!\l"
+	.string "or find a way to dodge!\p"
 	.string "What's worse, the GYM is as dark as\n"
 	.string "the darkest cave.\p"
 	.string "But there are items hidden\n"
@@ -383,9 +383,9 @@ DewfordTown_Gym_Text_BrawlyIntro:
 	.string "I'm BROCK HARD!\n"
 	.string "The first gym leader!\p"
 	.string "I've been training in the forests\n"
-	.string "of these parts, and I've grown tough\l"
-	.string "in the pitch-black cave!\p"
-	.string "So you wanted to challenge me?\n"
+	.string "of these parts, and I've grown tough\p"
+	.string "in the pitch-black cave!\n"
+	.string "So you wanted to challenge me?\p"
 	.string "Let me see what you're made of!$"
 
 DewfordTown_Gym_Text_BrawlyDefeat:

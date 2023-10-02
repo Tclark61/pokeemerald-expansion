@@ -3275,8 +3275,10 @@ static const u8 sTM50Desc[] = _(
     "attack, but sharply\n"
     "lowers Sp. Atk.");
 
-static const u8 sTM51Desc[] = _( // Todo
-    "?????");
+static const u8 sTM51Desc[] = _( // Electric Terrain
+    "Electrifies the ground\n"
+    "for five turns. Pokémon\n"
+    "can't fall asleep");
 
 static const u8 sTM52Desc[] = _( // Todo
     "?????");

@@ -5794,28 +5794,35 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
         case 3:
             // Rare Candy / EXP Candy
             if ((itemEffect[i] & ITEM3_LEVEL_UP)
-             && GetMonData(mon, MON_DATA_LEVEL, NULL) != MAX_LEVEL)
+                && GetMonData(mon, MON_DATA_LEVEL, NULL) < 100)//&& GetMonData(mon, MON_DATA_LEVEL, NULL) != MAX_LEVEL)
             {
-                u8 param = ItemId_GetHoldEffectParam(item);
-                dataUnsigned = 0;
+                if( GetMonData(mon, MON_DATA_LEVEL, NULL) < sLevelCaps[0] || 
+                ( (GetMonData(mon, MON_DATA_LEVEL, NULL) < sLevelCaps[1]) && FlagGet(sLevelCapFlags[0])) ||
+                ( (GetMonData(mon, MON_DATA_LEVEL, NULL) < sLevelCaps[2]) && FlagGet(sLevelCapFlags[1])) ||
+                ( (GetMonData(mon, MON_DATA_LEVEL, NULL) < sLevelCaps[3]) && FlagGet(sLevelCapFlags[2])) ||
+                ( ( FlagGet(sLevelCapFlags[3]))) )
+                {
+                    u8 param = ItemId_GetHoldEffectParam(item);
+                    dataUnsigned = 0;
 
-                if (param == 0) // Rare Candy
-                {
-                    dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES, NULL)].growthRate][GetMonData(mon, MON_DATA_LEVEL, NULL) + 1];
-                }
-                else if (param - 1 < ARRAY_COUNT(sExpCandyExperienceTable)) // EXP Candies
-                {
-                    u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
-                    dataUnsigned = sExpCandyExperienceTable[param - 1] + GetMonData(mon, MON_DATA_EXP, NULL);
-                    if (dataUnsigned > gExperienceTables[gSpeciesInfo[species].growthRate][MAX_LEVEL])
-                        dataUnsigned = gExperienceTables[gSpeciesInfo[species].growthRate][MAX_LEVEL];
-                }
+                    if (param == 0) // Rare Candy
+                    {
+                        dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES, NULL)].growthRate][GetMonData(mon, MON_DATA_LEVEL, NULL) + 1];
+                    }
+                    else if (param - 1 < ARRAY_COUNT(sExpCandyExperienceTable)) // EXP Candies
+                    {
+                        u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
+                        dataUnsigned = sExpCandyExperienceTable[param - 1] + GetMonData(mon, MON_DATA_EXP, NULL);
+                        if (dataUnsigned > gExperienceTables[gSpeciesInfo[species].growthRate][MAX_LEVEL])
+                            dataUnsigned = gExperienceTables[gSpeciesInfo[species].growthRate][MAX_LEVEL];
+                    }
 
-                if (dataUnsigned != 0) // Failsafe
-                {
-                    SetMonData(mon, MON_DATA_EXP, &dataUnsigned);
-                    CalculateMonStats(mon);
-                    retVal = FALSE;
+                    if (dataUnsigned != 0) // Failsafe
+                    {
+                        SetMonData(mon, MON_DATA_EXP, &dataUnsigned);
+                        CalculateMonStats(mon);
+                        retVal = FALSE;
+                    }
                 }
             }
 

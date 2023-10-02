@@ -32147,9 +32147,12 @@ static const u16 sRaichuAlolanTeachableLearnset[] = {
     MOVE_REST,
     MOVE_ROCK_SMASH,
     MOVE_STRENGTH,
+    MOVE_SURF,
     MOVE_THUNDERBOLT,
     MOVE_THUNDER,
     MOVE_TOXIC,
+    MOVE_ELECTRIC_TERRAIN,
+    MOVE_MISTY_TERRAIN,
     MOVE_UNAVAILABLE,
 };
 

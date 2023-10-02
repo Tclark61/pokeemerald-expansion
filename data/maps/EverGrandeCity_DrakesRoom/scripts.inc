@@ -44,6 +44,8 @@ EverGrandeCity_DrakesRoom_EventScript_Drake::
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_DRAKE, EverGrandeCity_DrakesRoom_Text_Defeat
+	giveitem ITEM_RARE_CANDY 8
+	giveitem ITEM_BIG_PEARL
 	goto EverGrandeCity_DrakesRoom_EventScript_Defeated
 	end
 
@@ -62,14 +64,14 @@ EverGrandeCity_DrakesRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_DrakesRoom_Text_IntroSpeech:
-	.string "I am the last of the POKéMON LEAGUE\n"
-	.string "ELITE FOUR, DRAKE the DRAGON master!\p"
-	.string "In their natural state, POKéMON are\n"
-	.string "wild living things. They are free.\p"
-	.string "At times, they hinder us.\n"
-	.string "At times, they help us.\p"
-	.string "For us to battle with POKéMON as\n"
-	.string "partners, do you know what it takes?\p"
+	.string "Well done, {PLAYER}!\n"
+	.string "I am the last trainer standing\p"
+	.string "between you and the CHAMPION.\n"
+	.string "Tell me, do you feel accomplished?\p"
+	.string "Do you feel as though you've learned?\n"
+	.string "Above all else, I hope you've been\p"
+	.string "challenged. If you haven't yet...\n"
+	.string "I will provide that challenge for you.\p"
 	.string "Do you know what is needed?\p"
 	.string "If you don't, then you will never\n"
 	.string "prevail over me!$"

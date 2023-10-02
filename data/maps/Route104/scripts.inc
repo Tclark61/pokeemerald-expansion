@@ -323,8 +323,26 @@ Route104_EventScript_Boy1::
 	end
 
 Route104_EventScript_Woman::
-	msgbox Route104_Text_OnlyThrowBallAtWildPokemon, MSGBOX_NPC
+	checkitem ITEM_OAKS_PARCEL
+	goto_if_eq VAR_RESULT, FALSE, Route104_EventScript_WomanMissesParcel
+	applymovement 5, Common_Movement_ExclamationMark
+	msgbox Route104_Text_WomanLeaves, MSGBOX_NPC
+	removeitem ITEM_OAKS_PARCEL
+	giveitem ITEM_EVIOLITE
+	applymovement 5, Route104_EventScript_WomanEntersForest
+	removeobject 5
+	setflag FLAG_FOUND_PARCEL
+	release
 	end
+
+Route104_EventScript_WomanMissesParcel::
+	msgbox Route104_Text_WomanMissesParcel, MSGBOX_NPC
+	end
+
+Route104_EventScript_WomanEntersForest:
+	face_up
+	walk_up
+	step_end
 
 Route104_EventScript_Boy2::
 	lock
@@ -979,6 +997,10 @@ Route104_EventScript_RematchCindy::
 	msgbox Route104_Text_CindyPostRematch, MSGBOX_AUTOCLOSE
 	end
 
+Route104_EventScript_ForestSign::
+	msgbox Route104_Text_ForestSign, MSGBOX_SIGN
+	end
+
 Route104_EventScript_CaveSign::
 	msgbox Route104_Text_CaveSign, MSGBOX_SIGN
 	end
@@ -989,6 +1011,10 @@ Route104_EventScript_DoubleBattleSign::
 
 Route104_EventScript_TrickRoomSign::
 	msgbox Route104_Text_TrickRoomSign, MSGBOX_SIGN
+	end
+
+Route104_EventScript_LevelCapSign::
+	msgbox Route104_Text_LevelCapSign, MSGBOX_SIGN
 	end
 
 Route104_EventScript_Gina::
@@ -1010,7 +1036,15 @@ Route104_EventScript_Darian::
 	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route104_Text_CaveSign::
+Route104_Text_LevelCapSign:
+	.string "The level cap is raised!\n"
+	.string "It's now 27!$"
+
+Route104_Text_ForestSign:
+	.string " --  Petalburg Forest  -- \n"
+	.string "Under Construction.$"
+
+Route104_Text_CaveSign:
 	.string "Granite Cave, up ahead. Make sure...\n"
 	.string "... ... It seems like the text\p"
 	.string "has been scratched off...\l"
@@ -1022,7 +1056,7 @@ Route104_Text_DoubleBattleSign:
 	.string "your two favorite pokemon up\n"
 	.string "front in your party!$"
 
-Route104_Text_TrickRoomSign::
+Route104_Text_TrickRoomSign:
 	.string "Some moves in the game work well\n"
 	.string "if used in double battles.\p"
 	.string "Trick Room swaps the speed order:\n"
@@ -1030,10 +1064,10 @@ Route104_Text_TrickRoomSign::
 	.string "but under trick room they go last."
 
 Route104_Text_BrineyLivesInSeasideCottage:
-	.string "That seaside cottage is where\n"
-	.string "MR. BRINEY lives.\p"
-	.string "He was once a mighty sailor who never\n"
-	.string "feared the sea, however stormy.$"
+	.string "I'm so frustrated!\n"
+	.string "I went inside the cave to go fishing\p"
+	.string "and a tentacool stole my rod!\n"
+	.string "I ended up leaving empty handed...$"
 
 Route104_Text_WhatsItLikeAtBottomOfSea:
 	.string "The sea, huh?\p"
@@ -1046,11 +1080,22 @@ Route104_Text_ThrowBallAtWeakenedPokemon:
 	.string "It will be easier to catch if it's been\n"
 	.string "poisoned, burned, or lulled to sleep.$"
 
-Route104_Text_OnlyThrowBallAtWildPokemon:
-	.string "You're a thief if you try to steal\n"
-	.string "someone else's POKéMON.\p"
-	.string "You should throw POKé BALLS only at\n"
-	.string "wild POKéMON.$"
+Route104_Text_WomanLeaves:
+	.string "Is that my parcel? Oh good!\p"
+	.string "I was worried it would never\n"
+	.string "arrive. Now I can go about\p"
+	.string "my merry way! Thank you,\n"
+	.string "dearie. Here's something for\p"
+	.string "your trouble. My husband gave\n"
+	.string "it to me for some research\p"
+	.string "related reason, but I'm sure\n"
+	.string "you'll make good use of it!$"
+
+Route104_Text_WomanMissesParcel:
+	.string "I'm getting worried about my\n"
+	.string "package. How am I supposed to\p"
+	.string "enter the forest if my umbrella\n"
+	.string "never delivers?$"
 
 Route104_Text_ImNotATrainer:
 	.string "Oh, no, I'm not a TRAINER.\p"
@@ -1088,7 +1133,7 @@ Route104_Text_FlowerShopSellingSaplings:
 	.string "shopping. Where should I put them?$"
 
 Route104_Text_MrBrineysCottage:
-	.string "MR. BRINEY'S COTTAGE$"
+	.string "TERRAIN MASTER'S COTTAGE$"
 
 Route104_Text_RouteSignPetalburg:
 	.string "ROUTE 1O4\n"

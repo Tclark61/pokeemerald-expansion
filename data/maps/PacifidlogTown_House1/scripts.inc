@@ -2,24 +2,43 @@ PacifidlogTown_House1_MapScripts::
 	.byte 0
 
 PacifidlogTown_House1_EventScript_Man::
-	msgbox PacifidlogTown_House1_Text_RegiStory, MSGBOX_NPC
+	goto_if_set FLAG_UNUSED_0x49A PacifidlogTown_House1_EventScript_ManWishesGoodLuck
+	msgbox PacifidlogTown_House1_Text_FirstTalk, MSGBOX_NPC
+	playfanfare MUS_OBTAIN_ITEM
+	giveitem ITEM_HM03
+	waitfanfare
+	setflag FLAG_UNUSED_0x49A
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET     
+	end
+
+PacifidlogTown_House1_EventScript_ManWishesGoodLuck::
+	msgbox PacifidlogTown_House1_Text_ManWishesGoodLuck, MSGBOX_NPC
 	end
 
 PacifidlogTown_House1_EventScript_Woman::
 	msgbox PacifidlogTown_House1_Text_SixDotsOpenThreeDoors, MSGBOX_NPC
 	end
 
-PacifidlogTown_House1_Text_RegiStory:
-	.string "In the HOENN region, there are three\n"
-	.string "POKéMON that represent the power of\l"
-	.string "rock, ice, and steel.\p"
-	.string "Each of them is said to hide away deep\n"
-	.string "inside caves.\p"
-	.string "That's the story I heard when I was\n"
-	.string "just a little kid.$"
+PacifidlogTown_House1_Text_ManWishesGoodLuck:
+	.string "That move is SURF! It'll help you\n"
+	.string "navigate the water. You have to\p"
+	.string "teach it to a pokemon though!$"
+
+PacifidlogTown_House1_Text_FirstTalk:
+	.string "You're headed for the CHAMPION?\n"
+	.string "That's a bold goal! But...\p"
+	.string "The only way forward is up that\n"
+	.string "waterfall. Here, I bet I can help.$\p"
 
 PacifidlogTown_House1_Text_SixDotsOpenThreeDoors:
-	.string "“Six dots open three doors.”\p"
-	.string "Grandpa used to say that, but I don't\n"
-	.string "know what he meant.$"
+	.string "It's said that all magikarps dream\n"
+	.string "of being strong enough to swim up\p"
+	.string "a waterfall. I've never seen one do it,\n"
+	.string "though. I think they'd evolve beforehand.\p"
+	.string "Shame, it'd be nice to see one day.$"
 

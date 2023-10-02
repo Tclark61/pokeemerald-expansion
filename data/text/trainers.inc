@@ -1,7 +1,7 @@
 Route102_Text_CalvinIntro:
 	.string "I'm the first boss!\n"
-	.string "You can't move on until\l"
-	.string "You pass through my unstoppable\n!"
+	.string "You can't move on until\p"
+	.string "you pass through my unstoppable\n!"
 	.string "defensive stalling prowess!$"
 
 Route102_Text_CalvinDefeated:
@@ -279,7 +279,7 @@ Route104_Text_MiaPostBattle:
 	.string "MIA: If you're going in the cave\n"
 	.string "try bringing repel. The zubat can't\p"
 	.string "be ran away from, so it wears down\n"
-	.string "on your team."
+	.string "on your team.$"
 
 Route104_Text_MiaNotEnoughMons:
 	.string "MIA: You want to battle with us?\p"

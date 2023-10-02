@@ -10,6 +10,18 @@ EverGrandeCity_EventScript_VictoryRoadSign::
 	msgbox EverGrandeCity_Text_EnteringVictoryRoad, MSGBOX_SIGN
 	end
 
+EverGrandeCity_EventScript_LevelCapTriggerPerson::
+	faceplayer
+	lock
+	msgbox EverGrandeCity_Text_Congrats
+	goto EverGrandeCity_EventScript_LevelCapTrigger
+	release
+	end
+
+EverGrandeCity_EventScript_LevelCapTrigger::
+	setflag FLAG_ENTERED_EVER_GRANDE
+	end
+
 EverGrandeCity_EventScript_CitySign::
 	msgbox EverGrandeCity_Text_CitySign, MSGBOX_SIGN
 	end
@@ -22,6 +34,9 @@ EverGrandeCity_EventScript_SetVisitedEverGrande::
 	setflag FLAG_VISITED_EVER_GRANDE_CITY
 	setvar VAR_TEMP_1, 1
 	end
+
+EverGrandeCity_Text_Congrats:
+	.string "You made it! Congratulations!$"
 
 EverGrandeCity_Text_EnteringVictoryRoad:
 	.string "ENTERING VICTORY ROAD$"

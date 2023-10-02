@@ -16,7 +16,7 @@ Route104_EventScript_ItemPPUp::
 	end
 
 Route104_EventScript_ItemPokeBall::
-	finditem ITEM_POKE_BALL
+	finditem ITEM_TM51
 	end
 
 Route104_EventScript_ItemXAccuracy::
@@ -306,11 +306,12 @@ Route134_EventScript_ItemStarPiece::
 	end
 
 PetalburgCity_EventScript_ItemMaxRevive::
-	finditem ITEM_MAX_REVIVE
+	finditem ITEM_WEAKNESS_POLICY
 	end
 
 PetalburgCity_EventScript_ItemEther::
-	finditem ITEM_RARE_CANDY 3
+	finditem ITEM_RARE_CANDY 10
+	finditem ITEM_MASTER_BALL 2
 	finditem ITEM_CHARCOAL
 	end
 
@@ -339,7 +340,8 @@ PetalburgWoods_EventScript_ItemGreatBall::
 	end
 
 PetalburgWoods_EventScript_ItemEther::
-	finditem ITEM_ETHER
+	finditem ITEM_RARE_CANDY 10
+	finditem ITEM_ICE_STONE
 	end
 
 PetalburgWoods_EventScript_ItemParalyzeHeal::
@@ -361,7 +363,10 @@ GraniteCave_1F_EventScript_ItemEscapeRope::
 	end
 
 GraniteCave_B1F_EventScript_ItemPokeBall::
-	finditem ITEM_POKE_BALL
+	finditem ITEM_RARE_CANDY 10
+	finditem ITEM_MASTER_BALL
+	finditem ITEM_TM37_SANDSTORM
+	finditem ITEM_TM46_THIEF
 	end
 
 GraniteCave_B2F_EventScript_ItemRepel::
@@ -617,7 +622,7 @@ VictoryRoad_1F_EventScript_ItemPPUp::
 	end
 
 VictoryRoad_B1F_EventScript_ItemTM29::
-	finditem ITEM_TM29
+	finditem ITEM_RARE_CANDY 30
 	end
 
 VictoryRoad_B1F_EventScript_ItemFullRestore::

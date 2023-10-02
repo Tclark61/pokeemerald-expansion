@@ -1223,18 +1223,18 @@
 #define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
 #define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
 #define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
-#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
-#define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
-#define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
-#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
-#define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
-#define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
+#define FLAG_FOUND_PARCEL                                           0x499 // Used to enter the forest
+#define FLAG_UNUSED_0x49A                                           0x49A // Now used for Surf
+#define FLAG_ENTERED_EVER_GRANDE                                    0x49B // Flag for getting to EverGrande
+#define FLAG_EXITED_CAVE                                            0x49C // Exiting new Granite Cave
+#define FLAG_BEAT_CHAMPION                                          0x49D // Use after beating Champion Tyler
+#define FLAG_OBTAINED_SPECIAL_PIKACHU                               0x49E // The Terrain Master gives this
+#define FLAG_TALKED_TO_SAD_BOY                                      0x49F // Unused Flag
+#define FLAG_TALKED_TO_SAD_BOY_TWO                                  0x4A0 // Unused Flag
+#define FLAG_TALKED_TO_SAD_BOY_THREE                                0x4A1 // Unused Flag
+#define FLAG_TALKED_TO_SAD_BOY_FOUR                                 0x4A2 // Unused Flag
+#define FLAG_TALKED_TO_SAD_BOY_FIVE                                 0x4A3 // Unused Flag
+#define FLAG_BRICK_BREAK_GUY                                        0x4A4 // Unused Flag
 #define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
 #define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
 #define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag

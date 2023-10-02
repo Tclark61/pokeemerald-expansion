@@ -12,17 +12,63 @@ GraniteCave_1F_EventScript_Hiker::
 	release
 	end
 
+MagmaHideout_3F_1R_EventScript_Grunt9::
+	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_9, MagmaHideout_3F_1R_Text_Grunt9Intro, MagmaHideout_3F_1R_Text_Grunt9Defeat
+	setflag FLAG_EXITED_CAVE
+	msgbox MagmaHideout_3F_1R_Text_Grunt9PostBattle, MSGBOX_DEFAULT
+	release
+	end
+
 GraniteCave_1F_EventScript_ReceivedFlash::
 	msgbox GraniteCave_1F_Text_ExplainFlash, MSGBOX_DEFAULT
 	release
 	end
+
+GraniteCave_1F_EventScript_Mailman::
+	lock
+	faceplayer
+	checkitem ITEM_OAKS_PARCEL
+	goto_if_set FLAG_FOUND_PARCEL, GraniteCave_1F_EventScript_TiredMailman
+	goto_if_eq VAR_RESULT, FALSE, GraniteCave_1F_EventScript_MailmanGivesParcel
+	goto_if_eq VAR_RESULT, TRUE, GraniteCave_1F_EventScript_TiredMailman
+	release
+	end
+
+GraniteCave_1F_EventScript_MailmanGivesParcel::
+	msgbox GraniteCave_1F_Text_MailmanGivesParcel, MSGBOX_NPC
+	giveitem ITEM_OAKS_PARCEL
+	release
+	end
+
+GraniteCave_1F_EventScript_TiredMailman::
+	msgbox GraniteCave_1F_Text_TiredMailman, MSGBOX_NPC
+	release
+	end
+
+GraniteCave_1F_Text_MailmanGivesParcel:
+	.string "Huff... Puff...\n"
+	.string "Hey, did you just come from\p"
+	.string "Petalburg? Huff... Puff...\n"
+	.string "I'm supposed to deliver a\p"
+	.string "parcel to someone near there...\n"
+	.string "Huff... Puff... but I'm so tired.\p"
+	.string "What if you gave the package\n"
+	.string "so I don't have to? That's a\p"
+	.string "great idea! Here you go!\n"
+	.string "It belongs to Miss Oak.$"
+
+GraniteCave_1F_Text_TiredMailman:
+	.string "Huff... Puff...\n"
+	.string "I'm catching my breath before\p"
+	.string "I walk all the way back to\n"
+	.string "EverGrande City...$"
 
 GraniteCave_1F_Text_GetsDarkAheadHereYouGo:
 	.string "Hey, you.\n"
 	.string "It gets awfully dark ahead.\l"
 	.string "It'll be tough trying to explore.\p"
 	.string "That guy who came by earlier…\n"
-	.string "STEVEN, I think it was.\p"
+	.string "TYLER, I think it was.\p"
 	.string "He knew how to use FLASH, so he ought\n"
 	.string "to be all right, but…\p"
 	.string "Well, for us HIKERS, helping out those\n"
@@ -36,4 +82,16 @@ GraniteCave_1F_Text_ExplainFlash:
 	.string "of caves.\p"
 	.string "But, to use it, you need the GYM BADGE\n"
 	.string "from DEWFORD's POKéMON GYM.$"
+
+MagmaHideout_3F_1R_Text_Grunt9Intro:
+	.string "You're at the end of the cave...\n"
+	.string "But now you have to get through me!\p"
+	.string "Your pokemon aren't tired, are they?$"
+
+MagmaHideout_3F_1R_Text_Grunt9Defeat:
+	.string "Maybe I was the one who was tired...$"
+
+MagmaHideout_3F_1R_Text_Grunt9PostBattle:
+	.string "You're almost to the CHAMPION.\n"
+	.string "You think you can go all the way?$"
 
