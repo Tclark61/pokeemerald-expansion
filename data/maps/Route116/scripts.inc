@@ -361,7 +361,9 @@ Route116_Text_ScoundrelMadeOffWithPeeko:
 
 Route116_Text_WantToDigTunnel:
 	.string "Nnn… Roar!\p"
-	.string "I want to dig that tunnel!$"
+	.string "I want to explore the cave!\n"
+	.string "But boss told me to stay put\p"
+	.string "and guard the house instead.$"
 
 Route116_Text_DiggingTunnelWhenGoonOrderedMeOut:
 	.string "Nnn… Roar!\n"
@@ -457,6 +459,8 @@ Route116_Text_TunnelersRestHouse:
 
 Route116_Text_TrainerTipsBToStopEvolution:
 	.string "TRAINER TIPS\p"
+	.string "Some pre-evolved pokemon learn\n"
+	.string "moves faster than their evolved form.\p"
 	.string "If you want to stop a POKéMON from\n"
 	.string "evolving, press the B Button while it\l"
 	.string "is trying to evolve.\l"

@@ -3200,7 +3200,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("BROCK HARD"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
         .party = TRAINER_PARTY(sParty_Brawly1),
     },
 
@@ -4028,20 +4028,20 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("TYLER"),
         .items = {},
         .doubleBattle = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN,
         .party = TRAINER_PARTY(sParty_Wallace),
     },
 
-    [TRAINER_ANDREW] =
+    [TRAINER_GARY] =
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .trainerName = _("ANDREW"),
+        .trainerName = _("GARY"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = TRAINER_PARTY(sParty_Andrew),
+        .party = TRAINER_PARTY(sParty_Gary),
     },
 
     [TRAINER_IVAN] =

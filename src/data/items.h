@@ -7758,7 +7758,7 @@ const struct Item gItems[] =
         .secondaryId = MOVE_OVERHEAT,
     },
 
-    [ITEM_TM51] =
+    [ITEM_TM_ELECTRIC_TERRAIN] =
     {
         .name = _("TM51"),
         .price = 3000,
@@ -7767,10 +7767,10 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_ELECTRIC_TERRAIN, // Todo
     },
 
-    [ITEM_TM52] =
+    [ITEM_TM_TRICK_ROOM] =
     {
         .name = _("TM52"),
         .price = 3000,
@@ -7779,7 +7779,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_TRICK_ROOM, // Todo
     },
 
     [ITEM_TM53] =
@@ -9081,7 +9081,7 @@ const struct Item gItems[] =
 
     [ITEM_OAKS_PARCEL] =
     {
-        .name = _("Oak's Parcel"),
+        .name = _("Lady's Parcel"),
         .price = 0,
         .description = sOaksParcelDesc,
         .importance = 2,

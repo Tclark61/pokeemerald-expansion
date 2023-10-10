@@ -228,28 +228,25 @@ RustboroCity_Gym_Text_GymStatue:
 
 RustboroCity_Gym_Text_GymStatueCertified:
 	.string "RUSTBORO CITY POKéMON GYM\p"
-	.string "ROXANNE'S CERTIFIED TRAINERS:\n"
+	.string "GLARRY'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
 RustboroCity_Gym_Text_RoxanneRegisterCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
-	.string "ROXANNE: Oh, hello, {PLAYER}?\n"
-	.string "This is ROXANNE of RUSTBORO CITY.\p"
-	.string "I heard from BRAWLY that you're\n"
-	.string "moving up through the ranks of\l"
-	.string "TRAINERS at an incredible clip.\p"
-	.string "Well, I'd rather not think that\n"
-	.string "I can't beat you.\p"
-	.string "I promise, I will shape up my GYM\n"
-	.string "so that you may challenge us again.\p"
-	.string "I hope you'll be looking forward to\n"
-	.string "that occasion as much as me!\p"
+	.string "BIA: Oh, hello, {PLAYER}?\n"
+	.string "This is BIA. News travels fast!\p"
+	.string "Congrats on beating BROCK HARD!\n"
+	.string "Keep getting stronger, and maybe\l"
+	.string "you'll become CHAMPION one day.\p"
+	.string "Also, TYLER worked really hard on\n"
+	.string "this game, so you better like it.\p"
+	.string "Or else.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 
 RustboroCity_Gym_Text_RegisteredRoxanne:
-	.string "Registered GYM LEADER ROXANNE\n"
+	.string "Registered BIA\n"
 	.string "in the POKéNAV.$"
 
 RustboroCity_Gym_Text_RoxannePreRematch:

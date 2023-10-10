@@ -5,7 +5,7 @@
       "id": "LAYOUT_PETALBURG_CITY",
       "name": "PetalburgCity_Layout",
       "width": 30,
-      "height": 40,
+      "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/PetalburgCity/border.bin",
@@ -596,8 +596,8 @@
       "name": "House2_Layout",
       "width": 11,
       "height": 8,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_MirageTower",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFactory",
       "border_filepath": "data/layouts/House2/border.bin",
       "blockdata_filepath": "data/layouts/House2/map.bin"
     },
@@ -977,7 +977,7 @@
       "width": 11,
       "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
+      "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/RustboroCity_CuttersHouse/border.bin",
       "blockdata_filepath": "data/layouts/RustboroCity_CuttersHouse/map.bin"
     },

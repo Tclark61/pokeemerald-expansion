@@ -1313,6 +1313,8 @@ extern const u8 gText_ElectricTerrain[];
 extern const u8 gText_GrassyTerrain[];
 extern const u8 gText_MistyTerrain[];
 extern const u8 gText_PsychicTerrain[];
+extern const u8 gText_IceCreamCone[];
+extern const u8 gText_WhippedCream[];
 
 // Cable Club multichoice text
 extern const u8 CableClub_Text_TradeUsingLinkCable[];

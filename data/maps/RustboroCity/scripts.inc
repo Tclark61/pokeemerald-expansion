@@ -1040,9 +1040,9 @@ RustboroCity_Text_HaveYouChallengedGym:
 	.string "realize what is required of them.$"
 
 RustboroCity_Text_HeyThatsRustborosGymBadge:
-	.string "Hey, that's RUSTBORO's GYM BADGE!\p"
+	.string "Hey, that's PETALBURG's GYM BADGE!\p"
 	.string "Out of all the POKéMON GYM BADGES,\n"
-	.string "RUSTBORO's is the coolest, I'd say.$"
+	.string "PETALBURG's is the coolest, I'd say.$"
 
 RustboroCity_Text_YoureNewAroundHere:
 	.string "Oh? Who might you be?\n"
@@ -1241,8 +1241,14 @@ RustboroCity_Text_DevonCorpSign:
 
 RustboroCity_Text_GymSign:
 	.string "RUSTBORO CITY POKéMON GYM\n"
-	.string "LEADER: ROXANNE\p"
-	.string "“The ROCK-loving honors student!”$"
+	.string "LEADER: TYLER--\p"
+	.string "The words have been crossed out.\n"
+	.string "LEADER: GARY--\p"
+	.string "Those words have been crossed out.\n"
+	.string "LEADER: LARRY--\p"
+	.string "Shockingly, those words have also\n"
+	.string "been crossed out. Nothing takes\p"
+	.string "its place. Curious.$"
 
 RustboroCity_Text_DevonCorpBranchOfficeSign:
 	.string "DEVON CORP. BRANCH OFFICE\p"
@@ -1260,7 +1266,7 @@ RustboroCity_Text_TrainersSchoolSign:
 	.string "POKéMON!”$"
 
 RustboroCity_Text_CuttersHouse:
-	.string "CUTTER'S HOUSE$"
+	.string "ICE CREAM PARLOR$"
 
 RustboroCity_Text_DevelopedNewPokenavFeature:
 	.string "I've been developing an added feature\n"

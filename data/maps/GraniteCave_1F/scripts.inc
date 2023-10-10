@@ -54,8 +54,7 @@ GraniteCave_1F_Text_MailmanGivesParcel:
 	.string "Huff... Puff... but I'm so tired.\p"
 	.string "What if you gave the package\n"
 	.string "so I don't have to? That's a\p"
-	.string "great idea! Here you go!\n"
-	.string "It belongs to Miss Oak.$"
+	.string "great idea! Here you go!$"
 
 GraniteCave_1F_Text_TiredMailman:
 	.string "Huff... Puff...\n"

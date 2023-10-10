@@ -3214,10 +3214,10 @@ static const struct TrainerMon sParty_Drake[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 36,
-    .species = SPECIES_ALTARIA,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TAKE_DOWN, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE, MOVE_AERIAL_ACE}
+    .lvl = 34,
+    .species = SPECIES_MAROWAK_ALOLAN,
+    .heldItem = ITEM_THICK_CLUB,
+    .moves = {MOVE_SHADOW_BONE, MOVE_BONE_RUSH, MOVE_ENDURE, MOVE_ENDEAVOR}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
@@ -4267,15 +4267,8 @@ static const struct TrainerMon sParty_Wallace[] = {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 38,
     .species = SPECIES_WAILORD,
-    .heldItem = ITEM_NONE,
+    .heldItem = ITEM_DAMP_ROCK,
     .moves = {MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_TAKE_DOWN, MOVE_ICY_WIND}
-    },
-    {
-    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 40,
-    .species = SPECIES_LUXRAY,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_THUNDER, MOVE_SNARL, MOVE_PROTECT, MOVE_ICE_BEAM}
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -4286,9 +4279,16 @@ static const struct TrainerMon sParty_Wallace[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 40,
+    .species = SPECIES_LUXRAY,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_THUNDER, MOVE_SNARL, MOVE_PROTECT, MOVE_CRUNCH}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 41,
     .species = SPECIES_SANDSLASH_ALOLAN,
-    .heldItem = ITEM_NONE,
+    .heldItem = ITEM_FOCUS_SASH,
     .moves = {MOVE_ICICLE_CRASH, MOVE_GYRO_BALL, MOVE_SUBSTITUTE, MOVE_ICY_WIND}
     },
     {
@@ -4296,7 +4296,7 @@ static const struct TrainerMon sParty_Wallace[] = {
     .lvl = 35,
     .species = SPECIES_KYOGRE,
     .heldItem = ITEM_LUM_BERRY,
-    .moves = {MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_HYPER_BEAM, MOVE_SURF}
+    .moves = {MOVE_CALM_MIND, MOVE_ICE_BEAM, MOVE_HYPER_BEAM, MOVE_SURF}
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -4307,18 +4307,22 @@ static const struct TrainerMon sParty_Wallace[] = {
     }
 };
 
-static const struct TrainerMon sParty_Andrew[] = {
+static const struct TrainerMon sParty_Gary[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_MAGIKARP,
+    .lvl = 25,
+    .species = SPECIES_PINCURCHIN,
     },
     {
-    .lvl = 10,
-    .species = SPECIES_TENTACOOL,
+    .lvl = 25,
+    .species = SPECIES_RAICHU_ALOLAN,
     },
     {
-    .lvl = 15,
-    .species = SPECIES_MAGIKARP,
+    .lvl = 27,
+    .species = SPECIES_TOGEKISS,
+    },
+    {
+    .lvl = 30,
+    .species = SPECIES_ORICORIO_POM_POM,
     }
 };
 

@@ -16,7 +16,7 @@ Route104_EventScript_ItemPPUp::
 	end
 
 Route104_EventScript_ItemPokeBall::
-	finditem ITEM_TM51
+	finditem ITEM_TM_ELECTRIC_TERRAIN
 	end
 
 Route104_EventScript_ItemXAccuracy::
@@ -130,15 +130,15 @@ Route115_EventScript_ItemPPUp::
 	end
 
 Route116_EventScript_ItemXSpecial::
-	finditem ITEM_X_SP_ATK
+	finditem ITEM_SMOOTH_ROCK
 	end
 
 Route116_EventScript_ItemEther::
-	finditem ITEM_ETHER
+	finditem ITEM_ASSAULT_VEST
 	end
 
 Route116_EventScript_ItemRepel::
-	finditem ITEM_REPEL
+	finditem ITEM_PP_UP 5
 	end
 
 Route116_EventScript_ItemHPUp::
@@ -146,7 +146,7 @@ Route116_EventScript_ItemHPUp::
 	end
 
 Route116_EventScript_ItemPotion::
-	finditem ITEM_POTION
+	finditem ITEM_RARE_CANDY 8
 	end
 
 Route117_EventScript_ItemGreatBall::
@@ -303,6 +303,7 @@ Route134_EventScript_ItemCarbos::
 
 Route134_EventScript_ItemStarPiece::
 	finditem ITEM_IRON_BALL
+	finditem ITEM_TM_TRICK_ROOM
 	end
 
 PetalburgCity_EventScript_ItemMaxRevive::
@@ -320,7 +321,7 @@ MauvilleCity_EventScript_ItemXSpeed::
 	end
 
 RustboroCity_EventScript_ItemXDefend::
-	finditem ITEM_X_DEFENSE
+	finditem ITEM_TM_SOLAR_BEAM
 	end
 
 LilycoveCity_EventScript_ItemMaxRepel::

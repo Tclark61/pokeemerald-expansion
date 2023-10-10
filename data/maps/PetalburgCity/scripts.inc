@@ -710,9 +710,10 @@ PetalburgCity_EventScript_GymBoy::
 	end
 
 PetalburgCity_Text_WhereIsWally:
-	.string "Where has our WALLY gone?\p"
-	.string "We have to leave for VERDANTURF TOWN\n"
-	.string "very soon…$"
+	.string "If a pokemon had the move\p"
+	.string "WATERFALL, they'd be able to\n"
+	.string "climb up the water. Shame, it's\p"
+	.string "too rare of a move for me to have...$"
 
 PetalburgCity_Text_AreYouRookieTrainer:
 	.string "Hiya! Are you maybe…\n"
@@ -744,8 +745,8 @@ PetalburgCity_Text_FullPartyExplanation:
 
 PetalburgCity_Text_GymSign:
 	.string "PETALBURG CITY POKéMON GYM\n"
-	.string "LEADER: NORMAN\l"
-	.string "“A man in pursuit of power!”$"
+	.string "LEADER: BROCK HARD\l"
+	.string "“A man with explosive prowess!”$"
 
 PetalburgCity_Text_CitySign:
 	.string "PETALBURG CITY\n"
@@ -764,9 +765,9 @@ PetalburgCity_Text_WellMaybeNot:
 	.string "Well, maybe not.\n"
 	.string "Your clothes aren't all that dirty.\p"
 	.string "You're either a rookie TRAINER,\n"
-	.string "or maybe you're just an ordinary kid.$"
+	.string "or maybe you're just a loser.$"
 
 PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm roaming the land in search of\n"
-	.string "talented TRAINERS.\p"
+	.string "people who will beat the entire game.\p"
 	.string "I'm sorry to have taken your time.$"

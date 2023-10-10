@@ -4033,16 +4033,16 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Wallace),
     },
 
-    [TRAINER_ANDREW] =
+    [TRAINER_GARY] =
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
         .trainerPic = TRAINER_PIC_FISHERMAN,
-        .trainerName = _("ANDREW"),
+        .trainerName = _("GARY"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Andrew),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Gary),
     },
 
     [TRAINER_IVAN] =

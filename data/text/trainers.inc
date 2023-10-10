@@ -159,16 +159,16 @@ Route103_Text_LivRematchNotEnoughPokemon:
 	.string "have to have two POKéMON!\l"
 	.string "It's not fair if you don't!$"
 
-Route103_Text_AndrewIntro:
+Route103_Text_GaryIntro:
 	.string "Gah! My fishing line's all snarled up!\n"
 	.string "I'm getting frustrated and mean!\l"
 	.string "That's it! Battle me!$"
 
-Route103_Text_AndrewDefeated:
+Route103_Text_GaryDefeated:
 	.string "Gah! Lost it!\n"
 	.string "I'm even more annoyed now!$"
 
-Route103_Text_AndrewPostBattle:
+Route103_Text_GaryPostBattle:
 	.string "Gah, I'm still boiling mad…\n"
 	.string "Grrrrr…$"
 

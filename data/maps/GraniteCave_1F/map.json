@@ -93,8 +93,8 @@
       "x": 5,
       "y": 10,
       "elevation": 3,
-      "dest_map": "MAP_EVER_GRANDE_CITY",
-      "dest_warp_id": "3"
+      "dest_map": "MAP_ROUTE116",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

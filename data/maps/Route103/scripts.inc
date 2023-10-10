@@ -242,9 +242,9 @@ Route102_EventScript_LivRematch::
 	msgbox Route103_Text_LivRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route103_EventScript_Andrew::
-	trainerbattle_single TRAINER_ANDREW, Route103_Text_AndrewIntro, Route103_Text_AndrewDefeated
-	msgbox Route103_Text_AndrewPostBattle, MSGBOX_AUTOCLOSE
+Route103_EventScript_Gary::
+	trainerbattle_single TRAINER_GARY, Route103_Text_GaryIntro, Route103_Text_GaryDefeated
+	msgbox Route103_Text_GaryPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route103_EventScript_Miguel::

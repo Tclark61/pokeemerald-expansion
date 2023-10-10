@@ -341,7 +341,7 @@ Route104_EventScript_WomanMissesParcel::
 
 Route104_EventScript_WomanEntersForest:
 	face_up
-	walk_up
+	walk_slow_up
 	step_end
 
 Route104_EventScript_Boy2::
