@@ -146,7 +146,7 @@ Route116_EventScript_ItemHPUp::
 	end
 
 Route116_EventScript_ItemPotion::
-	finditem ITEM_RARE_CANDY 8
+	finditem ITEM_RARE_CANDY 15
 	end
 
 Route117_EventScript_ItemGreatBall::
@@ -499,7 +499,8 @@ MtPyre_2F_EventScript_ItemUltraBall::
 	end
 
 MtPyre_3F_EventScript_ItemSuperRepel::
-	finditem ITEM_SUPER_REPEL
+	setflag FLAG_RECEIVED_HM_ROCK_SMASH
+	finditem ITEM_HM_ROCK_SMASH
 	end
 
 MtPyre_4F_EventScript_ItemSeaIncense::
@@ -531,7 +532,7 @@ AquaHideout_B1F_EventScript_ItemNugget::
 	end
 
 AquaHideout_B1F_EventScript_ItemMaxElixir::
-	finditem ITEM_MAX_ELIXIR
+	finditem ITEM_GOLD_STATUE
 	end
 
 AquaHideout_B2F_EventScript_ItemNestBall::

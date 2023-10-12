@@ -85,12 +85,12 @@ GraniteCave_1F_Text_ExplainFlash:
 MagmaHideout_3F_1R_Text_Grunt9Intro:
 	.string "You're at the end of the cave...\n"
 	.string "But now you have to get through me!\p"
-	.string "Your pokemon aren't tired, are they?$"
+	.string "My POKEMON are the BEST!$"
 
 MagmaHideout_3F_1R_Text_Grunt9Defeat:
-	.string "Maybe I was the one who was tired...$"
+	.string "Get it? Best?$"
 
 MagmaHideout_3F_1R_Text_Grunt9PostBattle:
-	.string "You're almost to the CHAMPION.\n"
-	.string "You think you can go all the way?$"
+	.string "I use UNOWN that spell out BEST.\n"
+	.string "C'mon, I'm funny. Right? Right?$"
 

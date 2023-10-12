@@ -1226,7 +1226,7 @@
 #define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
 #define FLAG_FOUND_PARCEL                                           0x499 // Used to enter the forest
 #define FLAG_UNUSED_0x49A                                           0x49A // Now used for Surf
-#define FLAG_ENTERED_EVER_GRANDE                                    0x49B // Flag for getting to EverGrande
+#define FLAG_BEAT_GLARRY                                    0x49B // Flag for getting to EverGrande
 #define FLAG_EXITED_CAVE                                            0x49C // Exiting new Granite Cave
 #define FLAG_BEAT_CHAMPION                                          0x49D // Use after beating Champion Tyler
 #define FLAG_OBTAINED_SPECIAL_PIKACHU                               0x49E // The Terrain Master gives this

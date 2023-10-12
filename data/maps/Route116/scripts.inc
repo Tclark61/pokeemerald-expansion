@@ -41,6 +41,8 @@ Route116_EventScript_BoyfriendGruntLeftTunnel::
 	release
 	end
 
+
+
 Route116_EventScript_BoyfriendGruntInTunnel::
 	msgbox Route116_Text_DiggingTunnelWhenGoonOrderedMeOut, MSGBOX_DEFAULT
 	release
@@ -128,6 +130,10 @@ Route116_EventScript_TunnelersRestHouseSign::
 
 Route116_EventScript_TrainerTipsBToStopEvolution::
 	msgbox Route116_Text_TrainerTipsBToStopEvolution, MSGBOX_SIGN
+	end
+
+Route116_EventScript_TrainerTipsCombee::
+	msgbox Route116_Text_TrainerTipsCombee, MSGBOX_SIGN
 	end
 
 Route116_EventScript_TrainerTipsBagHasPockets::
@@ -447,6 +453,12 @@ Route116_Text_NotWhatImLookingFor:
 Route116_Text_RouteSignRustboro:
 	.string "ROUTE 116\n"
 	.string "{LEFT_ARROW} RUSTBORO CITY$"
+
+Route116_Text_TrainerTipsCombee:
+	.string "If a female COMBEE gets strong,\n"
+	.string "it will evolve to become a queen bee.\p"
+	.string "The male COMBEE will always stay as\n"
+	.string "COMBEEs. Some real Kenergy there.$"
 
 Route116_Text_RusturfTunnelSign:
 	.string "RUSTURF TUNNEL\n"

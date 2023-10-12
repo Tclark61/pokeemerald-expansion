@@ -125,14 +125,14 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                        {EVO_ITEM, ITEM_ICE_STONE, SPECIES_GLACEON},
                                     #endif
                                     #if P_GEN_6_POKEMON == TRUE
-                                       {EVO_FRIENDSHIP_MOVE_TYPE, TYPE_FAIRY, SPECIES_SYLVEON}
+                                       {EVO_ITEM, ITEM_SHINY_STONE, SPECIES_SYLVEON}
                                     #endif
                                        },
     [SPECIES_PORYGON]               = {{EVO_TRADE_ITEM, ITEM_UPGRADE, SPECIES_PORYGON2},
                                        {EVO_ITEM, ITEM_UPGRADE, SPECIES_PORYGON2}},
-    [SPECIES_OMANYTE]               = {{EVO_LEVEL, 40, SPECIES_OMASTAR}},
-    [SPECIES_KABUTO]                = {{EVO_LEVEL, 40, SPECIES_KABUTOPS}},
-    [SPECIES_DRATINI]               = {{EVO_LEVEL, 30, SPECIES_DRAGONAIR}},
+    [SPECIES_OMANYTE]               = {{EVO_LEVEL, 30, SPECIES_OMASTAR}},
+    [SPECIES_KABUTO]                = {{EVO_LEVEL, 30, SPECIES_KABUTOPS}},
+    [SPECIES_DRATINI]               = {{EVO_LEVEL, 27, SPECIES_DRAGONAIR}},
     [SPECIES_DRAGONAIR]             = {{EVO_LEVEL, 48, SPECIES_DRAGONITE}},
     [SPECIES_CHIKORITA]             = {{EVO_LEVEL, 16, SPECIES_BAYLEEF}},
     [SPECIES_BAYLEEF]               = {{EVO_LEVEL, 32, SPECIES_MEGANIUM}},
@@ -318,7 +318,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_HAPPINY]               = {{EVO_ITEM_HOLD_DAY, ITEM_OVAL_STONE, SPECIES_CHANSEY},
                                        {EVO_ITEM_DAY, ITEM_OVAL_STONE, SPECIES_CHANSEY}},
     [SPECIES_GIBLE]                 = {{EVO_LEVEL, 24, SPECIES_GABITE}},
-    [SPECIES_GABITE]                = {{EVO_LEVEL, 48, SPECIES_GARCHOMP}},
+    [SPECIES_GABITE]                = {{EVO_LEVEL, 45, SPECIES_GARCHOMP}},
     [SPECIES_MUNCHLAX]              = {{EVO_FRIENDSHIP, 0, SPECIES_SNORLAX}},
     [SPECIES_RIOLU]                 = {{EVO_FRIENDSHIP_DAY, 0, SPECIES_LUCARIO}},
     [SPECIES_HIPPOPOTAS]            = {{EVO_LEVEL, 34, SPECIES_HIPPOWDON}},
@@ -381,8 +381,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_SOLOSIS]               = {{EVO_LEVEL, 32, SPECIES_DUOSION}},
     [SPECIES_DUOSION]               = {{EVO_LEVEL, 41, SPECIES_REUNICLUS}},
     [SPECIES_DUCKLETT]              = {{EVO_LEVEL, 35, SPECIES_SWANNA}},
-    [SPECIES_VANILLITE]             = {{EVO_LEVEL, 35, SPECIES_VANILLISH}},
-    [SPECIES_VANILLISH]             = {{EVO_LEVEL, 47, SPECIES_VANILLUXE}},
+    [SPECIES_VANILLITE]             = {{EVO_LEVEL, 30, SPECIES_VANILLISH}},
+    [SPECIES_VANILLISH]             = {{EVO_LEVEL, 42, SPECIES_VANILLUXE}},
     [SPECIES_DEERLING]              = {{EVO_LEVEL, 34, SPECIES_SAWSBUCK}},
     [SPECIES_KARRABLAST]            = {{EVO_TRADE_SPECIFIC_MON, SPECIES_SHELMET, SPECIES_ESCAVALIER}},
     [SPECIES_FOONGUS]               = {{EVO_LEVEL, 39, SPECIES_AMOONGUSS}},
@@ -527,13 +527,13 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_HATTREM]               = {{EVO_LEVEL, 42, SPECIES_HATTERENE}},
     [SPECIES_IMPIDIMP]              = {{EVO_LEVEL, 32, SPECIES_MORGREM}},
     [SPECIES_MORGREM]               = {{EVO_LEVEL, 42, SPECIES_GRIMMSNARL}},
-    [SPECIES_MILCERY]               = {{EVO_LEVEL, 25, SPECIES_ALCREMIE},
+    [SPECIES_MILCERY]               = {{EVO_LEVEL, 0, SPECIES_ALCREMIE},
                                        {EVO_LEVEL, 0, SPECIES_ALCREMIE_RUBY_CREAM},
                                        {EVO_LEVEL, 0, SPECIES_ALCREMIE_MATCHA_CREAM},
                                        {EVO_LEVEL, 0, SPECIES_ALCREMIE_MINT_CREAM},
                                        {EVO_LEVEL, 0, SPECIES_ALCREMIE_LEMON_CREAM},
                                        {EVO_LEVEL, 0, SPECIES_ALCREMIE_SALTED_CREAM},
-                                       {EVO_LEVEL, 0, SPECIES_ALCREMIE_RUBY_SWIRL},
+                                       {EVO_LEVEL, 25, SPECIES_ALCREMIE_RUBY_SWIRL},
                                        {EVO_LEVEL, 0, SPECIES_ALCREMIE_CARAMEL_SWIRL},
                                        {EVO_LEVEL, 0, SPECIES_ALCREMIE_RAINBOW_SWIRL}},
     [SPECIES_SNOM]                  = {{EVO_FRIENDSHIP_NIGHT, 0, SPECIES_FROSMOTH},
@@ -602,7 +602,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                        {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_SUPER}},
 #endif
 #if P_GEN_7_POKEMON == TRUE
-    [SPECIES_ROCKRUFF_OWN_TEMPO]    = {{EVO_LEVEL_DUSK, 25, SPECIES_LYCANROC_DUSK}},
+    [SPECIES_ROCKRUFF_OWN_TEMPO]    = {{EVO_LEVEL, 25, SPECIES_LYCANROC_DUSK}},
 #endif
 #if P_GEN_8_POKEMON == TRUE
     [SPECIES_SINISTEA_ANTIQUE]      = {{EVO_ITEM, ITEM_CHIPPED_POT, SPECIES_POLTEAGEIST_ANTIQUE}},

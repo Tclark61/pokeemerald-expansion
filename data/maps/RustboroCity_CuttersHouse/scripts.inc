@@ -52,13 +52,6 @@ RustboroCity_IceCreamParlor_EventScript_TryBuy::
 	call_if_eq VAR_TEMP_1, 0, RustboroCity_IceCreamParlor_EventScript_RemoveMoneyIceCreamCone
 	call_if_eq VAR_TEMP_1, 1, RustboroCity_IceCreamParlor_EventScript_RemoveMoneyWhippedCream
 	updatemoneybox
-	random 3  @ 1/3 chance of an additional drink dropping
-	goto_if_ne VAR_RESULT, 0, RustboroCity_IceCreamParlor_EventScript_ChooseNewDrink
-	checkitemspace VAR_TEMP_0
-	goto_if_eq VAR_RESULT, FALSE, RustboroCity_IceCreamParlor_EventScript_NoRoomForDrink
-	playse SE_VEND
-	msgbox RustboroCity_IceCreamParlor_Text_ExtraCanOfDrinkDroppedDown, MSGBOX_DEFAULT
-	additem ITEM_NEVER_MELT_ICE
 	bufferspeciesname STR_VAR_1, VAR_TEMP_0
 	playse SE_VEND
 	msgbox RustboroCity_IceCreamParlor_Text_CanOfDrinkDroppedDown, MSGBOX_DEFAULT
@@ -67,8 +60,19 @@ RustboroCity_IceCreamParlor_EventScript_TryBuy::
 	bufferspeciesname STR_VAR_2, VAR_TEMP_0
 	bufferstdstring STR_VAR_3, STDSTRING_ITEMS
 	msgbox gText_PutItemInPocket, MSGBOX_DEFAULT
-	goto RustboroCity_IceCreamParlor_EventScript_ChooseNewDrink
 	end
+
+
+RustboroCity_IceCreamParlor_EventScript_ExtraIce::
+	random 3  @ 1/3 chance of an additional drink dropping
+	goto_if_ne VAR_RESULT, 0, RustboroCity_IceCreamParlor_EventScript_ChooseNewDrink
+	checkitemspace VAR_TEMP_0
+	goto_if_eq VAR_RESULT, FALSE, RustboroCity_IceCreamParlor_EventScript_NoRoomForDrink
+	playse SE_VEND
+	msgbox RustboroCity_IceCreamParlor_Text_ExtraCanOfDrinkDroppedDown, MSGBOX_DEFAULT
+	additem ITEM_NEVER_MELT_ICE
+	goto RustboroCity_IceCreamParlor_EventScript_ChooseNewDrink
+
 
 RustboroCity_IceCreamParlor_EventScript_ChooseNewDrink::
 	message RustboroCity_IceCreamParlor_Text_WhichDrinkWouldYouLike
@@ -105,7 +109,7 @@ RustboroCity_IceCreamParlor_EventScript_ReceiveVanilliteParty::
 	goto_if_eq VAR_RESULT, NO, RustboroCity_IceCreamParlor_EventScript_ReceivedVanilliteFanfare
 	call Common_EventScript_GetGiftMonPartySlot
 	call Common_EventScript_NameReceivedPartyMon
-	goto RustboroCity_IceCreamParlor_EventScript_ReceivedVanilliteFanfare
+	goto RustboroCity_IceCreamParlor_EventScript_ExtraIce
 	end
 
 RustboroCity_IceCreamParlor_EventScript_ReceiveVanillitePC::
@@ -113,11 +117,13 @@ RustboroCity_IceCreamParlor_EventScript_ReceiveVanillitePC::
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, RustboroCity_IceCreamParlor_EventScript_TransferVanilliteToPC
 	call Common_EventScript_NameReceivedBoxMon
+	goto RustboroCity_IceCreamParlor_EventScript_TransferVanilliteToPC
 	end
 
 RustboroCity_IceCreamParlor_EventScript_TransferVanilliteToPC::
 	call Common_EventScript_TransferredToPC
 	goto RustboroCity_IceCreamParlor_EventScript_ReceivedVanilliteFanfare
+	goto RustboroCity_IceCreamParlor_EventScript_ExtraIce
 	end
 
 RustboroCity_IceCreamParlor_EventScript_ReceivedVanilliteFanfare::
@@ -143,7 +149,7 @@ RustboroCity_IceCreamParlor_EventScript_ReceiveMilceryParty::
 	goto_if_eq VAR_RESULT, NO, RustboroCity_IceCreamParlor_EventScript_ReceivedMilceryFanfare
 	call Common_EventScript_GetGiftMonPartySlot
 	call Common_EventScript_NameReceivedPartyMon
-	goto RustboroCity_IceCreamParlor_EventScript_ReceivedMilceryFanfare
+	goto RustboroCity_IceCreamParlor_EventScript_ExtraIce
 	end
 
 RustboroCity_IceCreamParlor_EventScript_ReceiveMilceryPC::
@@ -157,6 +163,7 @@ RustboroCity_IceCreamParlor_EventScript_ReceiveMilceryPC::
 RustboroCity_IceCreamParlor_EventScript_TransferMilceryToPC::
 	call Common_EventScript_TransferredToPC
 	goto RustboroCity_IceCreamParlor_EventScript_ReceivedMilceryFanfare
+	goto RustboroCity_IceCreamParlor_EventScript_ExtraIce
 	end
 
 RustboroCity_IceCreamParlor_EventScript_ReceivedMilceryFanfare::
@@ -213,8 +220,8 @@ RustboroCity_CuttersHouse_Text_ExplainCut:
 
 RustboroCity_CuttersHouse_Text_Creamie:
 	.string "I'm addicted to these ice cream\n"
-	.string "pokemon. Sometimes if you're lucky,\n"
-	.string "they have extra ice they give out\p"
+	.string "pokemon. Sometimes if you're lucky,\p"
+	.string "they have extra ice they give out\n"
 	.string "to customers.$"
 
 RustboroCity_IceCreamParlor_Text_WhichDrinkWouldYouLike:
@@ -239,7 +246,7 @@ RustboroCity_IceCreamParlor_Text_NotEnoughMoney:
 	.string "not broke.$"
 
 RustboroCity_IceCreamParlor_Text_DecidedAgainstBuyingDrink:
-	.string "Decided against buying a drink.$"
+	.string "Decided against buying ice cream.$"
 
 RustboroCity_IceCreamParlor_Text_ObtainedVanillite:
 	.string "{PLAYER} obtained an\n"

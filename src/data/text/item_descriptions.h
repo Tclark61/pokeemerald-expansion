@@ -3772,9 +3772,9 @@ static const u8 sBikeVoucherDesc[] = _(
     "from the Bike Shop.");
 
 static const u8 sGoldTeethDesc[] = _(
-    "Gold dentures lost\n"
-    "by the Safari\n"
-    "Zone's Warden.");
+    "Gold Statue found in\n"
+    "the rest house.\n"
+    "Looks expensive.");
 
 static const u8 sCardKeyDesc[] = _(
     "A card-type door\n"

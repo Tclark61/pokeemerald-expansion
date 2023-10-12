@@ -21224,6 +21224,7 @@ static const u16 sBlitzleTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_THUNDER_WAVE,
+    MOVE_ELECTRIC_TERRAIN,
     MOVE_UNAVAILABLE,
 };
 
@@ -21253,6 +21254,7 @@ static const u16 sZebstrikaTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_THUNDER_WAVE,
+    MOVE_ELECTRIC_TERRAIN,
     MOVE_UNAVAILABLE,
 };
 

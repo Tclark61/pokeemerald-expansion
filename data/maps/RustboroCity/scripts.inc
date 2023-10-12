@@ -961,6 +961,28 @@ RustboroCity_EventScript_BattleBrendanMudkip::
 	goto RustboroCity_EventScript_BrendanBrineyHint
 	end
 
+RustboroCity_EventScript_EverGrandeSign::
+	msgbox RustboroCity_Text_EverGrandeSign, MSGBOX_SIGN
+	end
+
+RustboroCity_EventScript_Thief::
+	lock
+	faceplayer
+	applymovement 15, Common_Movement_ExclamationMark
+	msgbox RustboroCity_Text_ThiefAsksForHelp, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_EventScript_ThiefGetsRejected
+	msgbox RustboroCity_Text_ThiefGivesPlan, MSGBOX_NPC
+	removeobject 15
+	setflag FLAG_HIDE_ROUTE_116_WANDAS_BOYFRIEND
+	release
+	end
+
+RustboroCity_EventScript_ThiefGetsRejected::
+	msgbox RustboroCity_Text_ThiefGetsRejected, MSGBOX_NPC
+	release
+	end
+
+
 RustboroCity_Movement_RivalApproachPlayer0:
 	walk_down
 	walk_left
@@ -1020,6 +1042,32 @@ RustboroCity_Movement_RivalApproachPlayer7:
 RustboroCity_EventScript_Boy1::
 	msgbox RustboroCity_Text_YouCanHave2On2Battle, MSGBOX_NPC
 	end
+
+RustboroCity_Text_ThiefGivesPlan:
+	.string "Yes! Let's do it. Okay,\n"
+	.string "here's the plan. I'll distract\p"
+	.string "the guy waiting in front of the\n"
+	.string "house, you go in and grab the goods.\p"
+	.string "You can keep anything except the\n"
+	.string "GOLDEN STATUE. That one goes to me.\p"
+	.string "Let's do this, I'll see you there!$"
+
+RustboroCity_Text_ThiefAsksForHelp:
+	.string "Hey kid, c'mere.\n"
+	.string "You see that tunneler building that's\p"
+	.string "east of town? I heard it's loaded\n"
+	.string "with goodies. You interested in\p"
+	.string "teaming up to get some of it?$"
+
+RustboroCity_Text_ThiefGetsRejected:
+	.string "Man, I should've known you were\n"
+	.string "a goodie two-shoes. Don't waste\p"
+	.string "any more of my time!$"
+
+RustboroCity_Text_EverGrandeSign:
+	.string "{UP_ARROW} EverGrandeCity\n"
+	.string "The home of the CHAMPION, \p"
+	.string "ready to take on all competitors.$"
 
 RustboroCity_Text_WeShortenItToDevon:
 	.string "The DEVON CORPORATION…\n"
@@ -1237,7 +1285,8 @@ RustboroCity_Text_TunnelNearingCompletion:
 RustboroCity_Text_DevonCorpSign:
 	.string "DEVON CORPORATION\p"
 	.string "“For all your living needs, we make\n"
-	.string "it all.”$"
+	.string "it all.”\p"
+	.string "Permanently closed due to bankruptcy.$"
 
 RustboroCity_Text_GymSign:
 	.string "RUSTBORO CITY POKéMON GYM\n"

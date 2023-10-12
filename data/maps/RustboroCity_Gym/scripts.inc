@@ -239,9 +239,10 @@ RustboroCity_Gym_Text_RoxanneRegisterCall:
 	.string "Congrats on beating BROCK HARD!\n"
 	.string "Keep getting stronger, and maybe\l"
 	.string "you'll become CHAMPION one day.\p"
-	.string "Also, TYLER worked really hard on\n"
-	.string "this game, so you better like it.\p"
-	.string "Or else.\p"
+	.string "How is your EEVEE doing?\n"
+	.string "I evolved mine into UMBREON.\p"
+	.string "Did you evolve yours yet?\n"
+	.string "Let me see when we meet in person!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 

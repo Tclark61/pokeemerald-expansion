@@ -19,7 +19,7 @@ EverGrandeCity_EventScript_LevelCapTriggerPerson::
 	end
 
 EverGrandeCity_EventScript_LevelCapTrigger::
-	setflag FLAG_ENTERED_EVER_GRANDE
+	setflag FLAG_BEAT_GLARRY
 	end
 
 EverGrandeCity_EventScript_CitySign::

@@ -1809,8 +1809,8 @@ static const u8 sAquaJetDescription[] = _(
     "at the foe at a high speed.");
 
 static const u8 sAttackOrderDescription[] = _(
-    "Underlings pummel the foe.\n"
-    "High critical-hit ratio.");
+    "Underlings attack first.\n"
+    "May also raise Attack.");
 
 static const u8 sDefendOrderDescription[] = _(
     "Raises Defense and Sp. Def\n"

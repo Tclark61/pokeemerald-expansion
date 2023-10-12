@@ -986,19 +986,19 @@ static const struct InGameTrade sIngameTrades[] =
 {
     [INGAME_TRADE_SEEDOT] =
     {
-        .nickname = _("DOTS"),
-        .species = SPECIES_SEEDOT,
-        .ivs = {5, 4, 5, 4, 4, 4},
+        .nickname = _("DWAYNE"),
+        .species = SPECIES_REGIROCK,
+        .ivs = {20, 20, 20, 20, 20, 20},
         .abilityNum = 1,
         .otId = 38726,
         .conditions = {30, 5, 5, 5, 5},
         .personality = 0x84,
-        .heldItem = ITEM_CHESTO_BERRY,
-        .mailNum = -1,
+        .heldItem = ITEM_GLITTER_MAIL,
+        .mailNum = 3,
         .otName = _("KOBE"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_RALTS
+        .requestedSpecies = SPECIES_SABLEYE
     },
     [INGAME_TRADE_PLUSLE] =
     {
@@ -1082,7 +1082,18 @@ static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =
         EC_WORD_A,
         EC_WORD_CUTE,
         EC_WORD_WAY
+    }, {
+        EC_WORD_THANK_YOU,
+        EC_WORD_FOR,
+        EC_WORD_CHOOSE,
+        EC_WORD_PLAY,
+        EC_WORD_MY,
+        EC_WORD_GAME,
+        EC_WORD_I,
+        EC_WORD_NEVER,
+        EC_WORD_FORGET
     }
+
 };
 
 static const struct WindowTemplate sTradeSequenceWindowTemplates[] =
