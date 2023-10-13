@@ -868,6 +868,7 @@ static const u16 sPikachuTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
     MOVE_ELECTRIC_TERRAIN,
+    MOVE_RISING_VOLTAGE,
     MOVE_UNAVAILABLE,
 };
 
@@ -917,6 +918,7 @@ static const u16 sRaichuTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
     MOVE_ELECTRIC_TERRAIN,
+    MOVE_RISING_VOLTAGE,
     MOVE_UNAVAILABLE,
 };
 
@@ -5525,6 +5527,7 @@ static const u16 sJolteonTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
     MOVE_ELECTRIC_TERRAIN,
+    MOVE_RISING_VOLTAGE,
     MOVE_UNAVAILABLE,
 };
 
@@ -26424,6 +26427,7 @@ static const u16 sSpritzeeTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_TRICK_ROOM,
+    MOVE_MISTY_EXPLOSION,
     MOVE_UNAVAILABLE,
 };
 
@@ -26457,6 +26461,7 @@ static const u16 sAromatisseTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_TRICK_ROOM,
+    MOVE_MISTY_EXPLOSION,
     MOVE_UNAVAILABLE,
 };
 
@@ -27052,6 +27057,7 @@ static const u16 sSylveonTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_MISTY_EXPLOSION,
     MOVE_UNAVAILABLE,
 };
 
@@ -27121,6 +27127,7 @@ static const u16 sDedenneTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
     MOVE_ELECTRIC_TERRAIN,
+    MOVE_RISING_VOLTAGE,
     MOVE_UNAVAILABLE,
 };
 
@@ -28164,6 +28171,7 @@ static const u16 sGrubbinTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_THUNDER_WAVE,
+    MOVE_RISING_VOLTAGE,
     MOVE_UNAVAILABLE,
 };
 
@@ -28188,6 +28196,7 @@ static const u16 sCharjabugTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_THUNDER_WAVE,
+    MOVE_RISING_VOLTAGE,
     MOVE_UNAVAILABLE,
 };
 
@@ -28215,6 +28224,7 @@ static const u16 sVikavoltTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_THUNDER_WAVE,
+    MOVE_RISING_VOLTAGE,
     MOVE_UNAVAILABLE,
 };
 
@@ -30994,6 +31004,7 @@ static const u16 sToxtricityTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_RISING_VOLTAGE,
     MOVE_UNAVAILABLE,
 };
 
@@ -31448,6 +31459,7 @@ static const u16 sAlcremieTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
+    MOVE_MISTY_EXPLOSION,
     MOVE_UNAVAILABLE,
 };
 
@@ -32180,6 +32192,7 @@ static const u16 sRaichuAlolanTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_ELECTRIC_TERRAIN,
     MOVE_MISTY_TERRAIN,
+    MOVE_RISING_VOLTAGE,
     MOVE_UNAVAILABLE,
 };
 
@@ -32615,6 +32628,7 @@ static const u16 sWeezingGalarianTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
+    MOVE_MISTY_EXPLOSION,
     MOVE_UNAVAILABLE,
 };
 

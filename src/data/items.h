@@ -7782,7 +7782,7 @@ const struct Item gItems[] =
         .secondaryId = MOVE_TRICK_ROOM, // Todo
     },
 
-    [ITEM_TM53] =
+    [ITEM_TM_RISING_VOLTAGE] =
     {
         .name = _("TM53"),
         .price = 3000,
@@ -7791,10 +7791,10 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_RISING_VOLTAGE, // Todo
     },
 
-    [ITEM_TM54] =
+    [ITEM_TM_MISTY_EXPLOSION] =
     {
         .name = _("TM54"),
         .price = 3000,
@@ -7803,7 +7803,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_MISTY_EXPLOSION, // Todo
     },
 
     [ITEM_TM55] =

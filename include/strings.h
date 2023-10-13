@@ -1315,6 +1315,22 @@ extern const u8 gText_MistyTerrain[];
 extern const u8 gText_PsychicTerrain[];
 extern const u8 gText_IceCreamCone[];
 extern const u8 gText_WhippedCream[];
+extern const u8 gText_AlphaZero[];
+extern const u8 gText_QuickThought[];
+extern const u8 gText_Komodo[];
+extern const u8 gText_DeepBlue[];
+extern const u8 gText_Slam[];
+extern const u8 gText_FirePunch[];
+extern const u8 gText_WingAttack[];
+extern const u8 gText_Bulldoze[];
+extern const u8 gText_Volleyball[];
+extern const u8 gText_Checkers[];
+extern const u8 gText_BoardGameGo[];
+extern const u8 gText_Chess[];
+extern const u8 gText_Porygon[];
+extern const u8 gText_Jynx[];
+extern const u8 gText_Pawniard[];
+extern const u8 gText_Tauros[];
 
 // Cable Club multichoice text
 extern const u8 CableClub_Text_TradeUsingLinkCable[];

@@ -85,8 +85,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
 #if P_GEN_4_POKEMON == TRUE
     [SPECIES_LICKITUNG]             = {{EVO_MOVE, MOVE_ROLLOUT, SPECIES_LICKILICKY}},
 #endif
-    [SPECIES_KOFFING]               = {{EVO_LEVEL, 35, SPECIES_WEEZING},
-                                       {EVO_NONE, 0, SPECIES_WEEZING_GALARIAN}},
+    [SPECIES_KOFFING]               = {{EVO_NONE, 0, SPECIES_WEEZING},
+                                       {EVO_LEVEL, 28, SPECIES_WEEZING_GALARIAN}},
     [SPECIES_RHYHORN]               = {{EVO_LEVEL, 42, SPECIES_RHYDON}},
 #if P_GEN_4_POKEMON == TRUE
     [SPECIES_RHYDON]                = {{EVO_TRADE_ITEM, ITEM_PROTECTOR, SPECIES_RHYPERIOR},

@@ -14,12 +14,7 @@ EverGrandeCity_EventScript_LevelCapTriggerPerson::
 	faceplayer
 	lock
 	msgbox EverGrandeCity_Text_Congrats
-	goto EverGrandeCity_EventScript_LevelCapTrigger
 	release
-	end
-
-EverGrandeCity_EventScript_LevelCapTrigger::
-	setflag FLAG_BEAT_GLARRY
 	end
 
 EverGrandeCity_EventScript_CitySign::

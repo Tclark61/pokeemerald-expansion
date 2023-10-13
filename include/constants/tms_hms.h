@@ -53,7 +53,9 @@
     F(SNATCH) \
     F(OVERHEAT) \
     F(ELECTRIC_TERRAIN) \
-    F(TRICK_ROOM)
+    F(TRICK_ROOM) \
+    F(RISING_VOLTAGE) \
+    F(MISTY_EXPLOSION)
 
 #define FOREACH_HM(F) \
     F(CUT) \

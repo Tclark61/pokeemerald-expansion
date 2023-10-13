@@ -974,6 +974,7 @@ RustboroCity_EventScript_Thief::
 	msgbox RustboroCity_Text_ThiefGivesPlan, MSGBOX_NPC
 	removeobject 15
 	setflag FLAG_HIDE_ROUTE_116_WANDAS_BOYFRIEND
+	clearflag FLAG_HIDE_LILYCOVE_MOTEL_GAME_DESIGNERS
 	release
 	end
 
@@ -982,6 +983,12 @@ RustboroCity_EventScript_ThiefGetsRejected::
 	release
 	end
 
+RustboroCity_EventScript_Guard::
+	lock
+	faceplayer
+	msgbox RustboroCity_Text_Guard, MSGBOX_NPC
+	release
+	end
 
 RustboroCity_Movement_RivalApproachPlayer0:
 	walk_down
@@ -1042,6 +1049,11 @@ RustboroCity_Movement_RivalApproachPlayer7:
 RustboroCity_EventScript_Boy1::
 	msgbox RustboroCity_Text_YouCanHave2On2Battle, MSGBOX_NPC
 	end
+
+RustboroCity_Text_Guard:
+	.string "Wanna see a magic trick?\n"
+	.string "Get the badge from the gym\p"
+	.string "and watch me disappear!$"
 
 RustboroCity_Text_ThiefGivesPlan:
 	.string "Yes! Let's do it. Okay,\n"

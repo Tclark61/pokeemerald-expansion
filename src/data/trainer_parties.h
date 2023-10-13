@@ -3230,25 +3230,46 @@ static const struct TrainerMon sParty_Drake[] = {
 
 static const struct TrainerMon sParty_Roxanne1[] = {
     {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 12,
-    .species = SPECIES_GEODUDE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 39,
+    .species = SPECIES_GYARADOS,
+    .heldItem = ITEM_MYSTIC_WATER,
+    .moves = {MOVE_WATERFALL, MOVE_ICE_FANG, MOVE_DRAGON_RAGE, MOVE_SCARY_FACE}
     },
     {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 12,
-    .species = SPECIES_GEODUDE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 41,
+    .species = SPECIES_CASTFORM,
+    .heldItem = ITEM_QUICK_CLAW,
+    .moves = {MOVE_WEATHER_BALL, MOVE_RAIN_DANCE, MOVE_BLIZZARD, MOVE_FIRE_BLAST}
     },
     {
-    .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
-    .lvl = 15,
-    .species = SPECIES_NOSEPASS,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_BLOCK, MOVE_HARDEN, MOVE_TACKLE, MOVE_ROCK_TOMB}
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 44,
+    .species = SPECIES_UMBREON,
+    .heldItem = ITEM_LIGHT_CLAY,
+    .moves = {MOVE_ASSURANCE, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_SHADOW_BALL}
+    },
+        {
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 39,
+    .species = SPECIES_MISMAGIUS,
+    .heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_PSYBEAM, MOVE_PROTECT, MOVE_SHADOW_BALL, MOVE_PERISH_SONG}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 43,
+    .species = SPECIES_SCIZOR,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_METAL_CLAW, MOVE_CUT, MOVE_FURY_CUTTER, MOVE_BRICK_BREAK}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 45,
+    .species = SPECIES_RAICHU_ALOLAN,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_SURF, MOVE_THUNDERBOLT, MOVE_PSYCHIC, MOVE_MISTY_TERRAIN}
     }
 };
 
@@ -3422,33 +3443,47 @@ static const struct TrainerMon sParty_Winona1[] = {
 };
 
 static const struct TrainerMon sParty_TateAndLiza1[] = {
-    {
+        {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 41,
-    .species = SPECIES_CLAYDOL,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_EARTHQUAKE, MOVE_ANCIENT_POWER, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN}
+    .lvl = 25,
+    .species = SPECIES_GRIMER,
+    .heldItem = ITEM_BLACK_SLUDGE,
+    .moves = {MOVE_TOXIC, MOVE_PROTECT, MOVE_ACID_ARMOR, MOVE_SLUDGE_BOMB}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 41,
-    .species = SPECIES_XATU,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_PSYCHIC, MOVE_SUNNY_DAY, MOVE_CONFUSE_RAY, MOVE_CALM_MIND}
+    .lvl = 27,
+    .species = SPECIES_GOLBAT,
+    .heldItem = ITEM_EVIOLITE,
+    .moves = {MOVE_DUAL_WINGBEAT, MOVE_TOXIC, MOVE_ROOST, MOVE_POISON_FANG}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 42,
-    .species = SPECIES_LUNATONE,
-    .heldItem = ITEM_SITRUS_BERRY,
+    .lvl = 29,
+    .species = SPECIES_PINCURCHIN,
+    .heldItem = ITEM_ELECTRIC_SEED,
     .moves = {MOVE_LIGHT_SCREEN, MOVE_PSYCHIC, MOVE_HYPNOSIS, MOVE_CALM_MIND}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 42,
-    .species = SPECIES_SOLROCK,
+    .lvl = 29,
+    .species = SPECIES_VIKAVOLT,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 31,
+    .species = SPECIES_TOXTRICITY_LOW_KEY,
+    .heldItem = ITEM_ELECTRIC_SEED,
+    .moves = {MOVE_VENOM_DRENCH, MOVE_MAGNETIC_FLUX, MOVE_TOXIC, MOVE_OVERDRIVE}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 31,
+    .species = SPECIES_TOXTRICITY,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_VENOSHOCK, MOVE_SHIFT_GEAR, MOVE_THUNDER_PUNCH, MOVE_PROTECT}
     }
 };
 

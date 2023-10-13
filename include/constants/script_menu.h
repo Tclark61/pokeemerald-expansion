@@ -124,6 +124,10 @@
 #define MULTI_TAG_MATCH_TYPE               113
 #define MULTI_TERRAIN_TYPES                114
 #define MULTI_ICE_CREAM                    115
+#define MULTI_FIRST_TRIVIA                 116
+#define MULTI_SECOND_TRIVIA                117
+#define MULTI_THIRD_TRIVIA                 118
+#define MULTI_FOURTH_TRIVIA                119
 
 // Lilycove SS Tidal Multichoice Selections
 #define SSTIDAL_SELECTION_SLATEPORT        0

@@ -11,8 +11,6 @@ PacifidlogTown_House1_EventScript_Man::
 	setflag FLAG_BADGE03_GET
 	setflag FLAG_BADGE04_GET
 	setflag FLAG_BADGE05_GET
-	setflag FLAG_BADGE06_GET
-	setflag FLAG_BADGE07_GET
 	setflag FLAG_BADGE08_GET     
 	end
 

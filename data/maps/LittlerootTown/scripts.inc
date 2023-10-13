@@ -259,6 +259,7 @@ LittlerootTown_EventScript_Tyler::
 	givemon SPECIES_EEVEE, 5, ITEM_MASTER_BALL
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_BADGE01_GET
+	setflag FLAG_HIDE_LILYCOVE_MOTEL_GAME_DESIGNERS
 	call Common_EventScript_GetGiftMonPartySlot
 	call Common_EventScript_NameReceivedPartyMon
 	giveitem ITEM_RARE_CANDY, 5

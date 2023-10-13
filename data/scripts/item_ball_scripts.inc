@@ -135,6 +135,7 @@ Route116_EventScript_ItemXSpecial::
 
 Route116_EventScript_ItemEther::
 	finditem ITEM_ASSAULT_VEST
+	finditem ITEM_HM_WATERFALL
 	end
 
 Route116_EventScript_ItemRepel::
@@ -222,7 +223,7 @@ Route121_EventScript_ItemRevive::
 	end
 
 Route121_EventScript_ItemZinc::
-	finditem ITEM_ZINC
+	finditem ITEM_UPGRADE
 	end
 
 Route123_EventScript_ItemCalcium::

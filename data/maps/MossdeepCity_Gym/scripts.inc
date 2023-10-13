@@ -63,7 +63,9 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_MOSSDEEP_GYM
+	setflag FLAG_BADGE06_GET
 	setflag FLAG_BADGE07_GET
+	setflag FLAG_BEAT_GLARRY
 	setflag FLAG_HIDE_AQUA_HIDEOUT_GRUNTS
 	clearflag FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY
 	clearflag FLAG_UNKNOWN_0x393
@@ -98,8 +100,9 @@ MossdeepCity_Gym_EventScript_GiveCalmMind2::
 	end
 
 MossdeepCity_Gym_EventScript_GiveCalmMind::
-	giveitem ITEM_TM_CALM_MIND
+	giveitem ITEM_TM_TOXIC
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
+	giveitem ITEM_TM_RISING_VOLTAGE
 	msgbox MossdeepCity_Gym_Text_ExplainCalmMind, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_CALM_MIND
 	return
@@ -546,18 +549,21 @@ MossdeepCity_Gym_Text_NicholasPostBattle:
 	.string "invincible POKéMON power next.$"
 
 MossdeepCity_Gym_Text_TateAndLizaIntro:
-	.string "TATE: Hehehe… Were you surprised?\p"
-	.string "LIZA: Fufufu… Were you surprised?\p"
-	.string "TATE: That there are two GYM LEADERS?\n"
-	.string "LIZA: That there are two GYM LEADERS?\p"
-	.string "TATE: We're twins!\n"
-	.string "LIZA: We're twins!\p"
-	.string "TATE: We don't need to talk because…\n"
-	.string "LIZA: We can each determine what…\p"
-	.string "TATE: The other is thinking…\n"
-	.string "LIZA: All in our minds!\p"
-	.string "TATE: This combination of ours…\n"
-	.string "LIZA: Can you beat it?$"
+	.string "LARRY: We have a challenger!\p"
+	.string "GARY: Okay, let's let them settle this.\p"
+	.string "LARRY: Trainer, tell GARY I'm the real\n"
+	.string "gym leader here. Not this CHUMP.\p"
+	.string "GARY: Or, you tell this toxic wannabe\n"
+	.string "that electric is the superior type?\p"
+	.string "LARRY: I'm not toxic! Unless they start it.\n"
+	.string "Then I might be a little toxic.\p"
+	.string "GARY: How about this: Whoever beats\n"
+	.string "this trainer harder gets the gym spot?\p"
+	.string "LARRY: Oh, I'm so scared!\n"
+	.string "Unless they bring a ground type against you.\p"
+	.string "GARY: Don't you also lose to ground?!\n"
+	.string "LARRY: God, I hate you. Let's fight, trainer!\p"
+	.string "GARY: You can't beat both of us!$"
 
 MossdeepCity_Gym_Text_TateAndLizaDefeat:
 	.string "TATE: What?! Our combination…\n"
@@ -577,16 +583,14 @@ MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
 	.string "TATE: You should also take this, too.$"
 
 MossdeepCity_Gym_Text_ExplainCalmMind:
-	.string "TATE: That TM04 contains…\n"
-	.string "LIZA: CALM MIND!\p"
-	.string "TATE: It raises SP. ATK and…\n"
-	.string "LIZA: It raises SP. DEF!\p"
-	.string "TATE: It's a move that's perfect…\n"
-	.string "LIZA: For PSYCHIC POKéMON!\p"
-	.string "… … … … … …$"
+	.string "LARRY: Those are our best moves.\n"
+	.string "Toxic makes you win in the long term.\p"
+	.string "GARY: Rising Voltage makes sure you\n"
+	.string "win before toxic can do anything,\p"
+	.string "so it's better.$"
 
 MossdeepCity_Gym_Text_RegisteredTateAndLiza:
-	.string "Registered GYM LEADERS TATE & LIZA\n"
+	.string "Registered GYM LEADERS GARY & LARRY\n"
 	.string "in the POKéNAV.$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostBattle:

@@ -3287,13 +3287,19 @@ static const u8 sTM51Desc[] = _( // Electric Terrain
     "can't fall asleep");
 
 static const u8 sTM52Desc[] = _( // Todo
-    "?????");
+    "Swaps around space\n"
+    "so slow Pokemon move\n"
+    "first");
 
 static const u8 sTM53Desc[] = _( // Todo
-    "?????");
+    "Rising electric attack.\n"
+    "Doubles in power in\n"
+    "Electric terrain.");
 
 static const u8 sTM54Desc[] = _( // Todo
-    "?????");
+    "A powerful final move\n"
+    "that increases in power\n"
+    "in misty terrain.");
 
 static const u8 sTM55Desc[] = _( // Todo
     "?????");

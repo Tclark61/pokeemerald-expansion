@@ -357,6 +357,47 @@ Route116_EventScript_Johnson::
 	msgbox Route116_Text_JohnsonPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route116_EventScript_Thief::
+	lock
+	faceplayer
+	checkitem ITEM_GOLD_STATUE
+	goto_if_eq VAR_RESULT, TRUE, Route116_EventScript_ThiefGetsStatue
+	msgbox Route116_Text_ThiefJobWellDone, MSGBOX_NPC
+	release
+	end
+
+Route116_EventScript_ThiefGetsStatue::
+	applymovement 26, Common_Movement_ExclamationMark
+	msgbox Route116_Text_ThiefCongratulates, MSGBOX_NPC
+	removeitem ITEM_GOLD_STATUE
+	giveitem ITEM_LIFE_ORB
+	giveitem ITEM_DUBIOUS_DISC
+	release
+	end
+
+Route116_Text_ThiefCongratulates:
+	.string "You did it! I knew you were\n"
+	.string "a natural thief. Here, hand\p"
+	.string "over the statue to me.\n"
+	.string "... ? It's golden teeth.\p"
+	.string "Whatever, the buyer will pay\n"
+	.string "regardless of how ugly it looks.\p"
+	.string "Here, I'll give you this orb\n"
+	.string "as payment. It hurts the user,\p"
+	.string "so I don't wanna hold on to it\n"
+	.string "for too long anyway.\p"
+	.string "And just for you, I'll also\n"
+	.string "throw in my mixtape!\p"
+	.string "I know, I know. Free of charge?\n"
+	.string "Something of such high value?\p"
+	.string "What can I say, I'm a nice guy.\n"
+	.string "Make sure to follow me on spotify,\p"
+	.string "my rapper name is Sir Swipe-a-Lot.$"
+
+Route116_Text_ThiefJobWellDone:
+	.string "Heh, another job well done.\n"
+	.string "That guard had no clue.$"
+
 Route116_Text_ScoundrelMadeOffWithPeeko:
 	.string "Ohhh, what am I to do?\p"
 	.string "We were on our walk, PEEKO and I, when\n"

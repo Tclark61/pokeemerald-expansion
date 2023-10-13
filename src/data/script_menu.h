@@ -788,6 +788,42 @@ static const struct MenuAction MultichoiseList_IceCream[] =
     {gText_Exit},
 };
 
+static const struct MenuAction MultichoiseList_FirstTrivia[] =
+{
+    {gText_AlphaZero},
+    {gText_QuickThought},
+    {gText_Komodo},
+    {gText_DeepBlue},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiseList_SecondTrivia[] =
+{
+    {gText_Slam},
+    {gText_FirePunch},
+    {gText_WingAttack},
+    {gText_Bulldoze},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiseList_ThirdTrivia[] =
+{
+    {gText_Volleyball},
+    {gText_Checkers},
+    {gText_BoardGameGo},
+    {gText_Chess},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiseList_FourthTrivia[] =
+{
+    {gText_Porygon},
+    {gText_Jynx},
+    {gText_Pawniard},
+    {gText_Tauros},
+    {gText_Exit},
+};
+
 static const struct MenuAction MultichoiceList_Exit[] =
 {
     {gText_Exit},
@@ -917,6 +953,10 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
     [MULTI_TERRAIN_TYPES]              = MULTICHOICE(MultichoiseList_TerrainTypes),
     [MULTI_ICE_CREAM]                  = MULTICHOICE(MultichoiseList_IceCream),
+    [MULTI_FIRST_TRIVIA]               = MULTICHOICE(MultichoiseList_FirstTrivia),
+    [MULTI_SECOND_TRIVIA]              = MULTICHOICE(MultichoiseList_SecondTrivia),
+    [MULTI_THIRD_TRIVIA]               = MULTICHOICE(MultichoiseList_ThirdTrivia),
+    [MULTI_FOURTH_TRIVIA]              = MULTICHOICE(MultichoiseList_FourthTrivia),
 };
 
 const u8 *const gStdStrings[] =
