@@ -1,5 +1,5 @@
 Route102_EventScript_ItemPotion::
-	finditem ITEM_MASTER_BALL 2
+	finditem ITEM_MASTER_BALL 3
 	findItem ITEM_RARE_CANDY 8
 	end
 
@@ -224,6 +224,7 @@ Route121_EventScript_ItemRevive::
 
 Route121_EventScript_ItemZinc::
 	finditem ITEM_UPGRADE
+	finditem ITEM_HM_WATERFALL
 	end
 
 Route123_EventScript_ItemCalcium::
@@ -291,7 +292,8 @@ Route133_EventScript_ItemBigPearl::
 	end
 
 Route133_EventScript_ItemStarPiece::
-	finditem ITEM_STAR_PIECE
+	finditem ITEM_TM_MISTY_EXPLOSION
+	finditem ITEM_MISTY_SEED
 	end
 
 Route133_EventScript_ItemMaxRevive::

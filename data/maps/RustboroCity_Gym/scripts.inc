@@ -56,7 +56,7 @@ RustboroCity_Gym_EventScript_Marc::
 RustboroCity_Gym_EventScript_GymGuide::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_RUSTBORO_GYM, RustboroCity_Gym_EventScript_GymGuidePostVictory
+	goto_if_set FLAG_BADGE07_GET, RustboroCity_Gym_EventScript_GymGuidePostVictory
 	msgbox RustboroCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
 	release
 	end
@@ -68,13 +68,13 @@ RustboroCity_Gym_EventScript_GymGuidePostVictory::
 
 RustboroCity_Gym_EventScript_LeftGymStatue::
 	lockall
-	goto_if_set FLAG_BADGE01_GET, RustboroCity_Gym_EventScript_GymStatueCertified
+	goto_if_set FLAG_BADGE07_GET, RustboroCity_Gym_EventScript_GymStatueCertified
 	goto RustboroCity_Gym_EventScript_GymStatue
 	end
 
 RustboroCity_Gym_EventScript_RightGymStatue::
 	lockall
-	goto_if_set FLAG_BADGE01_GET, RustboroCity_Gym_EventScript_GymStatueCertified
+	goto_if_set FLAG_BADGE07_GET, RustboroCity_Gym_EventScript_GymStatueCertified
 	goto RustboroCity_Gym_EventScript_GymStatue
 	end
 
@@ -106,36 +106,33 @@ RustboroCity_Gym_EventScript_RegisterRoxanne::
 RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "Yo, how's it going?\p"
 	.string "Listen, my friend!\n"
-	.string "Would you like to become the CHAMPION?\p"
-	.string "I'm no TRAINER, not me, but I can\n"
-	.string "sure give you winning advice.\p"
-	.string "That's settled, then! We'll aim for the\n"
-	.string "POKéMON CHAMPIONSHIP together!\p"
-	.string "It's your job as a TRAINER to collect\n"
-	.string "GYM BADGES, am I right?\p"
-	.string "But GYM LEADERS aren't pushovers!\p"
-	.string "And that's where I come in!\n"
-	.string "I'm here to provide expert advice!\p"
-	.string "ROXANNE, the GYM LEADER, is a user\n"
-	.string "of ROCK-type POKéMON.\p"
-	.string "The ROCK type is very durable, but\n"
-	.string "it can't stand WATER-type and\l"
-	.string "GRASS-type moves.\p"
-	.string "Come see me afterwards, if you beat\n"
-	.string "the GYM LEADER.\p"
+	.string "This gym has two GYM LEADERS!\p"
+	.string "Well, kind of. The previous leader\n"
+	.string "left and two strong trainers have\p"
+	.string "been gunning for the spot!\n"
+	.string "Each one has a badge for you to get,\p"
+	.string "so you'll have to defeat them both!\n"
+	.string "But they aren't pushovers!\p"
+	.string "So let me give you some advice:\n"
+	.string "GARY uses ELECTRIC types!\p"
+	.string "LARRY uses POISON types!\n"
+	.string "Both of those Pokemon have a weakness\p"
+	.string "To GROUND attacks! Similarly, STEEL\n"
+	.string "can resist ELECTRIC and is immune to\p"
+	.string "POISON moves. WATER, GRASS and FAIRY\p"
+	.string "Pokemon will suffer against both of them!\n"
+	.string "You got this, CHAMP in the making!\p"
 	.string "Well, go for it!$"
 
 RustboroCity_Gym_Text_GymGuidePostVictory:
-	.string "Whoa! What a breathtaking victory!\n"
-	.string "My cheering must've worked!\p"
-	.string "Great!\n"
-	.string "Check your TRAINER CARD.\p"
-	.string "The STONE BADGE you got should be\n"
-	.string "properly recorded on it.\p"
-	.string "In other words…\p"
-	.string "You've climbed the first step on\n"
-	.string "the stairs to the CHAMPIONSHIP!\p"
-	.string "That's got to feel awesome!$"
+	.string "Whoa! You beat both at once!\n"
+	.string "That should humble them a bit.\p"
+	.string "Maybe they'll finally get along!\n"
+	.string "As for you ...\p"
+	.string "The next step is EverGrande City!\n"
+	.string "The final gauntlet of trainers is\p"
+	.string "next! I believe in you, CHAMP!\p"
+	.string "Your victory is in sight!$"
 
 RustboroCity_Gym_Text_JoshIntro:
 	.string "Don't take us GYM TRAINERS lightly!\n"
@@ -228,7 +225,7 @@ RustboroCity_Gym_Text_GymStatue:
 
 RustboroCity_Gym_Text_GymStatueCertified:
 	.string "RUSTBORO CITY POKéMON GYM\p"
-	.string "GLARRY'S CERTIFIED TRAINERS:\n"
+	.string "GARY AND LARRY'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
 RustboroCity_Gym_Text_RoxanneRegisterCall:

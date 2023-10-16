@@ -44,7 +44,7 @@ EverGrandeCity_ChampionsRoom_Movement_PlayerApproachWallace:
 EverGrandeCity_ChampionsRoom_EventScript_Wallace::
 	playbgm MUS_ENCOUNTER_CHAMPION, FALSE
 	msgbox EverGrandeCity_ChampionsRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_WALLACE, EverGrandeCity_ChampionsRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_ROXANNE_1, EverGrandeCity_ChampionsRoom_Text_Defeat
 	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
 	end
 
@@ -225,32 +225,29 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives:
 	step_end
 
 EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
-	.string "TYLER: Welcome, {PLAYER}{KUN}.\p"
-	.string "I've been watching your progress…\n"
-	.string "That was superb work, \l"
-	.string "finding the OLD ROD.\p"
-	.string "And the way you defeated DRAKE!\p"
-	.string "I have nothing but admiration.\n"
-	.string "You overcame that difficult situation\n"
-	.string "by working as one with your POKéMON.\p"
-	.string "I hope you've enjoyed the journey\n"
-	.string "to reach this final battle!\l"
-	.string "This is where your achievements\n"
-	.string "are put to the test against the\l"
-	.string "best I can throw at you.\p"
-	.string "Now!\p"
-	.string "Who can most elegantly dance with\n"
-	.string "their POKéMON in HOENN?\p"
-	.string "Show me right here and now!$"
+	.string "BIANCA: Hi, {PLAYER}{KUN}.\p"
+	.string "We finally get to meet in person.\n"
+	.string "Sorry about adding another battle,\l"
+	.string "but I was just a little faster than you.\p"
+	.string "I can't wait to see how you and EEVEE\p"
+	.string "have grown!\n"
+	.string "I bet your team has become strong\n"
+	.string "Unfortunately... My team is the strongest.\n"
+	.string "Good luck, {PLAYER}!\p"
+	.string "Let's put it all on the table,\n"
+	.string "and prove who really deserves the title:\l"
+	.string "CHAMPION!$"
 
 EverGrandeCity_ChampionsRoom_Text_Defeat:
-	.string "I, the CHAMPION, fall in defeat…\p"
-	.string "That was wonderful work.\n"
-	.string "You were elegant, infuriatingly so.\l"
-	.string "And yet it was utterly glorious!\p"
-	.string "Kudos to you, {PLAYER}{KUN}!\p"
-	.string "You are a truly noble POKéMON\n"
-	.string "TRAINER!$"
+	.string "Dang, well played.\p"
+	.string "I only got to be champion\n"
+	.string "for a day, huh ...\l"
+	.string "Still, you deserved it!\n"
+	.string "Our POKEMON fought hard.\p"
+	.string "Honestly, I didn't think my team\n"
+	.string "and I could lose.\p"
+	.string "Congrats, {PLAYER}{KUN}!\p"
+	.string "You are officially the strongest!$"
 
 EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
 	.string "TYLER: The POKéMON you sent into\n"
@@ -258,22 +255,25 @@ EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
 	.string "At times they danced like a spring\n"
 	.string "breeze, and at times they struck\l"
 	.string "like lightning.\p"
-	.string "It was with light, yet surefooted,\n"
-	.string "elegance that you led your POKéMON.\p"
-	.string "Even I felt bedazzled by your\n"
-	.string "masterful performance!\p"
-	.string "You now stand at the glorious peak\n"
-	.string "of the POKéMON LEAGUE.\p"
-	.string "I now proclaim you to be the new\n"
-	.string "HOENN region…$"
+	.string "You've come so far, in such a short\n"
+	.string "time. That being said, I have news.\p"
+	.string "I have the role of CHAMPION...\n"
+	.string "Or at least I did, until yesterday.\p"
+	.string "Unfortunately for you, there is still\n"
+	.string "one more TRAINER for you to fight...\p"
+	.string "One who arrived before you.\n"
+	.string "Still, if anyone can win, it's you!\n"
+	.string "Let me heal your pokemon.\p"
+	.string "Prepare for your true final battle,\n"
+	.string "{PLAYER}!\p"
 
 EverGrandeCity_ChampionsRoom_Text_MayAdvice:
-	.string "BIANCA: {PLAYER}{KUN}!\p"
+	.string "CHEYANNE: {PLAYER}{KUN}!\p"
 	.string "Here's some advice before you challenge\n"
 	.string "the CHAMPION…$"
 
 EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver:
-	.string "BIANCA: Huh?\n"
+	.string "CHEYANNE: Huh?\n"
 	.string "What, what, what?\p"
 	.string "{PLAYER}{KUN}…\n"
 	.string "Could it be that…\l"
@@ -290,14 +290,14 @@ EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon:
 	.string "You've beaten the CHAMPION?$"
 
 EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex:
-	.string "PROF. BIRCH: See?\n"
-	.string "What did I tell you, {RIVAL}?\p"
+	.string "PROF. BEAN: See?\n"
+	.string "What did I tell you?\p"
 	.string "Didn't I tell you that you don't need\n"
 	.string "to worry about {PLAYER}{KUN}?\p"
 	.string "… … … … … … … …\n"
 	.string "{PLAYER}{KUN}, you've finally done it.\p"
-	.string "When I heard that you defeated your\n"
-	.string "own father at the PETALBURG GYM,\l"
+	.string "When I heard that you defeated\n"
+	.string "BROCK HARD at the PETALBURG GYM,\l"
 	.string "I thought perhaps you had a chance…\p"
 	.string "But to think you've actually become\n"
 	.string "the CHAMPION!\p"
@@ -306,25 +306,25 @@ EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex:
 	.string "Here, let me see.$"
 
 EverGrandeCity_ChampionsRoom_Text_BirchCongratulations:
-	.string "PROF. BIRCH: Anyways,\n"
+	.string "PROF. BEAN: Anyways,\n"
 	.string "congratulations!\p"
 	.string "Now, go proudly into the final room!$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe:
-	.string "TYLER: {PLAYER}{KUN}…\p"
+	.string "BIANCA: {PLAYER}{KUN}…\p"
 	.string "No, let me rephrase that properly.\p"
 	.string "The new CHAMPION!\p"
 	.string "Come with me.$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside:
-	.string "TYLER: I'm sorry, but…\p"
+	.string "BIANCA: I'm sorry, but…\p"
 	.string "From here on, only those TRAINERS who\n"
 	.string "have become CHAMPIONS may enter.\p"
 	.string "You'll have to wait outside with\n"
-	.string "PROF. BIRCH.$"
+	.string "PROF. BEAN.$"
 
 EverGrandeCity_ChampionsRoom_Text_MayCongratulations:
-	.string "BIANCA: Groan…\p"
+	.string "CHEYANNE: Groan…\p"
 	.string "… … … … … … … …\n"
 	.string "… … … … … … … …\p"
 	.string "I'm just joking! That's okay!\n"

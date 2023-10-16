@@ -1089,9 +1089,9 @@ static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =
         EC_WORD_PLAY,
         EC_WORD_MY,
         EC_WORD_GAME,
-        EC_WORD_I,
-        EC_WORD_NEVER,
-        EC_WORD_FORGET
+        EC_WORD_WE,
+        EC_WORD_FRIEND,
+        EC_WORD_FOREVER
     }
 
 };

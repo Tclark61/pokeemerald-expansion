@@ -3298,7 +3298,7 @@ static const u8 sTM53Desc[] = _( // Todo
 
 static const u8 sTM54Desc[] = _( // Todo
     "A powerful final move\n"
-    "that increases in power\n"
+    "that has rasied power\n"
     "in misty terrain.");
 
 static const u8 sTM55Desc[] = _( // Todo

@@ -5935,8 +5935,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpAttack  = 65,
         #if P_UPDATED_STATS >= GEN_7
             .baseHP        = 65,
-            .baseDefense   = 95,
-            .baseSpDefense = 95,
+            .baseDefense   = 105,
+            .baseSpDefense = 105,
         #else
             .baseHP        = 55,
             .baseDefense   = 85,
@@ -16695,7 +16695,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD},
-        .abilities = {ABILITY_CUTE_CHARM, ABILITY_CUTE_CHARM, ABILITY_PIXILATE},
+        .abilities = {ABILITY_PIXILATE, ABILITY_NONE, ABILITY_PIXILATE},
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
     },
@@ -20133,11 +20133,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_CURSOLA] =
     {
         .baseHP        = 60,
-        .baseAttack    = 95,
-        .baseDefense   = 50,
+        .baseAttack    = 85,
+        .baseDefense   = 80,
         .baseSpeed     = 30,
-        .baseSpAttack  = 145,
-        .baseSpDefense = 130,
+        .baseSpAttack  = 140,
+        .baseSpDefense = 125,
         .types = { TYPE_GHOST, TYPE_GHOST},
         .catchRate = 30,
         .expYield = 179,

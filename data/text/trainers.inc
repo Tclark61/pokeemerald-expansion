@@ -1,7 +1,7 @@
 Route102_Text_CalvinIntro:
 	.string "I'm the first boss!\n"
 	.string "You can't move on until\p"
-	.string "you pass through my unstoppable\n!"
+	.string "you pass through my unstoppable\n"
 	.string "defensive stalling prowess!$"
 
 Route102_Text_CalvinDefeated:

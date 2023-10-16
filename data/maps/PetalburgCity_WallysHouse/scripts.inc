@@ -49,7 +49,7 @@ PetalburgCity_WallysHouse_EventScript_FourthQuestion::
 	goto_if_ne VAR_RESULT, 0, PetalburgCity_WallysHouse_EventScript_PorygonWrongAnswer
 	msgbox PetalburgCity_WallysHouse_Text_Finale, MSGBOX_NPC
 	setvar VAR_TEMP_1, SPECIES_PORYGON
-	givemon SPECIES_PORYGON, 12
+	givemon SPECIES_PORYGON, 15
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, PetalburgCity_WallysHouse_EventScript_SendPorygonParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, PetalburgCity_WallysHouse_EventScript_SendPorygonPC
 	goto Common_EventScript_NoMoreRoomForPokemon

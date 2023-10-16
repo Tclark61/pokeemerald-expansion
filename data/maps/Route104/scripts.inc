@@ -1082,14 +1082,14 @@ Route104_Text_ThrowBallAtWeakenedPokemon:
 
 Route104_Text_WomanLeaves:
 	.string "Is that my parcel? Oh good!\p"
-	.string "I was worried it would never\n"
-	.string "arrive. Now I can go about\p"
-	.string "my merry way! Thank you,\n"
-	.string "dearie. Here's something for\p"
-	.string "your trouble. My husband gave\n"
-	.string "it to me for some research\p"
-	.string "related reason, but I'm sure\n"
-	.string "you'll make good use of it!$"
+	.string "I was worried it would never arrive.\n"
+	.string "Now I can go about my merry way!\p"
+	.string "Thank you, dearie. Here's something\n"
+	.string "for your trouble. It makes weak\p"
+	.string "Pokemon get a little more resilient!\n"
+	.string "I'm not a battler anymore,\p"
+	.string "but I'm sure you'll make good\n"
+	.string "use of it!$"
 
 Route104_Text_WomanMissesParcel:
 	.string "I'm getting worried about my\n"

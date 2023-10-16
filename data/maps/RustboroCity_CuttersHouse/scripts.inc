@@ -97,7 +97,7 @@ RustboroCity_IceCreamParlor_EventScript_ExitVendingMachine::
 
 RustboroCity_IceCreamParlor_EventScript_ReceiveVanillite::
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_VANILLITE
-	givemon SPECIES_VANILLITE, 20
+	givemon SPECIES_VANILLITE, 22, ITEM_NEVER_MELT_ICE
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, RustboroCity_IceCreamParlor_EventScript_ReceiveVanilliteParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, RustboroCity_IceCreamParlor_EventScript_ReceiveVanillitePC
 	goto Common_EventScript_NoMoreRoomForPokemon
@@ -137,7 +137,7 @@ RustboroCity_IceCreamParlor_EventScript_ReceivedVanilliteFanfare::
 
 RustboroCity_IceCreamParlor_EventScript_ReceiveMilcery::
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MILCERY
-	givemon SPECIES_MILCERY, 20
+	givemon SPECIES_MILCERY, 22
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, RustboroCity_IceCreamParlor_EventScript_ReceiveMilceryParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, RustboroCity_IceCreamParlor_EventScript_ReceiveMilceryPC
 	goto Common_EventScript_NoMoreRoomForPokemon
