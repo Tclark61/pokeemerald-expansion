@@ -901,7 +901,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .type = TYPE_FIRE,
         .accuracy = 100,
         .pp = 25,
-        .secondaryEffectChance = 10,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_SPECIAL,
@@ -920,7 +920,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .type = TYPE_FIRE,
         .accuracy = 100,
         .pp = 15,
-        .secondaryEffectChance = 10,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_SPECIAL,
@@ -1440,7 +1440,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_5
             .power = 35,
-            .accuracy = 85,
+            .accuracy = 100,
         #else
             .power = 15,
             .accuracy = 70,
@@ -2158,7 +2158,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .type = TYPE_FIRE,
         .accuracy = 85,
         .pp = 5,
-        .secondaryEffectChance = 10,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_SPECIAL,
@@ -2973,7 +2973,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .type = TYPE_FIRE,
         .accuracy = 100,
         .pp = 25,
-        .secondaryEffectChance = 10,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_PHYSICAL,
@@ -3282,11 +3282,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_OCTAZOOKA] =
     {
         .effect = EFFECT_ACCURACY_DOWN_HIT,
-        .power = 65,
+        .power = 90,
         .type = TYPE_WATER,
-        .accuracy = 85,
-        .pp = 10,
-        .secondaryEffectChance = 50,
+        .accuracy = 100,
+        .pp = 15,
+        .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_SPECIAL,
@@ -7855,15 +7855,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
 
     [MOVE_DARK_VOID] =
     {
-        #if B_UPDATED_MOVE_DATA >= GEN_7
-            .accuracy = 50,
-        #else
-            .accuracy = 80,
-        #endif
+
+        .accuracy = 80,
         .effect = EFFECT_DARK_VOID,
         .power = 0,
         .type = TYPE_DARK,
-        .pp = 10,
+        .pp = 5,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_BOTH,
         .priority = 0,

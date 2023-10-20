@@ -41,10 +41,11 @@ EverGrandeCity_PokemonLeague_1F_Pokemart:
 	.2byte ITEM_DUSK_STONE
 	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_MASTER_BALL
-	.2byte ITEM_LEFTOVERS
-	.2byte ITEM_FOCUS_SASH
 	.2byte ITEM_TM_SHADOW_BALL
 	.2byte ITEM_TM_SHOCK_WAVE
+	.2byte ITEM_TM_CALM_MIND
+	.2byte ITEM_TM_HAIL
+	.2byte ITEM_TM_BULLET_SEED
 	.2byte ITEM_NONE
 	release
 	end

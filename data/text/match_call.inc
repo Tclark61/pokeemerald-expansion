@@ -2832,7 +2832,7 @@ MatchCall_Text_Steven7::
 	.string "somewhere!$"
 
 MatchCall_Text_BirchRegisterCall:
-	.string "PROF. BIRCH: Oh, {PLAYER}{KUN}!\n"
+	.string "PROF. BEAN: Oh, {PLAYER}{KUN}!\n"
 	.string "I've already heard about you!\p"
 	.string "It seems your POKéNAV's been\n"
 	.string "upgraded with MATCH CALL.\p"

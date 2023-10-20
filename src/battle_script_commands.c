@@ -615,9 +615,9 @@ static void Cmd_tryworryseed(void);
 static void Cmd_callnative(void);
 const u16 sLevelCapFlags[NUM_LEVEL_CAP] =
 {
-    FLAG_BADGE02_GET, FLAG_EXITED_CAVE, FLAG_BEAT_GLARRY, FLAG_BEAT_CHAMPION,
+    FLAG_BEAT_METAPOD, FLAG_BADGE02_GET, FLAG_EXITED_CAVE, FLAG_BEAT_GLARRY, FLAG_BEAT_CHAMPION,
 };
-const u16 sLevelCaps[NUM_LEVEL_CAP] = { 18, 27, 35, 50 };
+const u16 sLevelCaps[NUM_LEVEL_CAP] = { 6, 18, 27, 32, 48 };
 
 void (* const gBattleScriptingCommandsTable[])(void) =
 {

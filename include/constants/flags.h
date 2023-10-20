@@ -1236,7 +1236,7 @@
 #define FLAG_TALKED_TO_SAD_BOY_FOUR                                 0x4A2 // Unused Flag
 #define FLAG_TALKED_TO_SAD_BOY_FIVE                                 0x4A3 // Unused Flag
 #define FLAG_BRICK_BREAK_GUY                                        0x4A4 // Unused Flag
-#define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
+#define FLAG_BEAT_METAPOD                                           0x4A5 // Unused Flag
 #define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
 #define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
 #define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag

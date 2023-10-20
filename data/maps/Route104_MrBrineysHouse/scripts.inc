@@ -241,7 +241,7 @@ Route104_MrBrineysHouse_Text_ReadWhichTopic:
 Route104_MrBrineysHouse_Text_TerrainMasterGivesPikachu:
 	.string "Speaking of... This pikachu next\n"
 	.string "to me, they're a special one.\p"
-	.string "they've been itching to go on an\n"
+	.string "They've been itching to go on an\n"
 	.string "adventure for a while. Would you\p"
 	.string "want to take them with you?$"
 

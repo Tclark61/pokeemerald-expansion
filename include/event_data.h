@@ -1,7 +1,7 @@
 #ifndef GUARD_EVENT_DATA_H
 #define GUARD_EVENT_DATA_H
 
-#define NUM_LEVEL_CAP 4
+#define NUM_LEVEL_CAP 5
 
 void InitEventData(void);
 void ClearTempFieldEventData(void);

@@ -42,7 +42,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Glacia::
 	goto_if_set FLAG_DEFEATED_ELITE_4_GLACIA, EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_WALLACE, EverGrandeCity_GlaciasRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_TYLER, EverGrandeCity_GlaciasRoom_Text_Defeat
 	goto EverGrandeCity_GlaciasRoom_EventScript_Defeated
 	end
 
@@ -70,8 +70,8 @@ EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
 	.string "by working as one with your POKéMON.\p"
 	.string "I hope you've enjoyed the journey\n"
 	.string "to reach this final battle!\l"
-	.string "This is where your achievements\n"
-	.string "are put to the test against the\l"
+	.string "This is where your achievements\p"
+	.string "are put to the test against the\n"
 	.string "best I can throw at you.\p"
 	.string "Now!\p"
 	.string "Who can craft the greatest plans\n"
@@ -108,3 +108,4 @@ EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
 	.string "You are on the precipice of victory,\n"
 	.string "{PLAYER}!\p"
 	.string "Go forth!$"
+

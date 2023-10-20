@@ -960,7 +960,7 @@ LittlerootTown_Text_OurNewHomeLetsGoInside:
 	.string "Well, this is LITTLEROOT TOWN.\p"
 	.string "How do you like it?\n"
 	.string "This is our new home!\p"
-	.string "It has a quaint feel, but it seems to be\n"
+	.string "I know it's invisible, but it seems to be\n"
 	.string "an easy place to live, don't you think?\p"
 	.string "And, you get your own room, {PLAYER}!\n"
 	.string "Let's go inside.$"
@@ -1066,7 +1066,7 @@ LittlerootTown_Text_FirstTutorial:
 
 LittlerootTown_Text_SecondTutorial:
 	.string "Next, the game has been shortened\n"
-	.string "to be beaten in an hour or so.\p"
+	.string "to be beaten in a few hours.\p"
 	.string "As such, the path is streamlined\n"
 	.string "and battles are carefully planned.$"
 
@@ -1097,7 +1097,7 @@ LittlerootTown_Text_ProfBirchsHouse:
 	.string "PROF. BEAN'S HOUSE$"
 
 LittlerootTown_Text_BirchSomethingToShowYouAtLab:
-	.string "PROF. BIRCH: Well, well, {PLAYER}{KUN}!\n"
+	.string "PROF. BEAN: Well, well, {PLAYER}{KUN}!\n"
 	.string "That was good work out there!\p"
 	.string "I knew there was something special\n"
 	.string "about you when I first saw you,\l"

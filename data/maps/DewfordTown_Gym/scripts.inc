@@ -295,7 +295,7 @@ DewfordTown_Gym_Text_GymGuideAdvice:
 	.string "What's worse, the GYM is as dark as\n"
 	.string "the darkest cave.\p"
 	.string "But there are items hidden\n"
-	.string "throughout the paths for you!.\p"
+	.string "throughout the paths for you!\p"
 	.string "Hey, okay, go for it!$"
 
 DewfordTown_Gym_Text_GymGuidePostVictory:

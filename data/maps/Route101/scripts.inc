@@ -248,6 +248,10 @@ Route101_EventScript_BirchsBag::
 	release
 	end
 
+Route101_EventScript_RunningShoesSign::
+	msgbox Route101_Text_RunningShoesSign, MSGBOX_SIGN
+	end
+
 Route101_EventScript_HideMayInBedroom::
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
 	return
@@ -299,4 +303,9 @@ Route101_Text_WildPokemonInTallGrass:
 Route101_Text_RouteSign:
 	.string "ROUTE 101\n"
 	.string "{UP_ARROW} OLDALE TOWN$"
+
+Route101_Text_RunningShoesSign:
+	.string "Hold down B while moving\n"
+	.string "to run, and Press START\p"
+	.string "to up the menu.$"
 

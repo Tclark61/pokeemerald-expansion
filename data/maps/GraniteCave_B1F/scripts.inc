@@ -13,10 +13,20 @@ GraniteCave_B1F_EventScript_Zander::
 	msgbox GraniteCave_B1F_Text_ZanderPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+GraniteCave_B1F_EventScript_Sign::
+	msgbox GraniteCave_B1F_Text_Sign, MSGBOX_NPC
+	end
+
 GraniteCave_B1F_SetHoleWarp:
 	setstepcallback STEP_CB_CRACKED_FLOOR
 	setholewarp MAP_GRANITE_CAVE_B2F
 	end
+
+GraniteCave_B1F_Text_Sign:
+	.string "You must climb the waterfall!\n"
+	.string "Items needed: 1 Master Ball,\p"
+	.string "2 Rare Candies. Depending on\n"
+	.string "your solution, 2 balls might be used.$"
 
 GraniteCave_B1F_Text_AngryFisherman:
 	.string "I'm so angry! I finally found\n"

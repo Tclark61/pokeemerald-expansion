@@ -276,6 +276,10 @@ OldaleTown_EventScript_ShowMayMessage::
 	goto OldaleTown_EventScript_RivalFinish
 	end
 
+OldaleTown_EventScript_CovetAndThief::
+	msgbox OldaleTown_Text_CovetAndThief, MSGBOX_NPC
+	end
+
 OldaleTown_EventScript_ShowBrendanMessage::
 	msgbox OldaleTown_Text_BrendanLetsGoBack, MSGBOX_DEFAULT
 	goto OldaleTown_EventScript_RivalFinish
@@ -352,8 +356,12 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 	step_end
 
 OldaleTown_Text_SavingMyProgress:
-	.string "I want to take a rest, so I'm saving my\n"
-	.string "progress.$"
+	.string "A big part of POKéMON battling\n"
+	.string "are held items. If you go to the\p"
+	.string "POKéMON menu, you can see what item\n"
+	.string "your POKéMON is holding.\p"
+	.string "Some items don't have any effect,\n"
+	.string "but some can win you battles!$"
 
 OldaleTown_Text_IWorkAtPokemonMart:
 	.string "Hi!\n"
@@ -404,12 +412,21 @@ OldaleTown_Text_BrendanLetsGoBack:
 	.string "{PLAYER}, you should hustle back, too.$"
 
 OldaleTown_Text_TownSign:
-	.string "Stuck? Most pokemon gain a new\n"
-	.string "move at level 6!$"
+	.string "Stuck? Level 6 is the\n"
+	.string "only level you need!$"
 
 OldaleTown_Text_StoneHouseSign:
 	.string "THE EVOLUTION HOUSE$"
 
 OldaleTown_Text_WarningSign:
 	.string "The trainer up ahead is a pain!\n"
-	.string "His pokemon has high defense.$"
+	.string "His pokemon has high defense.\p"
+	.string "You won't be able to beat him\n"
+	.string "in a fair fight, so you have to\p"
+	.string "find a trick to overcome him!$"
+
+OldaleTown_Text_CovetAndThief:
+	.string "Covet and Thief steal an item\n"
+	.string "from the opponent.\p"
+	.string "It doesn't work if your pokemon\n"
+	.string "is already holding an item.$"

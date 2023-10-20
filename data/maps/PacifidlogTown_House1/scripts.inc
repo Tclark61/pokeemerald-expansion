@@ -37,6 +37,7 @@ PacifidlogTown_House1_Text_SixDotsOpenThreeDoors:
 	.string "It's said that all magikarps dream\n"
 	.string "of being strong enough to swim up\p"
 	.string "a waterfall. I've never seen one do it,\n"
-	.string "though. I think they'd evolve beforehand.\p"
-	.string "Shame, it'd be nice to see one day.$"
+	.string "though. By the time they're strong enough,\p"
+	.string "they evolve and then they're too heavy.\n"
+	.string "Shame, I'd really like to see it one day.$"
 

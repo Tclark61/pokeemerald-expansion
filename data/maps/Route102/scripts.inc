@@ -31,7 +31,7 @@ Route125_EventScript_RegisterErnest::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
 	msgbox Route125_Text_ErnestRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_ERNEST_1
+	giveitem ITEM_PEARL
 	release
 	end
 
@@ -52,6 +52,7 @@ Route102_EventScript_Calvin::
 	end
 
 Route102_EventScript_CalvinRegisterMatchCallAfterBattle::
+	setflag FLAG_BEAT_METAPOD
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
 	goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_CalvinRegisterMatchCall

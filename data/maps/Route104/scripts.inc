@@ -330,6 +330,7 @@ Route104_EventScript_Woman::
 	removeitem ITEM_OAKS_PARCEL
 	giveitem ITEM_EVIOLITE
 	applymovement 4, Route104_EventScript_WomanEntersForest
+	waitmovement 0
 	removeobject 4
 	setflag FLAG_FOUND_PARCEL
 	release
@@ -1075,10 +1076,11 @@ Route104_Text_WhatsItLikeAtBottomOfSea:
 	.string "of the sea?$"
 
 Route104_Text_ThrowBallAtWeakenedPokemon:
-	.string "If you're going to throw a POKé BALL,\n"
-	.string "weaken the wild POKéMON first.\p"
-	.string "It will be easier to catch if it's been\n"
-	.string "poisoned, burned, or lulled to sleep.$"
+	.string "If you get stuck at a hard fight,\n"
+	.string "it can feel impossible to keep going.\p"
+	.string "But sometimes trying a new strategy,\n"
+	.string "or checking your back for different TMs\p"
+	.string "can make all the difference!$"
 
 Route104_Text_WomanLeaves:
 	.string "Is that my parcel? Oh good!\p"

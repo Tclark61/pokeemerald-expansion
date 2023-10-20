@@ -284,7 +284,7 @@ Route132_EventScript_ItemRareCandy::
 	end
 
 Route132_EventScript_ItemProtein::
-	finditem ITEM_PROTEIN
+	finditem ITEM_DUSK_STONE
 	end
 
 Route133_EventScript_ItemBigPearl::
@@ -346,6 +346,7 @@ PetalburgWoods_EventScript_ItemGreatBall::
 PetalburgWoods_EventScript_ItemEther::
 	finditem ITEM_RARE_CANDY 10
 	finditem ITEM_ICE_STONE
+	finditem ITEM_ICY_ROCK
 	end
 
 PetalburgWoods_EventScript_ItemParalyzeHeal::

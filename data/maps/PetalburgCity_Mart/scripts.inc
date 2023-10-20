@@ -27,6 +27,7 @@ PetalburgCity_Mart_Pokemart_Basic:
 	.2byte ITEM_FIRE_STONE
 	.2byte ITEM_WATER_STONE
 	.2byte ITEM_THUNDER_STONE
+	.2byte ITEM_ICE_STONE
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_NONE
 	release

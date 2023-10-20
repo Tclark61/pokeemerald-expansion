@@ -3200,7 +3200,7 @@ static const struct TrainerMon sParty_Drake[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 34,
+    .lvl = 35,
     .species = SPECIES_VESPIQUEN,
     .heldItem = ITEM_LUM_BERRY,
     .moves = {MOVE_DEFEND_ORDER, MOVE_ATTACK_ORDER, MOVE_HEAL_ORDER, MOVE_ANCIENT_POWER}
@@ -3214,7 +3214,7 @@ static const struct TrainerMon sParty_Drake[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 34,
+    .lvl = 35,
     .species = SPECIES_MAROWAK_ALOLAN,
     .heldItem = ITEM_THICK_CLUB,
     .moves = {MOVE_SHADOW_BONE, MOVE_BONE_RUSH, MOVE_ENDURE, MOVE_ENDEAVOR}
@@ -11102,45 +11102,45 @@ static const struct TrainerMon sParty_Darius[] = {
 static const struct TrainerMon sParty_Steven[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 77,
-    .species = SPECIES_SKARMORY,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    .lvl = 52,
+    .species = SPECIES_BASTIODON,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_STEALTH_ROCK, MOVE_ROCK_TOMB, MOVE_IRON_DEFENSE, MOVE_BODY_PRESS}
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 75,
-    .species = SPECIES_CLAYDOL,
+    .lvl = 54,
+    .species = SPECIES_GOODRA,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_ANCIENT_POWER, MOVE_EARTHQUAKE}
+    .moves = {MOVE_MUDDY_WATER, MOVE_DRAGON_PULSE, MOVE_REST, MOVE_SNORE}
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 76,
-    .species = SPECIES_AGGRON,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_THUNDER, MOVE_EARTHQUAKE, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW}
+    .lvl = 54,
+    .species = SPECIES_SHIFTRY,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_KNOCK_OFF, MOVE_SWORDS_DANCE, MOVE_LEAF_BLADE, MOVE_FAKE_OUT}
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 76,
-    .species = SPECIES_CRADILY,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_CONFUSE_RAY}
+    .lvl = 54,
+    .species = SPECIES_WEEZING_GALARIAN,
+    .heldItem = ITEM_BLACK_SLUDGE,
+    .moves = {MOVE_SLUDGE_BOMB, MOVE_STRANGE_STEAM, MOVE_TOXIC_SPIKES, MOVE_WILL_O_WISP}
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 76,
-    .species = SPECIES_ARMALDO,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_WATER_PULSE, MOVE_ANCIENT_POWER, MOVE_AERIAL_ACE, MOVE_SLASH}
+    .lvl = 56,
+    .species = SPECIES_VOLCARONA,
+    .heldItem = ITEM_CHARCOAL,
+    .moves = {MOVE_QUIVER_DANCE, MOVE_FIERY_DANCE, MOVE_SILVER_WIND, MOVE_HURRICANE}
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 78,
-    .species = SPECIES_METAGROSS,
+    .lvl = 60,
+    .species = SPECIES_DARKRAI,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_EARTHQUAKE, MOVE_PSYCHIC, MOVE_METEOR_MASH, MOVE_SHADOW_BALL}
+    .moves = {MOVE_NASTY_PLOT, MOVE_DARK_VOID, MOVE_DREAM_EATER, MOVE_DARK_PULSE}
     }
 };
 

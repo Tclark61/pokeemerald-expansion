@@ -276,10 +276,9 @@ Route104_Text_MiaDefeat:
 	.string "You might be ready for the cave...$"
 
 Route104_Text_MiaPostBattle:
-	.string "MIA: If you're going in the cave\n"
-	.string "try bringing repel. The zubat can't\p"
-	.string "be ran away from, so it wears down\n"
-	.string "on your team.$"
+	.string "MIA: on the other side of this cave\n"
+	.string "Is Rustboro City! After that is\p"
+	.string "EverGrande City, home of the CHAMPION!$"
 
 Route104_Text_MiaNotEnoughMons:
 	.string "MIA: You want to battle with us?\p"
@@ -3845,8 +3844,8 @@ Route125_Text_ErnestPostBattle:
 	.string "This time, Ziggy won't lose!$"
 
 Route125_Text_ErnestRegister:
-	.string "Register me in your POKéNAV,\n"
-	.string "and I'll tell you something good.$"
+	.string "Ah, you beat me!\n"
+	.string "Maybe you'll use this better.$"
 
 Route125_Text_ErnestRematchIntro:
 	.string "It's high time I get my payback\n"

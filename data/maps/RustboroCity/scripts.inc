@@ -950,7 +950,7 @@ RustboroCity_EventScript_BattleBrendanTreecko::
 	end
 
 RustboroCity_EventScript_BattleBrendanTorchic::
-	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TORCHIC, RustboroCity_Text_BrendanDefeat
+	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TORCHIC, RustboroCity_Text_BrendanDefeat  
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
 	goto RustboroCity_EventScript_BrendanBrineyHint
 	end
@@ -968,11 +968,11 @@ RustboroCity_EventScript_EverGrandeSign::
 RustboroCity_EventScript_Thief::
 	lock
 	faceplayer
-	applymovement 15, Common_Movement_ExclamationMark
+	applymovement 14, Common_Movement_ExclamationMark
 	msgbox RustboroCity_Text_ThiefAsksForHelp, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, RustboroCity_EventScript_ThiefGetsRejected
 	msgbox RustboroCity_Text_ThiefGivesPlan, MSGBOX_NPC
-	removeobject 15
+	removeobject 14
 	setflag FLAG_HIDE_ROUTE_116_WANDAS_BOYFRIEND
 	clearflag FLAG_HIDE_LILYCOVE_MOTEL_GAME_DESIGNERS
 	release
@@ -1113,14 +1113,14 @@ RustboroCity_Text_YoureNewAroundHere:
 RustboroCity_Text_GymLeaderIsntEasyWithFire:
 	.string "I challenged the GYM LEADER, but…\p"
 	.string "It's not going to be easy winning with\n"
-	.string "my FIRE-type POKéMON…\p"
-	.string "FIRE-type POKéMON don't match up\n"
-	.string "well against ROCK-type POKéMON…$"
+	.string "my WATER-type POKéMON…\p"
+	.string "WATER-type POKéMON don't match up\n"
+	.string "well against ELECTRIC-type POKéMON…$"
 
 RustboroCity_Text_MrBrineyWalksInTheTunnel:
-	.string "The old sailor MR. BRINEY lives in\n"
+	.string "The old man MR. TERRAIN lives in\n"
 	.string "a cottage by the sea.\p"
-	.string "He goes for walks in the tunnel every\n"
+	.string "He goes for walks on the beach every\n"
 	.string "so often.$"
 
 RustboroCity_Text_MrBrineyLovesPeeko:

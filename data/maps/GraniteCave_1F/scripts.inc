@@ -80,7 +80,7 @@ GraniteCave_1F_Text_ExplainFlash:
 	.string "It lights up even the inky darkness\n"
 	.string "of caves.\p"
 	.string "But, to use it, you need the GYM BADGE\n"
-	.string "from DEWFORD's POKéMON GYM.$"
+	.string "from PETALBURG's POKéMON GYM.$"
 
 MagmaHideout_3F_1R_Text_Grunt9Intro:
 	.string "You're at the end of the cave...\n"

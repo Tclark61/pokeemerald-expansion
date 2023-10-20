@@ -54,8 +54,6 @@ EverGrandeCity_ChampionsRoom_EventScript_Defeated::
 	setmetatile 6, 1, METATILE_EliteFour_OpenDoorChampion_Frame, FALSE
 	setmetatile 6, 2, METATILE_EliteFour_OpenDoorChampion_Opening, FALSE
 	special DrawWholeMapView
-	msgbox EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
-	closemessage
 	playse SE_DOOR
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, EverGrandeCity_ChampionsRoom_EventScript_PlayMayMusic
@@ -250,7 +248,7 @@ EverGrandeCity_ChampionsRoom_Text_Defeat:
 	.string "You are officially the strongest!$"
 
 EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
-	.string "TYLER: The POKéMON you sent into\n"
+	.string "BIANCA: The POKéMON you sent into\n"
 	.string "battle…\p"
 	.string "At times they danced like a spring\n"
 	.string "breeze, and at times they struck\l"
