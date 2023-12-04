@@ -3200,7 +3200,7 @@ static const struct TrainerMon sParty_Drake[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 35,
+    .lvl = 36,
     .species = SPECIES_VESPIQUEN,
     .heldItem = ITEM_LUM_BERRY,
     .moves = {MOVE_DEFEND_ORDER, MOVE_ATTACK_ORDER, MOVE_HEAL_ORDER, MOVE_ANCIENT_POWER}
@@ -3217,7 +3217,7 @@ static const struct TrainerMon sParty_Drake[] = {
     .lvl = 35,
     .species = SPECIES_MAROWAK_ALOLAN,
     .heldItem = ITEM_THICK_CLUB,
-    .moves = {MOVE_SHADOW_BONE, MOVE_BONE_RUSH, MOVE_ENDURE, MOVE_ENDEAVOR}
+    .moves = {MOVE_SHADOW_BONE, MOVE_BONE_RUSH, MOVE_FLAME_WHEEL, MOVE_SWORDS_DANCE}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
@@ -3231,7 +3231,7 @@ static const struct TrainerMon sParty_Drake[] = {
 static const struct TrainerMon sParty_Roxanne1[] = {
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 39,
+    .lvl = 40,
     .species = SPECIES_GYARADOS,
     .heldItem = ITEM_MYSTIC_WATER,
     .moves = {MOVE_WATERFALL, MOVE_ICE_FANG, MOVE_DRAGON_RAGE, MOVE_SCARY_FACE}
@@ -3252,7 +3252,7 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     },
         {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 39,
+    .lvl = 40,
     .species = SPECIES_MISMAGIUS,
     .heldItem = ITEM_FOCUS_SASH,
     .moves = {MOVE_PSYBEAM, MOVE_PROTECT, MOVE_SHADOW_BALL, MOVE_PERISH_SONG}
@@ -4310,7 +4310,7 @@ static const struct TrainerMon sParty_Wallace[] = {
     .lvl = 40,
     .species = SPECIES_ARIADOS,
     .heldItem = ITEM_FOCUS_SASH,
-    .moves = {MOVE_TOXIC, MOVE_STICKY_WEB, MOVE_SUCKER_PUNCH, MOVE_SCARY_FACE}
+    .moves = {MOVE_CROSS_POISON, MOVE_STICKY_WEB, MOVE_SUCKER_PUNCH, MOVE_TOXIC_SPIKES}
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -6022,7 +6022,7 @@ static const struct TrainerMon sParty_GinaAndMia1[] = { //here
     .iv = 100,
     .lvl = 15,
     .species = SPECIES_SLOWPOKE,
-    .moves = {MOVE_CONFUSION, MOVE_CALM_MIND, MOVE_YAWN, MOVE_SLACK_OFF}
+    .moves = {MOVE_CONFUSION, MOVE_GRASS_KNOT, MOVE_YAWN, MOVE_SLACK_OFF}
     },
     {
     .iv = 0,
@@ -6032,7 +6032,7 @@ static const struct TrainerMon sParty_GinaAndMia1[] = { //here
     },
     {
     .iv = 100,
-    .lvl = 15,
+    .lvl = 17,
     .species = SPECIES_MR_MIME,
     .moves = {MOVE_CONFUSION, MOVE_REFLECT, MOVE_DAZZLING_GLEAM, MOVE_TRICK_ROOM}
     },

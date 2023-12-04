@@ -297,7 +297,7 @@ Route133_EventScript_ItemStarPiece::
 	end
 
 Route133_EventScript_ItemMaxRevive::
-	finditem ITEM_MAX_REVIVE
+	finditem ITEM_TERRAIN_EXTENDER
 	end
 
 Route134_EventScript_ItemCarbos::

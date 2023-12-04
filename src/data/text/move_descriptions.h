@@ -1741,8 +1741,8 @@ static const u8 sDefogDescription[] = _(
     "lowers evasion.");
 
 static const u8 sTrickRoomDescription[] = _(
-    "Slower Pokémon get to move\n"
-    "first for 5 turns.");
+    "Slower Pokémon get to\n"
+    "move first for 5 turns.");
 
 static const u8 sDracoMeteorDescription[] = _(
     "Casts comets onto the foe.\n"

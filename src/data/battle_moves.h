@@ -7469,7 +7469,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .type = TYPE_POISON,
         .accuracy = 100,
         .pp = 20,
-        .secondaryEffectChance = 10,
+        .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_PHYSICAL,
@@ -9581,7 +9581,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_PARABOLIC_CHARGE] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_7
-            .power = 65,
+            .power = 70,
         #else
             .power = 50,
         #endif
@@ -10987,10 +10987,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_FLEUR_CANNON] =
     {
         .effect = EFFECT_OVERHEAT,
-        .power = 130,
+        .power = 120,
         .type = TYPE_FAIRY,
         .accuracy = 90,
-        .pp = 5,
+        .pp = 10,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,

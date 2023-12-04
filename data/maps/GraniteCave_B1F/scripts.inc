@@ -39,8 +39,8 @@ GraniteCave_B1F_Text_ZanderIntro:
 	.string "something move in the water?!$"
 
 GraniteCave_B1F_Text_ZanderDefeat:
-	.string "Sensei Larry, forgive me!\n"
-	.string "I lost my wits!$"
+	.string "That water is so creepy!\n"
+	.string "A tentacle tried to grab me!$"
 
 GraniteCave_B1F_Text_ZanderPostBattle:
 	.string "I get freaked out every time I see\n"

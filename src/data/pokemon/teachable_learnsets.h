@@ -31497,6 +31497,7 @@ static const u16 sPincurchinTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_THUNDER_WAVE,
     MOVE_ELECTRIC_TERRAIN,
+    MOVE_RISING_VOLTAGE,
     MOVE_UNAVAILABLE,
 };
 

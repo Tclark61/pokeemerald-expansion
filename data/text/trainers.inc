@@ -267,7 +267,7 @@ Route104_Text_GinaNotEnoughMons:
 
 Route104_Text_MiaIntro:
 	.string "MIA: The cave ahead is brutal!\n"
-	.string "If you can't be us, there's no way\p"
+	.string "If you can't beat us, there's no way\p"
 	.string "you'll survive in there! Hope you're\n"
 	.string "ready for a double battle!$"
 

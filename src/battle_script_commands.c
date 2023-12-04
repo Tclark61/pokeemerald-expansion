@@ -617,7 +617,7 @@ const u16 sLevelCapFlags[NUM_LEVEL_CAP] =
 {
     FLAG_BEAT_METAPOD, FLAG_BADGE02_GET, FLAG_EXITED_CAVE, FLAG_BEAT_GLARRY, FLAG_BEAT_CHAMPION,
 };
-const u16 sLevelCaps[NUM_LEVEL_CAP] = { 6, 18, 27, 32, 48 };
+const u16 sLevelCaps[NUM_LEVEL_CAP] = { 6, 18, 25, 32, 46 };
 
 void (* const gBattleScriptingCommandsTable[])(void) =
 {
