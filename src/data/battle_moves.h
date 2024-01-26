@@ -705,11 +705,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_TWINEEDLE] =
     {
         .effect = EFFECT_POISON_HIT,
-        .power = 25,
+        .power = 40,
         .type = TYPE_BUG,
         .accuracy = 100,
         .pp = 20,
-        .secondaryEffectChance = 20,
+        .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_PHYSICAL,
@@ -8194,7 +8194,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_SYNCHRONOISE] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 120,
+            .power = 200,
             .pp = 10,
         #else
             .power = 70,

@@ -1161,7 +1161,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_BEEDRILL] =
     {
-        .baseHP        = 65,
+        .baseHP        = 70,
         .baseDefense   = 40,
         .baseSpeed     = 75,
         .baseSpAttack  = 45,
@@ -3040,11 +3040,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_ONIX] =
     {
-        .baseHP        = 35,
+        .baseHP        = 40,
         .baseAttack    = 45,
         .baseDefense   = 160,
         .baseSpeed     = 70,
-        .baseSpAttack  = 30,
+        .baseSpAttack  = 40,
         .baseSpDefense = 45,
         .types = { TYPE_ROCK, TYPE_GROUND },
         .catchRate = 45,
@@ -5106,7 +5106,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_SUDOWOODO] =
     {
         .baseHP        = 70,
-        .baseAttack    = 100,
+        .baseAttack    = 110,
         .baseDefense   = 115,
         .baseSpeed     = 30,
         .baseSpAttack  = 30,
@@ -5119,8 +5119,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
+        .itemCommon = ITEM_ROCKY_HELMET,
+        .itemRare = ITEM_ROCKY_HELMET,
         .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_MINERAL},
-        .abilities = {ABILITY_STURDY, ABILITY_ROCK_HEAD, ABILITY_RATTLED},
+        .abilities = {ABILITY_ROCK_HEAD, ABILITY_NONE, ABILITY_RATTLED},
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },
@@ -5598,7 +5600,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_STEELIX] =
     {
-        .baseHP        = 75,
+        .baseHP        = 85,
         .baseAttack    = 85,
         .baseDefense   = 200,
         .baseSpeed     = 30,
@@ -5614,7 +5616,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_MINERAL},
-        .abilities = {ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_SHEER_FORCE},
+        .abilities = {ABILITY_SHEER_FORCE, ABILITY_NONE, ABILITY_SHEER_FORCE},
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = FALSE,
     },
@@ -5715,7 +5717,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG},
-        .abilities = {ABILITY_SWARM, ABILITY_TECHNICIAN, ABILITY_LIGHT_METAL},
+        .abilities = {ABILITY_TECHNICIAN, ABILITY_NONE, ABILITY_LIGHT_METAL},
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
@@ -6580,7 +6582,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = { EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED},
-        .abilities = {ABILITY_PRESSURE, ABILITY_NONE, ABILITY_MULTISCALE},
+        .abilities = {ABILITY_MULTISCALE, ABILITY_NONE, ABILITY_MULTISCALE},
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = FALSE,
         .flags = SPECIES_FLAG_LEGENDARY,
@@ -6626,11 +6628,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .itemCommon = ITEM_LUM_BERRY,
         .itemRare = ITEM_LUM_BERRY,
         .genderRatio = MON_GENDERLESS,
-        .eggCycles = 120,
+        .eggCycles = 40,
         .friendship = 100,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED },
-        .abilities = {ABILITY_NATURAL_CURE, ABILITY_NONE},
+        .abilities = {ABILITY_GRASSY_SURGE, ABILITY_NONE},
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
         .flags = SPECIES_FLAG_MYTHICAL,
@@ -10208,7 +10210,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD},
-        .abilities = {ABILITY_RIVALRY, ABILITY_INTIMIDATE, ABILITY_GUTS},
+        .abilities = {ABILITY_LIGHTNING_ROD, ABILITY_NONE, ABILITY_GUTS},
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
     },
@@ -11019,7 +11021,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_GARCHOMP] =
     {
         .baseHP        = 108,
-        .baseAttack    = 130,
+        .baseAttack    = 120,
         .baseDefense   = 95,
         .baseSpeed     = 102,
         .baseSpAttack  = 80,
@@ -17236,7 +17238,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD},
-        .abilities = {ABILITY_BLAZE, ABILITY_NONE, ABILITY_INTIMIDATE},
+        .abilities = {ABILITY_INTIMIDATE, ABILITY_NONE, ABILITY_INTIMIDATE},
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
@@ -17258,7 +17260,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD},
-        .abilities = {ABILITY_BLAZE, ABILITY_NONE, ABILITY_INTIMIDATE},
+        .abilities = {ABILITY_INTIMIDATE, ABILITY_NONE, ABILITY_INTIMIDATE},
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
@@ -19721,7 +19723,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = { EGG_GROUP_GRASS, EGG_GROUP_DRAGON},
-        .abilities = {ABILITY_RIPEN, ABILITY_GLUTTONY, ABILITY_HUSTLE},
+        .abilities = {ABILITY_RIPEN, ABILITY_NONE, ABILITY_HUSTLE},
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
     },

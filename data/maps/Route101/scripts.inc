@@ -307,5 +307,5 @@ Route101_Text_RouteSign:
 Route101_Text_RunningShoesSign:
 	.string "Hold down B while moving\n"
 	.string "to run, and Press START\p"
-	.string "to up the menu.$"
+	.string "to open up the menu.$"
 

@@ -262,7 +262,7 @@ LittlerootTown_EventScript_Tyler::
 	setflag FLAG_HIDE_LILYCOVE_MOTEL_GAME_DESIGNERS
 	call Common_EventScript_GetGiftMonPartySlot
 	call Common_EventScript_NameReceivedPartyMon
-	giveitem ITEM_RARE_CANDY, 5
+	giveitem ITEM_RARE_CANDY, 10
 	giveitem ITEM_TM_PROTECT
 	removeobject 4
 	setflag FLAG_RIVAL_LEFT_FOR_ROUTE103
@@ -1088,7 +1088,8 @@ LittlerootTown_Text_TownSign:
 	.string "“A town that can't be shaded any hue.”$"
 
 LittlerootTown_Text_ProfBirchsLab:
-	.string "PROF. BEAN'S POKéMON LAB$"
+	.string "PROF. BEAN'S POKéMON LAB.\n"
+	.string "Still invisible.$"
 
 LittlerootTown_Text_PlayersHouse:
 	.string "{PLAYER}'s HOUSE$"

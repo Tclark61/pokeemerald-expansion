@@ -75,7 +75,7 @@ PetalburgCity_Mart_EventScript_Man::
 PetalburgCity_Mart_Text_WeakWillGrowStronger:
 	.string "This shop has a great selection!,\n"
 	.string "I'm buying a SHINY STONE. My\p"
-	.string "Scyther is going to love it!$"
+	.string "EEVEE is going to love it!$"
 
 PetalburgCity_Mart_Text_RepelIsUseful:
 	.string "Do you use REPEL?\n"

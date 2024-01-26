@@ -1,6 +1,6 @@
 Route102_EventScript_ItemPotion::
 	finditem ITEM_MASTER_BALL 3
-	findItem ITEM_RARE_CANDY 8
+	findItem ITEM_RARE_CANDY 20
 	end
 
 Route103_EventScript_ItemGuardSpec::
@@ -20,7 +20,7 @@ Route104_EventScript_ItemPokeBall::
 	end
 
 Route104_EventScript_ItemXAccuracy::
-	finditem ITEM_RARE_CANDY 8
+	finditem ITEM_RARE_CANDY 15
 	finditem ITEM_DAMP_ROCK
 	finditem ITEM_HEAT_ROCK
 	end
@@ -135,7 +135,7 @@ Route116_EventScript_ItemXSpecial::
 
 Route116_EventScript_ItemEther::
 	finditem ITEM_ASSAULT_VEST
-	finditem ITEM_HM_WATERFALL
+	finditem ITEM_TM_ROOST
 	end
 
 Route116_EventScript_ItemRepel::
@@ -147,7 +147,7 @@ Route116_EventScript_ItemHPUp::
 	end
 
 Route116_EventScript_ItemPotion::
-	finditem ITEM_RARE_CANDY 15
+	finditem ITEM_RARE_CANDY 20
 	end
 
 Route117_EventScript_ItemGreatBall::
@@ -314,8 +314,8 @@ PetalburgCity_EventScript_ItemMaxRevive::
 	end
 
 PetalburgCity_EventScript_ItemEther::
-	finditem ITEM_RARE_CANDY 10
-	finditem ITEM_MASTER_BALL 2
+	finditem ITEM_RARE_CANDY 20
+	finditem ITEM_MASTER_BALL 5
 	finditem ITEM_CHARCOAL
 	end
 
@@ -344,7 +344,7 @@ PetalburgWoods_EventScript_ItemGreatBall::
 	end
 
 PetalburgWoods_EventScript_ItemEther::
-	finditem ITEM_RARE_CANDY 10
+	finditem ITEM_RARE_CANDY 25
 	finditem ITEM_ICE_STONE
 	finditem ITEM_ICY_ROCK
 	end
@@ -368,14 +368,15 @@ GraniteCave_1F_EventScript_ItemEscapeRope::
 	end
 
 GraniteCave_B1F_EventScript_ItemPokeBall::
-	finditem ITEM_RARE_CANDY 10
+	finditem ITEM_RARE_CANDY 30
 	finditem ITEM_MASTER_BALL
 	finditem ITEM_TM_SANDSTORM
 	finditem ITEM_TM_THIEF
 	end
 
 GraniteCave_B2F_EventScript_ItemRepel::
-	finditem ITEM_REPEL
+	finditem ITEM_MEGA_RING
+	finditem ITEM_STEELIXITE
 	end
 
 GraniteCave_B2F_EventScript_ItemRareCandy::
@@ -628,7 +629,7 @@ VictoryRoad_1F_EventScript_ItemPPUp::
 	end
 
 VictoryRoad_B1F_EventScript_ItemTMPsychic::
-	finditem ITEM_RARE_CANDY 30
+	finditem ITEM_RARE_CANDY 40
 	end
 
 VictoryRoad_B1F_EventScript_ItemFullRestore::

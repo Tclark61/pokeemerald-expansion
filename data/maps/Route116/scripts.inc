@@ -41,11 +41,34 @@ Route116_EventScript_BoyfriendGruntLeftTunnel::
 	release
 	end
 
-
-
 Route116_EventScript_BoyfriendGruntInTunnel::
 	msgbox Route116_Text_DiggingTunnelWhenGoonOrderedMeOut, MSGBOX_DEFAULT
 	release
+	end
+
+Route116_EventScript_CutFakeTree::
+	lockall
+	goto_if_unset FLAG_BADGE01_GET, EventScript_CheckTreeCantCut
+	checkpartymove MOVE_CUT
+	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CheckTreeCantCut
+	setfieldeffectargument 0, VAR_RESULT
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	buffermovename STR_VAR_2, MOVE_CUT
+	msgbox Text_WantToCut, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_CancelCut
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	msgbox Route116_Text_WeirdTree, MSGBOX_DEFAULT
+	setwildbattle SPECIES_SUDOWOODO, 25
+	waitse
+	playmoncry SPECIES_SUDOWOODO, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	removeobject 4
+	setflag FLAG_HIDE_AQUA_HIDEOUT_B1F_ELECTRODE_1
+	releaseall
 	end
 
 Route116_EventScript_DevonEmployee::
@@ -375,6 +398,10 @@ Route116_EventScript_ThiefGetsStatue::
 	release
 	end
 
+Route116_Text_WeirdTree:
+	.string "This tree just moved!\n"
+	.string "It's fighting back!$"
+
 Route116_Text_ThiefCongratulates:
 	.string "You did it! I knew you were\n"
 	.string "a natural thief. Here, hand\p"
@@ -502,10 +529,10 @@ Route116_Text_TrainerTipsCombee:
 	.string "COMBEEs. Some real Kenergy there.$"
 
 Route116_Text_RusturfTunnelSign:
-	.string "RUSTURF TUNNEL\n"
-	.string "“Linking RUSTBORO and VERDANTURF\p"
+	.string "GRANITE CAVE TUNNEL\n"
+	.string "“Linking RUSTBORO and PETALBURG\p"
 	.string "“The tunnel project has been\n"
-	.string "canceled.”$"
+	.string "delayed due to giant waterfall.”$"
 
 Route116_Text_TunnelersRestHouse:
 	.string "TUNNELER'S REST HOUSE$"

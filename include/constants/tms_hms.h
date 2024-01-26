@@ -55,7 +55,9 @@
     F(ELECTRIC_TERRAIN) \
     F(TRICK_ROOM) \
     F(RISING_VOLTAGE) \
-    F(MISTY_EXPLOSION)
+    F(MISTY_EXPLOSION) \
+    F(SELF_DESTRUCT) \
+    F(ROOST)
 
 #define FOREACH_HM(F) \
     F(CUT) \

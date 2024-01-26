@@ -1046,9 +1046,26 @@ RustboroCity_Movement_RivalApproachPlayer7:
 	walk_down
 	step_end
 
-RustboroCity_EventScript_Boy1::
+RustboroCity_EventScript_WeightTrainer::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_IRON_COAT, RustboroCity_EventScript_WeightTrainerGivesUp
 	msgbox RustboroCity_Text_YouCanHave2On2Battle, MSGBOX_NPC
+	giveitem ITEM_METAL_COAT
+	waitfanfare
+	setflag FLAG_GOT_IRON_COAT
+	release
 	end
+
+RustboroCity_EventScript_WeightTrainerGivesUp::
+	msgbox RustboroCity_Text_WeightTrainerGivesUp, MSGBOX_NPC
+
+RustboroCity_Text_WeightTrainerGivesUp:
+	.string "Now that I don't have that\n"
+	.string "pesky vest holding me back,\p"
+	.string "my vertical jump is finally gonna\n"
+	.string "skyrocket! Watch out, world!\p"
+	.string "I'm heading out of C league!$"
 
 RustboroCity_Text_Guard:
 	.string "Wanna see a magic trick?\n"
@@ -1137,18 +1154,18 @@ RustboroCity_Text_WowYouHavePokemon:
 	.string "places with POKéMON, too.$"
 
 RustboroCity_Text_CatchRarePokemonIfIGoToSchool:
-	.string "POKéMON TRAINER'S SCHOOL!\p"
-	.string "If I go to this school, will I be able\n"
-	.string "to catch rare POKéMON easily?$"
+	.string "RICHMOND VOLLEYBALL CLUB!\p"
+	.string "I wanted to sign up, but the\n"
+	.string "entry fee is too high.$"
 
 RustboroCity_Text_PokemonCanChangeLookFromExp:
-	.string "If a POKéMON gains experience in\n"
-	.string "battles, it can sometimes change in\l"
-	.string "the way it looks.$"
+	.string "Did you see that tree on Route 116?\n"
+	.string "My friend here says it moves!$"
 
 RustboroCity_Text_PokemonChangeShape:
-	.string "A POKéMON changes shape?\n"
-	.string "If one did that, I would be shocked!$"
+	.string "I'm not crazy, I tell you!\n"
+	.string "That tree was moving!\p"
+	.string "Why does no one believe me?!$"
 
 RustboroCity_Text_TradePokemonGrowFast:
 	.string "A POKéMON you get in a trade from\n"
@@ -1322,9 +1339,9 @@ RustboroCity_Text_CitySign:
 	.string "nature and science.”$"
 
 RustboroCity_Text_TrainersSchoolSign:
-	.string "POKéMON TRAINER'S SCHOOL\p"
+	.string "RICHMOND VOLLEYBALL CLUB\p"
 	.string "“We'll teach you anything about\n"
-	.string "POKéMON!”$"
+	.string "VOLLEYBALL!”$"
 
 RustboroCity_Text_CuttersHouse:
 	.string "ICE CREAM PARLOR$"
@@ -1356,11 +1373,11 @@ RustboroCity_Text_IdBetterGetBackToWork:
 	.string "Please take care, {PLAYER}!$"
 
 RustboroCity_Text_YouCanHave2On2Battle:
-	.string "Did you know this?\p"
-	.string "You can have a 2-on-2 battle even\n"
-	.string "if you're not with another TRAINER.\p"
-	.string "If you catch the eyes of two TRAINERS\n"
-	.string "when you have two or more POKéMON,\l"
-	.string "they'll both challenge you.\p"
-	.string "Don't you think it'd be cool if you\n"
-	.string "could beat two TRAINERS by yourself?$"
+	.string "I've been trying to increase\n"
+	.string "my vertical jump for a while,\p"
+	.string "so I ended up buying equipment.\n"
+	.string "But this weighted vest, man...\p"
+	.string "It's way too heavy for me. Maybe\n"
+	.string "a pokemon could use it instead.\p"
+	.string "Tell you what, I'll give it to you,\n"
+	.string "maybe you'll have better luck!$"

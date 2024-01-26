@@ -5187,7 +5187,7 @@ const struct Item gItems[] =
         .name = _("Charcoal"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_FIRE_POWER,
-        .holdEffectParam = 30,
+        .holdEffectParam = 25,
         .description = sCharcoalDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -7804,7 +7804,7 @@ const struct Item gItems[] =
         .secondaryId = MOVE_MISTY_EXPLOSION, // Todo
     },
 
-    [ITEM_TM55] =
+    [ITEM_TM_SELF_DESTRUCT] =
     {
         .name = _("TM55"),
         .price = 3000,
@@ -7813,10 +7813,10 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_SELF_DESTRUCT, // Todo
     },
 
-    [ITEM_TM56] =
+    [ITEM_TM_ROOST] =
     {
         .name = _("TM56"),
         .price = 3000,
@@ -7825,7 +7825,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_ROOST, // Todo
     },
 
     [ITEM_TM57] =

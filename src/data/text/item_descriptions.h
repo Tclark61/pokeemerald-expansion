@@ -3302,10 +3302,14 @@ static const u8 sTM54Desc[] = _( // Todo
     "in misty terrain.");
 
 static const u8 sTM55Desc[] = _( // Todo
-    "?????");
+    "The user blows up to\n"
+    "inflict severe damage,\n" 
+    "making itself faint.");
 
 static const u8 sTM56Desc[] = _( // Todo
-    "?????");
+    "The user lands and\n"
+    "rests its wings, to\n"
+    "restore 1/2 its HP.");
 
 static const u8 sTM57Desc[] = _( // Todo
     "?????");

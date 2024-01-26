@@ -1049,7 +1049,7 @@ Route104_Text_CaveSign:
 	.string "Granite Cave, up ahead. Make sure...\n"
 	.string "... ... It seems like the text\p"
 	.string "has been scratched off...\l"
-	.string "something about antidotes...$"
+	.string "something about fishing...$"
 
 Route104_Text_DoubleBattleSign:
 	.string "There's a tough double battle\n"
