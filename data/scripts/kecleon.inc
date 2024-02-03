@@ -84,6 +84,7 @@ EventScript_BattleKecleon::
 
 EventScript_RemoveKecleon::
 	goto Common_EventScript_RemoveStaticPokemon
+	setflag FLAG_EXITED_CAVE_OR_FOREST
 	end
 
 Movement_KecleonAppears:

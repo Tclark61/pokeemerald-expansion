@@ -26,6 +26,25 @@ FortreeCity_House2_EventScript_HiddenPowerGiver::
 	release
 	end
 
+FortreeCity_House2_EventScript_Jigglypuff::
+	lock
+	faceplayer
+	msgbox FortreeCity_House2_Text_Jigglypuff_Stares, MSGBOX_DEFAULT
+	checkitem ITEM_LETTER
+	goto_if_eq VAR_RESULT, TRUE, FortreeCity_House2_EventScript_Jigglypuff_TakesLetter
+	release
+
+FortreeCity_House2_EventScript_Jigglypuff_TakesLetter::
+	applymovement 1, Common_Movement_ExclamationMark
+	waitse
+	msgbox FortreeCity_House2_Text_GiveLetter, MSGBOX_DEFAULT
+	fadescreen FADE_TO_BLACK
+	removeobject 1
+	setflag FLAG_DELIVERED_STEVEN_LETTER
+	removeitem ITEM_LETTER
+	fadescreen FADE_FROM_BLACK
+	release
+
 FortreeCity_House2_EventScript_Greeting::
 	msgbox FortreeCity_House2_Text_HiddenPowersArousedByNature, MSGBOX_DEFAULT
 	setflag FLAG_MET_HIDDEN_POWER_GIVER
@@ -40,6 +59,19 @@ FortreeCity_House2_EventScript_WrongGuess::
 	msgbox FortreeCity_House2_Text_YouGuessedWrong, MSGBOX_DEFAULT
 	release
 	end
+
+FortreeCity_House2_Text_Jigglypuff_Stares:
+	.string "... ... ...\p"
+	.string "The Jigglypuff stares intently.\n"
+	.string "It has a strong sense of purpose.$"
+
+FortreeCity_House2_Text_GiveLetter:
+	.string "You hand Jigglypuff the LETTER.\n"
+	.string "It reads it intently.\p"
+	.string "Honestly, you didn't think it knew\n"
+	.string "how to read.\p"
+	.string "It walks away, still with a\n"
+	.string "strong sense of purpose.$"
 
 FortreeCity_House2_Text_HiddenPowersArousedByNature:
 	.string "People… POKéMON…\p"

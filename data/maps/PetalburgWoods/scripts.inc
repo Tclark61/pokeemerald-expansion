@@ -248,6 +248,57 @@ PetalburgWoods_EventScript_Boy2::
 	msgbox PetalburgWoods_Text_HiddenItemsExplanation, MSGBOX_NPC
 	end
 
+PetalburgWoods_EventScript_Foongus1::
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	msgbox PetalburgWoods_Text_WeirdBall, MSGBOX_DEFAULT
+	setwildbattle SPECIES_FOONGUS, 14
+	waitse
+	playmoncry SPECIES_FOONGUS, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	removeobject 11
+	setflag FLAG_PETALBURG_WOODS_FOONGUS1
+	releaseall
+	end
+
+PetalburgWoods_EventScript_BiancaSign::
+	msgbox PetalburgWoods_Text_BiancaSign, MSGBOX_SIGN
+
+PetalburgWoods_EventScript_Foongus2::
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	msgbox PetalburgWoods_Text_WeirdBall, MSGBOX_DEFAULT
+	setwildbattle SPECIES_FOONGUS, 14
+	waitse
+	playmoncry SPECIES_FOONGUS, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	removeobject 12
+	setflag FLAG_PETALBURG_WOODS_FOONGUS2
+	releaseall
+	end
+
+PetalburgWoods_EventScript_Voltorb::
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+	msgbox PetalburgWoods_Text_WeirdBall, MSGBOX_DEFAULT
+	setwildbattle SPECIES_VOLTORB_HISUIAN, 15
+	waitse
+	playmoncry SPECIES_VOLTORB_HISUIAN, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	removeobject 13
+	setflag FLAG_PETALBURG_WOODS_VOLTORB
+	releaseall
+	end
+
 PetalburgWoods_EventScript_Girl::
 	lock
 	faceplayer
@@ -277,46 +328,93 @@ PetalburgWoods_EventScript_Lyle::
 	msgbox PetalburgWoods_Text_ImOutOfPokeBalls, MSGBOX_AUTOCLOSE
 	end
 
-PetalburgWoods_EventScript_James::
-	trainerbattle_single TRAINER_JAMES_1, PetalburgWoods_Text_InstantlyPopularWithBugPokemon, PetalburgWoods_Text_CantBePopularIfILose, PetalburgWoods_EventScript_TryRegisterJames
+PetalburgWoods_EventScript_Azurill::
+	lock
+	faceplayer
+	msgbox PetalburgWoods_Text_SuspiciousPokemon, MSGBOX_DEFAULT
+	release
+	end
+
+PetalburgWoods_EventScript_HiddenForest::
+	lock
+	faceplayer
+	msgbox PetalburgWoods_Text_HiddenForest, MSGBOX_NPC
+	release
+	end
+
+
+PetalburgWoods_EventScript_Sign_NorthWest::
+	msgbox PetalburgWoods_Text_Sign_NorthWest, MSGBOX_SIGN
+
+PetalburgWoods_EventScript_Sign_East::
+	msgbox PetalburgWoods_Text_Sign_East, MSGBOX_SIGN
+
+PetalburgWoods_EventScript_Sign_South::
+	msgbox PetalburgWoods_Text_Sign_South, MSGBOX_SIGN
+
+PetalburgWoods_EventScript_Sign_North::
+	msgbox PetalburgWoods_Text_Sign_North, MSGBOX_SIGN
+
+PetalburgWoods_EventScript_Sign_NorthEmphatic::
+	msgbox PetalburgWoods_Text_Sign_NorthEmphatic, MSGBOX_SIGN
+
+PetalburgWoods_EventScript_Zach::
+	trainerbattle_single TRAINER_ZACH_1, PetalburgWoods_Text_ZachIntroText, PetalburgWoods_Text_ZachDefeatText, PetalburgWoods_EventScript_TryRegisterZach
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, PetalburgWoods_EventScript_JamesRematch
-	setvar VAR_0x8004, TRAINER_JAMES_1
+	goto_if_eq VAR_RESULT, TRUE, PetalburgWoods_EventScript_ZachRematch
+	setvar VAR_0x8004, TRAINER_ZACH_1
 	specialvar VAR_RESULT, IsTrainerRegistered
-	goto_if_eq VAR_RESULT, FALSE, PetalburgWoods_EventScript_TryRegisterJames2
+	goto_if_eq VAR_RESULT, FALSE, PetalburgWoods_EventScript_TryRegisterZach2
 	msgbox PetalburgWoods_Text_PeopleRespectYou, MSGBOX_DEFAULT
 	release
 	end
 
-PetalburgWoods_EventScript_TryRegisterJames::
+PetalburgWoods_EventScript_TryRegisterZach::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	goto_if_set FLAG_HAS_MATCH_CALL, PetalburgWoods_EventScript_RegisterJames
+	goto_if_set FLAG_HAS_MATCH_CALL, PetalburgWoods_EventScript_RegisterZach
 	release
 	end
 
-PetalburgWoods_EventScript_RegisterJames::
+PetalburgWoods_EventScript_RegisterZach::
 	msgbox PetalburgWoods_Text_IWantRematch1, MSGBOX_DEFAULT
-	register_matchcall TRAINER_JAMES_1
+	register_matchcall TRAINER_ZACH_1
 	release
 	end
 
-PetalburgWoods_EventScript_TryRegisterJames2::
-	goto_if_set FLAG_HAS_MATCH_CALL, PetalburgWoods_EventScript_RegisterJames2
+PetalburgWoods_EventScript_TryRegisterZach2::
+	goto_if_set FLAG_HAS_MATCH_CALL, PetalburgWoods_EventScript_RegisterZach2
 	msgbox PetalburgWoods_Text_PeopleRespectYou, MSGBOX_DEFAULT
 	release
 	end
 
-PetalburgWoods_EventScript_RegisterJames2::
+PetalburgWoods_EventScript_RegisterZach2::
 	msgbox PetalburgWoods_Text_IWantRematch2, MSGBOX_DEFAULT
-	register_matchcall TRAINER_JAMES_1
+	register_matchcall TRAINER_ZACH_1
 	release
 	end
 
-PetalburgWoods_EventScript_JamesRematch::
-	trainerbattle_rematch TRAINER_JAMES_1, PetalburgWoods_Text_MyPokemonHaveGrown, PetalburgWoods_Text_CantBePopularIfLose
+PetalburgWoods_EventScript_ZachRematch::
+	trainerbattle_rematch TRAINER_ZACH_1, PetalburgWoods_Text_MyPokemonHaveGrown, PetalburgWoods_Text_CantBePopularIfLose
 	msgbox PetalburgWoods_Text_IveBeenTrainingHard, MSGBOX_AUTOCLOSE
 	end
+
+PetalburgWoods_Text_BiancaSign:
+	.string "BIANCA's house$"
+
+PetalburgWoods_Text_HiddenForest:
+	.string "Up ahead is FORTREE CITY.\n"
+	.string "However, very few people have entered.\p"
+	.string "Here's a piece of advice for you:\n"
+	.string "Don't just think with your eyes.\p"
+	.string "If you follow the signs, and trust\n"
+	.string "your gut instead of what makes sense,\p"
+	.string "I'm sure you'll find what you need.$"
+
+PetalburgWoods_Text_SuspiciousPokemon:
+	.string "Oh! Didn't see you there.\n"
+	.string "Uh...\p"
+	.string "Pika... Chu?$" 
 
 PetalburgWoods_Text_NotAOneToBeFound:
 	.string "Hmmm…\n"
@@ -396,21 +494,23 @@ PetalburgWoods_Text_ImOutOfPokeBalls:
 	.string "I caught a bunch of POKéMON.\n"
 	.string "Now I'm out of POKé BALLS.$"
 
-PetalburgWoods_Text_InstantlyPopularWithBugPokemon:
-	.string "If you take BUG POKéMON to school,\n"
-	.string "you get to be instantly popular!$"
+PetalburgWoods_Text_ZachIntroText:
+	.string "Don't think when you battle!\n"
+	.string "Just pick the strongest move and win!$"
 
-PetalburgWoods_Text_CantBePopularIfILose:
-	.string "I can't be popular if I lose.$"
+PetalburgWoods_Text_ZachDefeatText:
+	.string "But my moves did more damage.\n"
+	.string "Something isn't adding up...$"
 
 PetalburgWoods_Text_PeopleRespectYou:
-	.string "If you have a big BUG POKéMON,\n"
-	.string "people respect you for it.$"
+	.string "If your moves do a lot of damage,\n"
+	.string "you don't need to think so hard.\p"
+	.string "POKéMON is best when it's simple.$"
 
 PetalburgWoods_Text_IWantRematch1:
-	.string "I want a rematch when my BUG\n"
-	.string "POKéMON grow up!\p"
-	.string "I'm registering you in my POKéNAV!$"
+	.string "Are you free on Mondays?\n"
+	.string "I'm making a volleyball team!\p"
+	.string "Take my number if you're interested!$"
 
 PetalburgWoods_Text_IWantRematch2:
 	.string "I want a rematch when my BUG \n"
@@ -431,15 +531,18 @@ PetalburgWoods_Text_IveBeenTrainingHard:
 
 PetalburgWoods_Text_StayOutOfTallGrass:
 	.string "Yo, there!\n"
-	.string "Your POKéMON doing okay?\p"
-	.string "If your POKéMON are weak and you want\n"
-	.string "to avoid battles, you should stay out\l"
-	.string "of tall grass.$"
+	.string "Do you smell that fragrance?\p"
+	.string "That's a POKéMON's SWEET SCENT.\n"
+	.string "If you use SWEET SCENT outside,\n"
+	.string "POKéMON will notice.\p"
+	.string "It's the easiest way to catch\n"
+	.string "a new party member.$"
 
 PetalburgWoods_Text_HiddenItemsExplanation:
 	.string "One day, this forest will be open\n"
 	.string "to the public, and this will expand.\p"
-	.string "I think right now it hasn't been made.$"
+	.string "I think right now it hasn't been made.\p"
+	.string "... Wait a minute! It's open now!$"
 
 PetalburgWoods_Text_TryUsingThisItem:
 	.string "Oh, neat!\n"
@@ -454,6 +557,32 @@ PetalburgWoods_Text_MiracleSeedExplanation:
 	.string "Besides MIRACLE SEED, I think there are\n"
 	.string "other convenient items for POKéMON\l"
 	.string "to hold.$"
+
+PetalburgWoods_Text_Sign_NorthWest:
+	.string "The sign has an arrow pointing\n"
+	.string "to the northwest.$"
+
+PetalburgWoods_Text_Sign_East:
+	.string "The sign has an arrow pointing\n"
+	.string "to the east.$"
+
+PetalburgWoods_Text_Sign_South:
+	.string "The sign has an arrow pointing\n"
+	.string "to the south.$"
+
+PetalburgWoods_Text_Sign_SouthWest:
+	.string "The sign has an arrow pointing\n"
+	.string "to the southwest.$"
+
+PetalburgWoods_Text_Sign_North:
+	.string "The sign has an arrow pointing\n"
+	.string "to the north.$"
+
+PetalburgWoods_Text_Sign_NorthEmphatic:
+	.string "The sign has an arrow pointing\n"
+	.string "to the north.\p"
+	.string "... ... ... There's an\n"
+	.string "exclamation point written!$"
 
 PetalburgWoods_Text_TrainerTipsExperience:
 	.string "TRAINER TIPS\p"
@@ -473,3 +602,6 @@ PetalburgWoods_Text_TrainerTipsPP:
 	.string "If a POKéMON runs out of PP, it must be\n"
 	.string "taken to a POKéMON CENTER.$"
 
+PetalburgWoods_Text_WeirdBall:
+	.string "This isn't an item!\n"
+	.string "It's a POKéMON!$"

@@ -3173,6 +3173,7 @@ static const u16 sAbraTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TELEPORT,
     MOVE_UNAVAILABLE,
 };
 
@@ -3225,6 +3226,7 @@ static const u16 sKadabraTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TELEPORT,
     MOVE_UNAVAILABLE,
 };
 
@@ -3278,6 +3280,7 @@ static const u16 sAlakazamTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_TELEPORT,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ABRA
@@ -26963,6 +26966,7 @@ static const u16 sGolurkTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_THUNDER_PUNCH,
+    MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_GOLETT

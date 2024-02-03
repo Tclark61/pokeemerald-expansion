@@ -49,6 +49,7 @@ EverGrandeCity_SidneysRoom_EventScript_Sidney::
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_SIDNEY, EverGrandeCity_SidneysRoom_Text_Defeat
+	giveitem ITEM_HYPER_POTION 3
 	goto EverGrandeCity_SidneysRoom_EventScript_Defeated
 	end
 
@@ -65,21 +66,27 @@ EverGrandeCity_SidneysRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_SidneysRoom_Text_IntroSpeech:
-	.string "Welcome, challenger!\n"
-	.string "I'm SIDNEY of the ELITE FOUR.\p"
-	.string "I like that look you're giving me.\n"
-	.string "I guess you'll give me a good match.\l"
+	.string "Hey, challenger!\n"
+	.string "I'm GEOFF of the ELITE FOUR.\p"
+	.string "I got here by graduating from the\n"
+	.string "Richmond Volleyball Club.\p"
+	.string "In there, it's all about how high\n"
+	.string "you can fly. To ensure I was the best,\p"
+	.string "All I did was focus on flying POKéMON!\p"
+	.string "How high can you jump? Have you felt\n"
+	.string "the joy of leaving the ground?\p"
+	.string "I bet you have!\l"
 	.string "That's good! Looking real good!\p"
 	.string "All right! You and me, let's enjoy\n"
 	.string "a battle that can only be staged\l"
 	.string "here in the POKéMON LEAGUE!$"
 
 EverGrandeCity_SidneysRoom_Text_Defeat:
-	.string "Well, how do you like that? I lost!\n"
+	.string "You blocked all my spikes!\n"
 	.string "Eh, it was fun, so it doesn't matter.$"
 
 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
-	.string "Well, listen to what this loser has\n"
+	.string "Okay, listen to what this loser has\n"
 	.string "to say.\p"
 	.string "You've got what it takes to go far.\n"
 	.string "Now, go on to the next room and enjoy\l"

@@ -63,9 +63,7 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_MOSSDEEP_GYM
-	setflag FLAG_BADGE06_GET
 	setflag FLAG_BADGE07_GET
-	setflag FLAG_BEAT_GLARRY
 	setflag FLAG_HIDE_AQUA_HIDEOUT_GRUNTS
 	clearflag FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY
 	clearflag FLAG_UNKNOWN_0x393
@@ -88,6 +86,8 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL
+	goto_if_set FLAG_BEAT_FIRST_OPTIONAL_GYM, EventScript_SetSecondOptionalGym
+	setflag FLAG_BEAT_FIRST_OPTIONAL_GYM
 	release
 	end
 

@@ -205,6 +205,32 @@ Route120_EventScript_StevenBattleKecleon::
 	goto Route120_EventScript_StevenGiveDeconScope
 	end
 
+Route120_EventScript_BiancaBattleRegi::
+	msgbox Route120_Text_StevenShowMeYourPower, MSGBOX_DEFAULT
+	closemessage
+	call_if_eq VAR_FACING, DIR_NORTH, Route120_EventScript_PlayerApproachKecleonNorth
+	call_if_eq VAR_FACING, DIR_WEST, Route120_EventScript_PlayerApproachKecleonWest
+	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
+	delay 20
+	msgbox Route120_Text_StevenUsedDevonScope, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_BRIDGE_KECLEON, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
+	applymovement LOCALID_BRIDGE_KECLEON, Movement_KecleonAppears
+	waitmovement 0
+	waitse
+	playmoncry SPECIES_REGISTEEL, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	trainerbattle_no_intro TRAINER_COLIN, Route120_Text_ColinDefeat
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route120_EventScript_RemoveBridgeKecleonPostBattle
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route120_EventScript_RemoveBridgeKecleonPostBattle
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route120_EventScript_RemoveBridgeKecleonPostBattle
+	goto Route120_EventScript_StevenGiveDeconScope
+	end
+
 Route120_EventScript_RemoveBridgeKecleonPostBattle::
 	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_BRIDGE_KECLEON
@@ -218,7 +244,7 @@ Route120_EventScript_StevenGiveDeconScope::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox Route120_Text_StevenGiveDevonScope, MSGBOX_DEFAULT
-	giveitem ITEM_DEVON_SCOPE
+	giveitem ITEM_LETTER
 	setflag FLAG_RECEIVED_DEVON_SCOPE
 	msgbox Route120_Text_StevenGoodbye, MSGBOX_DEFAULT
 	closemessage
@@ -259,6 +285,7 @@ Route120_EventScript_BridgeKecleon::
 
 Route120_EventScript_RouteSignFortree::
 	msgbox Route120_Text_RouteSignFortree, MSGBOX_SIGN
+	braillemsgbox TopPercentage_Hint
 	end
 
 Route120_EventScript_RouteSign121::
@@ -272,23 +299,21 @@ Route120_EventScript_Colin::
 
 Route120_EventScript_Robert::
 	trainerbattle_single TRAINER_ROBERT_1, Route120_Text_RobertIntro, Route120_Text_RobertDefeat, Route120_EventScript_RegisterRobert
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route120_EventScript_RematchRobert
 	msgbox Route120_Text_RobertPostBattle, MSGBOX_DEFAULT
+	ClearTrainerFlag(TRAINER_ROBERT_1)
 	release
+	end
+
+Route120_EventScript_BattleSign::
+	msgbox Route120_Text_BattleSign, MSGBOX_SIGN
 	end
 
 Route120_EventScript_RegisterRobert::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox Route120_Text_RobertRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_ROBERT_1
+	msgbox Route125_Text_ErnestRegister, MSGBOX_DEFAULT
+	giveitem ITEM_PEARL
 	release
-	end
-
-Route120_EventScript_RematchRobert::
-	trainerbattle_rematch TRAINER_ROBERT_1, Route120_Text_RobertRematchIntro, Route120_Text_RobertRematchDefeat
-	msgbox Route120_Text_RobertPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route120_EventScript_Lorenzo::
@@ -362,53 +387,65 @@ Route120_EventScript_Callie::
 	msgbox Route120_Text_CalliePostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route120_Text_BattleSign:
+	.string "This trainer can be battled as\n"
+	.string "many times as you want.\p"
+	.string "You'll never guess why.$"
+
 Route120_Text_StevenGreeting:
-	.string "STEVEN: Hm? {PLAYER}{KUN}, hi.\n"
-	.string "It's been a while.\p"
+	.string "BIA: Hm? {PLAYER}{KUN}, hey!\p"
+	.string "This is our first time meeting\n"
+	.string "face to face, huh? I'm BIANCA.\p"
 	.string "There's something here that you can't\n"
 	.string "see, right?\p"
-	.string "Now, if I were to use this device on\n"
-	.string "the invisible obstacle…\p"
-	.string "No, no. Rather than describing it,\n"
-	.string "I should just show you.\l"
-	.string "That would be more fun.\p"
+	.string "I was out exploring in this area when\n"
+	.string "I came across an outbreak of POKéMON.\p"
+	.string "I was able to defeat most of them, but\n"
+	.string "these three are extra impressive...\p"
+	.string "My Kecleon turned them invisible, which\n"
+	.string "seems to have confused them for now.\p"
+	.string "But... I'm worried Kecleon can't hold it\n"
+	.string "for much longer. Can you help?\p"
+	.string "Thanks! Make sure you're prepared,\n"
+	.string "because this fight won't be easy...\p"
 	.string "{PLAYER}{KUN}, are your POKéMON ready for\n"
 	.string "battle?$"
 
 Route120_Text_StevenIllWaitHere:
-	.string "STEVEN: No?\p"
+	.string "BIA: No?\p"
 	.string "I'll wait here, so you can get ready.$"
 
 Route120_Text_StevenReadyForBattle:
-	.string "STEVEN: {PLAYER}{KUN}, are your POKéMON\n"
+	.string "BIA: {PLAYER}{KUN}, are your POKéMON\n"
 	.string "ready for battle?$"
 
 Route120_Text_StevenShowMeYourPower:
-	.string "STEVEN: {PLAYER}{KUN}, show me your true\n"
+	.string "BIA: {PLAYER}{KUN}, show me your true\n"
 	.string "power as a TRAINER!$"
 
 Route120_Text_StevenUsedDevonScope:
-	.string "STEVEN used the DEVON SCOPE.\p"
+	.string "BIANCA used the DEVON SCOPE.\p"
 	.string "An invisible POKéMON became completely\n"
 	.string "visible!\p"
 	.string "The startled POKéMON attacked!$"
 
 Route120_Text_StevenGiveDevonScope:
-	.string "STEVEN: I see…\n"
+	.string "BIA: I see…\n"
 	.string "Your battle style is intriguing.\p"
 	.string "Your POKéMON have obviously grown\n"
-	.string "since I first met you in DEWFORD.\p"
-	.string "I'd like you to have this\n"
-	.string "DEVON SCOPE.\p"
-	.string "Who knows, there may be other\n"
-	.string "concealed POKéMON.$"
+	.string "since I first called you.\p"
+	.string "I'd like you to have this LETTER,\n"
+	.string "with some instructions written by me.\p"
+	.string "If you go to my house in the WOODS,\n"
+	.string "Jigglypuff will let you by.\p"
+	.string "I bet it'll help you out.$"
 
 Route120_Text_StevenGoodbye:
-	.string "STEVEN: {PLAYER}{KUN}.\p"
-	.string "I enjoy seeing POKéMON and TRAINERS\n"
-	.string "who strive together.\p"
-	.string "I think you're doing great.\p"
-	.string "Well, let's meet again somewhere.$"
+	.string "BIA: {PLAYER}{KUN}.\p"
+	.string "I'm glad to see someone else\n"
+	.string "taking on this adventure!\p"
+	.string "Keep going, you're doing great.\p"
+	.string "Well, let's meet again sometime!$"
 
 Kecleon_Text_SomethingUnseeable:
 	.string "Something unseeable is in the way.$"
@@ -424,8 +461,9 @@ Kecleon_Text_UseDevonScopeMonAttacked:
 	.string "The startled POKéMON attacked!$"
 
 Route120_Text_RouteSignFortree:
-	.string "ROUTE 120\n"
-	.string "{LEFT_ARROW} FORTREE CITY$"
+	.string "The upcoming fight is hard.\n"
+	.string "Here's an easy hint to help you!\p"
+	.string "(You might need to google it)$"
 
 Route120_Text_RouteSign121:
 	.string "{RIGHT_ARROW} ROUTE 121\n"

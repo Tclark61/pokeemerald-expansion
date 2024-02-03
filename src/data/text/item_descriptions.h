@@ -3819,7 +3819,7 @@ static const u8 sTeaDesc[] = _(
 static const u8 sRubyDesc[] = _(
     "An exquisite, red-\n"
     "glowing gem that\n"
-    "symbolizes passion.");
+    "symbolizes time.");
 
 static const u8 sSapphireDesc[] = _(
     "A brilliant blue gem\n"

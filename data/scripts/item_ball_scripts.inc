@@ -159,7 +159,7 @@ Route117_EventScript_ItemRevive::
 	end
 
 Route118_EventScript_ItemHyperPotion::
-	finditem ITEM_HYPER_POTION
+	finditem ITEM_LUM_BERRY 10
 	end
 
 Route119_EventScript_ItemSuperRepel::
@@ -204,14 +204,16 @@ Route120_EventScript_ItemFullHeal::
 
 Route120_EventScript_ItemHyperPotion::
 	finditem ITEM_HYPER_POTION
+	finditem ITEM_RARE_CANDY 20
 	end
 
 Route120_EventScript_ItemNestBall::
-	finditem ITEM_NEST_BALL
+	finditem ITEM_FULL_RESTORE 3
 	end
 
 Route120_EventScript_ItemRevive::
-	finditem ITEM_REVIVE
+	finditem ITEM_HM_STRENGTH
+	finditem ITEM_ESCAPE_ROPE
 	end
 
 Route121_EventScript_ItemCarbos::
@@ -336,11 +338,11 @@ MossdeepCity_EventScript_ItemNetBall::
 	end
 
 PetalburgWoods_EventScript_ItemXAttack::
-	finditem ITEM_X_ATTACK
+	finditem ITEM_SYRUPY_APPLE
 	end
 
 PetalburgWoods_EventScript_ItemGreatBall::
-	finditem ITEM_GREAT_BALL
+	finditem ITEM_ABOMASITE
 	end
 
 PetalburgWoods_EventScript_ItemEther::
@@ -350,7 +352,8 @@ PetalburgWoods_EventScript_ItemEther::
 	end
 
 PetalburgWoods_EventScript_ItemParalyzeHeal::
-	finditem ITEM_PARALYZE_HEAL
+	finditem ITEM_SWEET_APPLE
+	finditem ITEM_TART_APPLE
 	end
 
 RusturfTunnel_EventScript_ItemPokeBall::
@@ -362,7 +365,6 @@ RusturfTunnel_EventScript_ItemMaxEther::
 	end
 
 GraniteCave_1F_EventScript_ItemEscapeRope::
-	finditem ITEM_ESCAPE_ROPE 5
 	finditem ITEM_TM_BRICK_BREAK
 	finditem ITEM_ANTIDOTE
 	end

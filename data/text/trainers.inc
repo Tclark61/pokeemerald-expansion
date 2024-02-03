@@ -2952,7 +2952,8 @@ Route120_Text_ColinIntro:
 	.string "a flying POKéMON?$"
 
 Route120_Text_ColinDefeat:
-	.string "You soared above me!$"
+	.string "BIA: You solved it!\n"
+	.string "Well done!$"
 
 Route120_Text_ColinPostBattle:
 	.string "The move FLY is convenient,\n"
@@ -2961,11 +2962,11 @@ Route120_Text_ColinPostBattle:
 	.string "almost no moves can strike it.$"
 
 Route120_Text_RobertIntro:
-	.string "My POKéMON is strong!\n"
-	.string "How about yours?$"
+	.string "I'll fight you as much as you\n"
+	.string "want, I'll never give up!$"
 
 Route120_Text_RobertDefeat:
-	.string "Your POKéMON were stronger…$"
+	.string "Still not giving up, go again!$"
 
 Route120_Text_RobertPostBattle:
 	.string "A POKéMON that grows steadily is one\n"
@@ -3071,8 +3072,8 @@ Route120_Text_ChipPostBattle:
 	.string "ruins. But I see no entrance.$"
 
 Route120_Text_ClarissaIntro:
-	.string "Why am I carrying this parasol?\p"
-	.string "I'll tell you if you can win against me.$"
+	.string "Back in college, I ran relay races.\n"
+	.string "So now I use baton pass!$"
 
 Route120_Text_ClarissaDefeat:
 	.string "A parasol can't ward off POKéMON\n"

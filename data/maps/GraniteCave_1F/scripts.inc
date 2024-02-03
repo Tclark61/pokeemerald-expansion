@@ -14,7 +14,7 @@ GraniteCave_1F_EventScript_Hiker::
 
 MagmaHideout_3F_1R_EventScript_Grunt9::
 	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_9, MagmaHideout_3F_1R_Text_Grunt9Intro, MagmaHideout_3F_1R_Text_Grunt9Defeat
-	setflag FLAG_EXITED_CAVE
+	setflag FLAG_EXITED_CAVE_OR_FOREST
 	msgbox MagmaHideout_3F_1R_Text_Grunt9PostBattle, MSGBOX_DEFAULT
 	release
 	end

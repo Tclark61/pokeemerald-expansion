@@ -1226,8 +1226,8 @@
 #define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
 #define FLAG_FOUND_PARCEL                                           0x499 // Used to enter the forest
 #define FLAG_UNUSED_0x49A                                           0x49A // Now used for Surf
-#define FLAG_BEAT_GLARRY                                            0x49B // Flag for getting to EverGrande
-#define FLAG_EXITED_CAVE                                            0x49C // Exiting new Granite Cave
+#define FLAG_BEAT_FIRST_OPTIONAL_GYM                                0x49B // Flag for being one of the two split gyms
+#define FLAG_EXITED_CAVE_OR_FOREST                                  0x49C // Exiting new Granite Cave
 #define FLAG_BEAT_CHAMPION                                          0x49D // Use after beating Champion Tyler
 #define FLAG_OBTAINED_SPECIAL_PIKACHU                               0x49E // The Terrain Master gives this
 #define FLAG_TALKED_TO_SAD_BOY                                      0x49F // Unused Flag
@@ -1238,12 +1238,12 @@
 #define FLAG_BRICK_BREAK_GUY                                        0x4A4 // Unused Flag
 #define FLAG_BEAT_METAPOD                                           0x4A5 // Unused Flag
 #define FLAG_GOT_IRON_COAT                                          0x4A6 // Unused Flag
-#define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
-#define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
-#define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
-#define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
-#define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
-#define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
+#define FLAG_DISABLE_BAG                                            0x4A7 // Unused Flag
+#define FLAG_BEAT_SECOND_OPTIONAL_GYM                               0x4A8 // Flag for getting to EverGrande
+#define FLAG_PETALBURG_WOODS_FOONGUS1                               0x4A9 // Unused Flag
+#define FLAG_PETALBURG_WOODS_FOONGUS2                               0x4AA // Unused Flag
+#define FLAG_PETALBURG_WOODS_VOLTORB                                0x4AB // Unused Flag
+#define FLAG_HIDDEN_DEVON_SCOPE                                     0x4AC // Unused Flag
 #define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
 #define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
 #define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag

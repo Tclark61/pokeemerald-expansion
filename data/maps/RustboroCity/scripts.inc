@@ -1069,7 +1069,7 @@ RustboroCity_Text_WeightTrainerGivesUp:
 
 RustboroCity_Text_Guard:
 	.string "Wanna see a magic trick?\n"
-	.string "Get the badge from the gym\p"
+	.string "Get all 8 gym badges,\p"
 	.string "and watch me disappear!$"
 
 RustboroCity_Text_ThiefGivesPlan:

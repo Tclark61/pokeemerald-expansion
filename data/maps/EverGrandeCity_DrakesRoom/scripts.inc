@@ -46,6 +46,7 @@ EverGrandeCity_DrakesRoom_EventScript_Drake::
 	trainerbattle_no_intro TRAINER_DRAKE, EverGrandeCity_DrakesRoom_Text_Defeat
 	giveitem ITEM_RARE_CANDY 8
 	giveitem ITEM_BIG_PEARL
+	giveitem ITEM_HYPER_POTION
 	goto EverGrandeCity_DrakesRoom_EventScript_Defeated
 	end
 

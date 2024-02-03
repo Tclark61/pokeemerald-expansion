@@ -42,6 +42,10 @@ SealedChamber_OuterRoom_Braille_WXYZ:
 	brailleformat 7, 6, 21, 13, 10, 9
 	.braille "WXYZ$"
 
+TopPercentage_Hint:
+	brailleformat 0, 0, 29, 19, 3, 3
+	.braille "TOP PERCENTAGE$"
+
 SealedChamber_OuterRoom_Braille_Comma:
 	brailleformat 9, 6, 19, 13, 12, 9
 	.braille ",$"
