@@ -33,15 +33,15 @@
       "x": 8,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_FORTREE_CITY",
-      "dest_warp_id": "4"
+      "dest_map": "MAP_PETALBURG_WOODS",
+      "dest_warp_id": "6"
     },
     {
       "x": 7,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_FORTREE_CITY",
-      "dest_warp_id": "4"
+      "dest_map": "MAP_PETALBURG_WOODS",
+      "dest_warp_id": "6"
     }
   ],
   "coord_events": [

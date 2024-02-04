@@ -76,6 +76,7 @@ EventScript_BattleKecleon::
 	dowildbattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
+	setflag FLAG_EXITED_CAVE_OR_FOREST
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, EventScript_RemoveKecleon
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, EventScript_RemoveKecleon
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, EventScript_RemoveKecleon
@@ -84,7 +85,6 @@ EventScript_BattleKecleon::
 
 EventScript_RemoveKecleon::
 	goto Common_EventScript_RemoveStaticPokemon
-	setflag FLAG_EXITED_CAVE_OR_FOREST
 	end
 
 Movement_KecleonAppears:

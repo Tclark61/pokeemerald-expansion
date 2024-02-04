@@ -1689,7 +1689,7 @@ const struct Item gItems[] =
     [ITEM_PEARL] =
     {
         .name = _("Pearl"),
-        .price = 2000,
+        .price = 4000,
         .description = sPearlDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -1700,7 +1700,7 @@ const struct Item gItems[] =
     [ITEM_BIG_PEARL] =
     {
         .name = _("Big Pearl"),
-        .price = 8000,
+        .price = 16000,
         .description = sBigPearlDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -1711,7 +1711,7 @@ const struct Item gItems[] =
     [ITEM_PEARL_STRING] =
     {
         .name = _("Pearl String"),
-        .price = 20000,
+        .price = 25000,
         .description = sPearlStringDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -7814,16 +7814,16 @@ const struct Item gItems[] =
         .secondaryId = MOVE_ROOST, // Todo
     },
 
-    [ITEM_TM57] =
+    [ITEM_TM_HEADBUTT] =
     {
         .name = _("TM57"),
-        .price = 3000,
+        .price = 1500,
         .description = sTM57Desc,
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_HEADBUTT, // Todo
     },
 
     [ITEM_TM58] =

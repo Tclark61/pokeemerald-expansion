@@ -1244,10 +1244,10 @@
 #define FLAG_PETALBURG_WOODS_FOONGUS2                               0x4AA // Unused Flag
 #define FLAG_PETALBURG_WOODS_VOLTORB                                0x4AB // Unused Flag
 #define FLAG_HIDDEN_DEVON_SCOPE                                     0x4AC // Unused Flag
-#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
-#define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
-#define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
-#define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
+#define FLAG_CHASE_MEOWTH1                                          0x4AD // Chasing Meowth in Rustboro
+#define FLAG_CHASE_MEOWTH2                                          0x4AE // Chasing Meowth in Rustboro
+#define FLAG_CHASE_MEOWTH3                                          0x4AF // Chasing Meowth in Rustboro
+#define FLAG_GOT_ITEMFINDER                                         0x4B0 // Unused Flag
 #define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
 #define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
 #define FLAG_UNUSED_0x4B3                                           0x4B3 // Unused Flag

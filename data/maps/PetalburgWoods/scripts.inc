@@ -266,6 +266,26 @@ PetalburgWoods_EventScript_Foongus1::
 
 PetalburgWoods_EventScript_BiancaSign::
 	msgbox PetalburgWoods_Text_BiancaSign, MSGBOX_SIGN
+	end
+
+PetalburgWoods_EventScript_ItemfinderGuy::
+	faceplayer
+	lock
+	goto_if_set FLAG_GOT_ITEMFINDER, PetalburgWoods_EventScript_ItemfinderGuy_AsksAboutItems
+	goto PetalburgWoods_EventScript_ItemfinderGuy_GivesItemfinder
+
+PetalburgWoods_EventScript_ItemfinderGuy_GivesItemfinder::
+	msgbox Route110_Text_BrendanTakeThis, MSGBOX_DEFAULT
+	call Route110_EventScript_GiveItemfinder
+	msgbox Route110_Text_BrendanExplainItemfinder, MSGBOX_DEFAULT
+	setflag FLAG_GOT_ITEMFINDER
+	release
+	end
+
+PetalburgWoods_EventScript_ItemfinderGuy_AsksAboutItems::
+	msgbox PetalburgWoods_Text_ItemfinderGuy_AsksAboutItems, MSGBOX_NPC
+	release
+	end
 
 PetalburgWoods_EventScript_Foongus2::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
@@ -345,18 +365,23 @@ PetalburgWoods_EventScript_HiddenForest::
 
 PetalburgWoods_EventScript_Sign_NorthWest::
 	msgbox PetalburgWoods_Text_Sign_NorthWest, MSGBOX_SIGN
+	end
 
 PetalburgWoods_EventScript_Sign_East::
 	msgbox PetalburgWoods_Text_Sign_East, MSGBOX_SIGN
+	end
 
 PetalburgWoods_EventScript_Sign_South::
 	msgbox PetalburgWoods_Text_Sign_South, MSGBOX_SIGN
+	end
 
 PetalburgWoods_EventScript_Sign_North::
 	msgbox PetalburgWoods_Text_Sign_North, MSGBOX_SIGN
+	end
 
 PetalburgWoods_EventScript_Sign_NorthEmphatic::
 	msgbox PetalburgWoods_Text_Sign_NorthEmphatic, MSGBOX_SIGN
+	end
 
 PetalburgWoods_EventScript_Zach::
 	trainerbattle_single TRAINER_ZACH_1, PetalburgWoods_Text_ZachIntroText, PetalburgWoods_Text_ZachDefeatText, PetalburgWoods_EventScript_TryRegisterZach
@@ -398,6 +423,11 @@ PetalburgWoods_EventScript_ZachRematch::
 	trainerbattle_rematch TRAINER_ZACH_1, PetalburgWoods_Text_MyPokemonHaveGrown, PetalburgWoods_Text_CantBePopularIfLose
 	msgbox PetalburgWoods_Text_IveBeenTrainingHard, MSGBOX_AUTOCLOSE
 	end
+
+PetalburgWoods_Text_ItemfinderGuy_AsksAboutItems:
+	.string "A lot of items can be hidden.\n"
+	.string "Use the ITEMFINDER to check.\p"
+	.string "Otherwise, you'll be missing out on value.$"
 
 PetalburgWoods_Text_BiancaSign:
 	.string "BIANCA's house$"
@@ -586,13 +616,12 @@ PetalburgWoods_Text_Sign_NorthEmphatic:
 
 PetalburgWoods_Text_TrainerTipsExperience:
 	.string "TRAINER TIPS\p"
-	.string "Any POKéMON that appears even once\n"
-	.string "in a battle is awarded EXP Points.\p"
-	.string "To raise a weak POKéMON, put it at the\n"
-	.string "left of the team list.\p"
-	.string "As soon as a battle starts, switch it\n"
-	.string "out. It will earn EXP Points without\l"
-	.string "being exposed to any harm.$"
+	.string "In order to MEGA EVOLVE, you must\n"
+	.string "give a POKéMON their MEGA STONE.\p"
+	.string "Then, during battle, before you pick\n"
+	.string "a move, you will see a glowing symbol.\p"
+	.string "Press START to highlight it, and then\n"
+	.string "the POKéMON will MEGA EVOLVE!$"
 
 PetalburgWoods_Text_TrainerTipsPP:
 	.string "TRAINER TIPS\p"

@@ -1043,7 +1043,7 @@ Route104_Text_LevelCapSign:
 
 Route104_Text_ForestSign:
 	.string " --  Petalburg Forest  -- \n"
-	.string "Under Construction.$"
+	.string "Construction Recently Finished.$"
 
 Route104_Text_CaveSign:
 	.string "Granite Cave, up ahead. Make sure...\n"
@@ -1079,7 +1079,7 @@ Route104_Text_ThrowBallAtWeakenedPokemon:
 	.string "If you get stuck at a hard fight,\n"
 	.string "it can feel impossible to keep going.\p"
 	.string "But sometimes trying a new strategy,\n"
-	.string "or checking your back for different TMs\p"
+	.string "or checking your bag for different TMs\p"
 	.string "can make all the difference!$"
 
 Route104_Text_WomanLeaves:
@@ -1088,7 +1088,7 @@ Route104_Text_WomanLeaves:
 	.string "Now I can go about my merry way!\p"
 	.string "Thank you, dearie. Here's something\n"
 	.string "for your trouble. It makes weak\p"
-	.string "Pokemon get a little more resilient!\n"
+	.string "POKéMON get a little more resilient!\n"
 	.string "I'm not a battler anymore,\p"
 	.string "but I'm sure you'll make good\n"
 	.string "use of it!$"

@@ -980,7 +980,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_MONSTER },
-        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_NONE, ABILITY_SHEER_FORCE },
+        .abilities = { ABILITY_ROCK_HEAD, ABILITY_NONE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Cranidos"),
         .cryId = CRY_CRANIDOS,
@@ -2649,7 +2649,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         ICON(Gabite, 0),
         .footprint = gMonFootprint_Gabite,
         LEARNSETS(Gabite),
-        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_GARCHOMP}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 46, SPECIES_GARCHOMP}),
     },
 
 #define GARCHOMP_MISC_INFO                                      \

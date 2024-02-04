@@ -3282,14 +3282,14 @@ static const u8 sTM50Desc[] = _(
     "lowers Sp. Atk.");
 
 static const u8 sTM51Desc[] = _( // Electric Terrain
-    "Electrifies the ground\n"
-    "for five turns. Pokémon\n"
-    "can't fall asleep");
+    "Electrifies ground\n"
+    "for five turns. No one\n"
+    "can fall asleep");
 
 static const u8 sTM52Desc[] = _( // Todo
     "Swaps around space\n"
-    "so slow Pokemon move\n"
-    "first");
+    "so slow Pokémon\n"
+    "move first");
 
 static const u8 sTM53Desc[] = _( // Todo
     "Rising electric attack.\n"
@@ -3303,7 +3303,7 @@ static const u8 sTM54Desc[] = _( // Todo
 
 static const u8 sTM55Desc[] = _( // Todo
     "The user blows up to\n"
-    "inflict severe damage,\n" 
+    "inflict huge damage,\n" 
     "making itself faint.");
 
 static const u8 sTM56Desc[] = _( // Todo
@@ -3312,7 +3312,9 @@ static const u8 sTM56Desc[] = _( // Todo
     "restore 1/2 its HP.");
 
 static const u8 sTM57Desc[] = _( // Todo
-    "?????");
+    "The user attacks\n"
+    "with their head.\n"
+    "Foe might flinch.");
 
 static const u8 sTM58Desc[] = _( // Todo
     "?????");

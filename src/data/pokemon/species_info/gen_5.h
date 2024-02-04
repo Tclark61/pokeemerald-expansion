@@ -6283,9 +6283,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS },
         #if P_UPDATED_ABILITIES >= GEN_6
-            .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_INFILTRATOR },
+            .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_INFILTRATOR },
         #else
-            .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_SHADOW_TAG },
+            .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_SHADOW_TAG },
         #endif
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
@@ -6315,7 +6315,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Litwick, 2),
         .footprint = gMonFootprint_Litwick,
         LEARNSETS(Litwick),
-        .evolutions = EVOLUTION({EVO_LEVEL, 41, SPECIES_LAMPENT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_LAMPENT}),
     },
 
     [SPECIES_LAMPENT] =
@@ -6336,9 +6336,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS },
         #if P_UPDATED_ABILITIES >= GEN_6
-            .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_INFILTRATOR },
+            .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_INFILTRATOR },
         #else
-            .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_SHADOW_TAG },
+            .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_SHADOW_TAG },
         #endif
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Lampent"),
@@ -6389,9 +6389,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS },
         #if P_UPDATED_ABILITIES >= GEN_6
-            .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_INFILTRATOR },
+            .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_INFILTRATOR },
         #else
-            .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_SHADOW_TAG },
+            .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_SHADOW_TAG },
         #endif
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Chandelure"),
@@ -7305,12 +7305,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_BOUFFALANT
     [SPECIES_BOUFFALANT] =
     {
-        .baseHP        = 95,
+        .baseHP        = 105,
         .baseAttack    = 110,
-        .baseDefense   = 95,
+        .baseDefense   = 105,
         .baseSpeed     = 55,
         .baseSpAttack  = 40,
-        .baseSpDefense = 95,
+        .baseSpDefense = 105,
         .types = { TYPE_NORMAL, TYPE_NORMAL },
         .catchRate = 45,
         .expYield = 172,

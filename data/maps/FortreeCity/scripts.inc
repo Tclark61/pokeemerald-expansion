@@ -44,8 +44,13 @@ FortreeCity_EventScript_GameboyKid::
 	msgbox FortreeCity_Text_PokemonThatEvolveWhenTraded, MSGBOX_NPC
 	end
 
+FortreeCity_EventScript_Jigglypuff_Waiting::
+	msgbox FortreeCity_Text_Jigglypuff_Waiting, MSGBOX_DEFAULT
+	end
+
 FortreeCity_EventScript_CitySign::
 	msgbox FortreeCity_Text_CitySign, MSGBOX_SIGN
+	setflag FLAG_EXITED_CAVE_OR_FOREST
 	end
 
 FortreeCity_EventScript_GymSign::
@@ -87,6 +92,12 @@ FortreeCity_Movement_KecleonFlee:
 	walk_right
 	step_end
 
+
+FortreeCity_Text_Jigglypuff_Waiting:
+	.string "The Jigglypuff stands with purpose.\n"
+	.string "It seems like it's waiting...\p"
+	.string "Who knows what for.$"
+
 FortreeCity_Text_SawGiganticPokemonInSky:
 	.string "No one believes me, but I saw this\n"
 	.string "gigantic POKéMON in the sky.\p"
@@ -104,7 +115,7 @@ FortreeCity_Text_SomethingBlockingGym:
 
 FortreeCity_Text_ThisTimeIllBeatWinona:
 	.string "I've got my pride-and-joy POKéMON\n"
-	.string "with me. This time, I'll beat WINONA.$"
+	.string "with me. This time, I'll beat CARLOS.$"
 
 FortreeCity_Text_TreesGrowByDrinkingRainwater:
 	.string "The ground absorbs rainwater, and\n"
@@ -150,7 +161,7 @@ FortreeCity_Text_CitySign:
 
 FortreeCity_Text_GymSign:
 	.string "FORTREE CITY POKéMON GYM\n"
-	.string "LEADER: WINONA\p"
-	.string "“The bird user taking flight into\n"
+	.string "LEADER: CARLOS\p"
+	.string "“The adventurer out to explore\n"
 	.string "the world.”$"
 

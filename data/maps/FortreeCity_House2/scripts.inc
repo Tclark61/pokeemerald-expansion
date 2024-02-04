@@ -33,6 +33,7 @@ FortreeCity_House2_EventScript_Jigglypuff::
 	checkitem ITEM_LETTER
 	goto_if_eq VAR_RESULT, TRUE, FortreeCity_House2_EventScript_Jigglypuff_TakesLetter
 	release
+	end
 
 FortreeCity_House2_EventScript_Jigglypuff_TakesLetter::
 	applymovement 1, Common_Movement_ExclamationMark
@@ -44,6 +45,7 @@ FortreeCity_House2_EventScript_Jigglypuff_TakesLetter::
 	removeitem ITEM_LETTER
 	fadescreen FADE_FROM_BLACK
 	release
+	end
 
 FortreeCity_House2_EventScript_Greeting::
 	msgbox FortreeCity_House2_Text_HiddenPowersArousedByNature, MSGBOX_DEFAULT

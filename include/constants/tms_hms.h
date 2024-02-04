@@ -57,7 +57,8 @@
     F(RISING_VOLTAGE) \
     F(MISTY_EXPLOSION) \
     F(SELF_DESTRUCT) \
-    F(ROOST)
+    F(ROOST) \
+    F(HEADBUTT)
 
 #define FOREACH_HM(F) \
     F(CUT) \

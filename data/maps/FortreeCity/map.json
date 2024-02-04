@@ -22,7 +22,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_2",
-      "x": 31,
+      "x": 32,
       "y": 3,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -113,7 +113,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 6,
+      "x": 7,
       "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -136,6 +136,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route120_EventScript_ItemHyperPotion",
       "flag": "FLAG_ITEM_ROUTE_120_HYPER_POTION"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_JIGGLYPUFF_DOLL",
+      "x": 6,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FortreeCity_EventScript_Jigglypuff_Waiting",
+      "flag": "FLAG_DELIVERED_STEVEN_LETTER"
     }
   ],
   "warp_events": [

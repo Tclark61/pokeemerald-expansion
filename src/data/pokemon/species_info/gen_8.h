@@ -1911,7 +1911,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = { EGG_GROUP_GRASS, EGG_GROUP_DRAGON },
-        .abilities = { ABILITY_SUPERSWEET_SYRUP, ABILITY_GLUTTONY, ABILITY_STICKY_HOLD },
+        .abilities = { ABILITY_SUPERSWEET_SYRUP, ABILITY_NONE, ABILITY_STICKY_HOLD },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Dipplin"),
         .cryId = CRY_DIPPLIN,
@@ -3718,7 +3718,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpDefense = 95,
         .evYield_SpAttack = 2,
         .genderRatio = MON_MALE,
-        .abilities = { ABILITY_INNER_FOCUS, ABILITY_SYNCHRONIZE, ABILITY_PSYCHIC_SURGE },
+        .abilities = { ABILITY_PSYCHIC_SURGE, ABILITY_NONE, ABILITY_PSYCHIC_SURGE },
         .cryId = CRY_INDEEDEE_MALE,
         .description = COMPOUND_STRING(
             "It uses the horns on its head to sense the\n"
@@ -3748,7 +3748,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpDefense = 105,
         .evYield_SpDefense = 2,
         .genderRatio = MON_FEMALE,
-        .abilities = { ABILITY_OWN_TEMPO, ABILITY_SYNCHRONIZE, ABILITY_PSYCHIC_SURGE },
+        .abilities = { ABILITY_PSYCHIC_SURGE, ABILITY_NONE, ABILITY_PSYCHIC_SURGE },
         .cryId = CRY_INDEEDEE_FEMALE,
         .description = COMPOUND_STRING(
             "They diligently serve people and\n"

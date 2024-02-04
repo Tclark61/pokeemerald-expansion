@@ -264,6 +264,7 @@ LittlerootTown_EventScript_Tyler::
 	call Common_EventScript_NameReceivedPartyMon
 	giveitem ITEM_RARE_CANDY, 10
 	giveitem ITEM_TM_PROTECT
+	giveitem ITEM_MEGA_RING
 	removeobject 4
 	setflag FLAG_RIVAL_LEFT_FOR_ROUTE103
 	release

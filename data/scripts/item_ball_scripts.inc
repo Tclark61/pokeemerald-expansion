@@ -377,7 +377,6 @@ GraniteCave_B1F_EventScript_ItemPokeBall::
 	end
 
 GraniteCave_B2F_EventScript_ItemRepel::
-	finditem ITEM_MEGA_RING
 	finditem ITEM_STEELIXITE
 	end
 

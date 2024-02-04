@@ -160,7 +160,7 @@ Route120_EventScript_Steven::
 	goto_if_set FLAG_NOT_READY_FOR_BATTLE_ROUTE_120, Route120_EventScript_StevenAskReadyForBattle
 	msgbox Route120_Text_StevenGreeting, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route120_EventScript_StevenNotReady
-	goto Route120_EventScript_StevenBattleKecleon
+	goto Route120_EventScript_BiancaBattleRegi
 	end
 
 Route120_EventScript_StevenNotReady::
@@ -172,7 +172,7 @@ Route120_EventScript_StevenNotReady::
 Route120_EventScript_StevenAskReadyForBattle::
 	msgbox Route120_Text_StevenReadyForBattle, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route120_EventScript_StevenNotReady
-	goto Route120_EventScript_StevenBattleKecleon
+	goto Route120_EventScript_BiancaBattleRegi
 	end
 
 Route120_EventScript_StevenBattleKecleon::

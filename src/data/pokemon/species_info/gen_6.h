@@ -1153,12 +1153,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
 #if P_FAMILY_FLABEBE
 #define FLABEBE_MISC_INFO(Form, FORM, iconPal)                                  \
-        .baseHP        = 44,                                                    \
-        .baseAttack    = 38,                                                    \
-        .baseDefense   = 39,                                                    \
-        .baseSpeed     = 42,                                                    \
-        .baseSpAttack  = 61,                                                    \
-        .baseSpDefense = 79,                                                    \
+        .baseHP        = 45,                                                    \
+        .baseAttack    = 40,                                                    \
+        .baseDefense   = 40,                                                    \
+        .baseSpeed     = 45,                                                    \
+        .baseSpAttack  = 65,                                                    \
+        .baseSpDefense = 80,                                                    \
         .types = { TYPE_FAIRY, TYPE_FAIRY },                                    \
         .catchRate = 225,                                                       \
         .expYield = 61,                                                         \
@@ -1269,12 +1269,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .formSpeciesIdTable = sFloetteFormSpeciesIdTable
 
 #define FLOETTE_NORMAL_INFO(form, FORM, iconPal)                                                \
-        .baseHP        = 54,                                                                    \
+        .baseHP        = 60,                                                                    \
         .baseAttack    = 45,                                                                    \
-        .baseDefense   = 47,                                                                    \
-        .baseSpeed     = 52,                                                                    \
-        .baseSpAttack  = 75,                                                                    \
-        .baseSpDefense = 98,                                                                    \
+        .baseDefense   = 50,                                                                    \
+        .baseSpeed     = 55,                                                                    \
+        .baseSpAttack  = 80,                                                                    \
+        .baseSpDefense = 100,                                                                   \
         .expYield = 130,                                                                        \
         .eggGroups = { EGG_GROUP_FAIRY, EGG_GROUP_FAIRY },                                      \
         .cryId = CRY_FLOETTE,                                                                   \
@@ -1335,12 +1335,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_FLOETTE_ETERNAL_FLOWER] =
     {
         FLOETTE_MISC_INFO(Eternal, ETERNAL, 0),
-        .baseHP        = 74,
+        .baseHP        = 80,
         .baseAttack    = 65,
-        .baseDefense   = 67,
-        .baseSpeed     = 92,
+        .baseDefense   = 70,
+        .baseSpeed     = 95,
         .baseSpAttack  = 125,
-        .baseSpDefense = 128,
+        .baseSpDefense = 130,
         .expYield = 243,
         .eggGroups = { EGG_GROUP_NO_EGGS_DISCOVERED, EGG_GROUP_NO_EGGS_DISCOVERED },
         .description = COMPOUND_STRING(
@@ -1358,12 +1358,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 
 #define FLORGES_MISC_INFO(Form, iconPal)                                        \
-        .baseHP        = 78,                                                    \
-        .baseAttack    = 65,                                                    \
-        .baseDefense   = 68,                                                    \
+        .baseHP        = 80,                                                    \
+        .baseAttack    = 70,                                                    \
+        .baseDefense   = 70,                                                    \
         .baseSpeed     = 75,                                                    \
         .baseSpAttack  = 112,                                                   \
-        .baseSpDefense = 154,                                                   \
+        .baseSpDefense = 155,                                                   \
         .types = { TYPE_FAIRY, TYPE_FAIRY },                                    \
         .catchRate = 45,                                                        \
         .expYield = 248,                                                        \

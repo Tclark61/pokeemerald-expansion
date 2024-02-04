@@ -796,13 +796,6 @@
     },
     {
       "type": "secret_base",
-      "x": 18,
-      "y": 12,
-      "elevation": 0,
-      "secret_base_id": "SECRET_BASE_BLUE_CAVE2_3"
-    },
-    {
-      "type": "secret_base",
       "x": 38,
       "y": 54,
       "elevation": 0,
@@ -820,7 +813,7 @@
       "x": 9,
       "y": 1,
       "elevation": 3,
-      "item": "ITEM_RARE_CANDY",
+      "item": "ITEM_KINGS_ROCK",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_1"
     },
     {
@@ -868,7 +861,7 @@
       "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "Route120_EventScript_BattleSign"
     }
   ]
 }
