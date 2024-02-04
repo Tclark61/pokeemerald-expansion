@@ -5271,10 +5271,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_EMOLGA
     [SPECIES_EMOLGA] =
     {
-        .baseHP        = 55,
+        .baseHP        = 65,
         .baseAttack    = 75,
-        .baseDefense   = 60,
-        .baseSpeed     = 103,
+        .baseDefense   = 80,
+        .baseSpeed     = 105,
         .baseSpAttack  = 75,
         .baseSpDefense = 60,
         .types = { TYPE_ELECTRIC, TYPE_FLYING },
@@ -5286,7 +5286,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD },
-        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_MOTOR_DRIVE },
+        .abilities = { ABILITY_MOTOR_DRIVE, ABILITY_NONE, ABILITY_MOTOR_DRIVE },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Emolga"),
         .cryId = CRY_EMOLGA,

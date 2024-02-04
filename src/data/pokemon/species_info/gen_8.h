@@ -3475,7 +3475,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG },
-        .abilities = { ABILITY_SHIELD_DUST, ABILITY_NONE, ABILITY_ICE_SCALES },
+        .abilities = { ABILITY_ICE_SCALES, ABILITY_NONE, ABILITY_ICE_SCALES },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Snom"),
         .cryId = CRY_SNOM,
@@ -3504,7 +3504,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .footprint = gMonFootprint_Snom,
         LEARNSETS(Snom),
         .evolutions = EVOLUTION({EVO_FRIENDSHIP_NIGHT, 0, SPECIES_FROSMOTH},
-                                {EVO_LEVEL, 24, SPECIES_FROSMOTH}),
+                                {EVO_LEVEL, 20, SPECIES_FROSMOTH}),
     },
 
     [SPECIES_FROSMOTH] =
@@ -3524,7 +3524,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG },
-        .abilities = { ABILITY_SHIELD_DUST, ABILITY_NONE, ABILITY_ICE_SCALES },
+        .abilities = { ABILITY_ICE_SCALES, ABILITY_NONE, ABILITY_ICE_SCALES },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Frosmoth"),
         .cryId = CRY_FROSMOTH,

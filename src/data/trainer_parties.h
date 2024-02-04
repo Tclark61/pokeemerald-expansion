@@ -3096,18 +3096,25 @@ static const struct TrainerMon sParty_Sidney[] = {
     .lvl = 38,
     .species = SPECIES_EMOLGA,
     .heldItem = ITEM_ROCKY_HELMET,
-    .moves = {MOVE_THUNDERBOLT, MOVE_U_TURN, MOVE_TAUNT, MOVE_ROOST}
+    .moves = {MOVE_TAILWIND, MOVE_U_TURN, MOVE_NUZZLE, MOVE_ROOST}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 39,
+    .lvl = 38,
     .species = SPECIES_TOGEKISS,
     .heldItem = ITEM_LUM_BERRY,
     .moves = {MOVE_EXTREME_SPEED, MOVE_AURA_SPHERE, MOVE_WISH, MOVE_YAWN}
     },
     {
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 37,
+    .species = SPECIES_CHARIZARD,
+    .heldItem = ITEM_CHARCOAL,
+    .moves = {MOVE_FLAMETHROWER, MOVE_EARTHQUAKE, MOVE_DOUBLE_EDGE, MOVE_FOCUS_BLAST}
+    },
+    {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 42,
+    .lvl = 41,
     .species = SPECIES_TROPIUS,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_DRACO_METEOR, MOVE_DRAGON_DANCE, MOVE_FLOWER_TRICK, MOVE_DUAL_WINGBEAT}
