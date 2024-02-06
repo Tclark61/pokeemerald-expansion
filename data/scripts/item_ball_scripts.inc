@@ -4,7 +4,7 @@ Route102_EventScript_ItemPotion::
 	end
 
 Route103_EventScript_ItemGuardSpec::
-	finditem ITEM_GUARD_SPEC
+	finditem ITEM_SAPPHIRE
 	end
 
 Route103_EventScript_ItemPPUp::
@@ -357,7 +357,7 @@ PetalburgWoods_EventScript_ItemParalyzeHeal::
 	end
 
 RusturfTunnel_EventScript_ItemPokeBall::
-	finditem ITEM_POKE_BALL
+	finditem ITEM_BLACK_AUGURITE
 	end
 
 RusturfTunnel_EventScript_ItemMaxEther::

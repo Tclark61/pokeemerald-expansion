@@ -258,6 +258,27 @@ Route116_Movement_GlassesManExitEast:
 	walk_left
 	step_end
 
+Route116_EventScript_CreepyGirl::
+	goto_if_set FLAG_MAN_TALKED_ABOUT_SHADOW, Route116_EventScript_CreepyGirl_CheckBattle
+	msgbox Route116_Text_CreepyGirl_Fufufu, MSGBOX_NPC
+	end
+
+Route116_EventScript_CreepyGirl_CheckBattle::
+	goto_if_set FLAG_BEAT_SECOND_OPTIONAL_GYM, Route116_EventScript_CreepyGirl_Battle
+	msgbox Route116_Text_CreepyGirl_Fufufu, MSGBOX_NPC
+	end
+
+Route116_EventScript_CreepyGirl_Battle::
+	msgbox Route116_Text_CreepyGirl_FightMe, MSGBOX_NPC
+	trainerbattle_single TRAINER_SYLVIA, Route116_Text_JoeyIntro, Route116_Text_JoeyDefeat
+	msgbox Route116_Text_JoeyPostBattle, MSGBOX_AUTOCLOSE
+	fadescreen FADE_TO_BLACK
+	msgbox Route116_Text_OminousMessage, MSGBOX_NPC
+	removeobject 25
+	setflag FLAG_CREEPY_GIRL_BEATEN
+	fadescreen FADE_FROM_BLACK
+	end
+
 Route116_EventScript_Joey::
 	trainerbattle_single TRAINER_JOEY, Route116_Text_JoeyIntro, Route116_Text_JoeyDefeat
 	msgbox Route116_Text_JoeyPostBattle, MSGBOX_AUTOCLOSE
@@ -397,6 +418,21 @@ Route116_EventScript_ThiefGetsStatue::
 	giveitem ITEM_DUBIOUS_DISC
 	release
 	end
+
+Route116_Text_CreepyGirl_Fufufu:
+	.string "Fufufufu... Now isn't the time.\n"
+	.string "Maybe later... Fufufufu....$"
+
+Route116_Text_CreepyGirl_FightMe:
+	.string "Fufufufu... Now is the time!\n"
+	.string "My master calls to me!\p"
+	.string "You're his next target!!$"
+
+Route116_Text_OminousMessage:
+	.string "... The girl has disappeared.\n"
+	.string "But nothing else has changed.\p"
+	.string "Where is the master?\n"
+	.string "Who is the master?$"
 
 Route116_Text_WeirdTree:
 	.string "This tree just moved!\n"

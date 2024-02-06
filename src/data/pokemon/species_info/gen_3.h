@@ -6177,13 +6177,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .footprint = gMonFootprint_Dusclops,
         LEARNSETS(Dusclops),
         .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_REAPER_CLOTH, SPECIES_DUSKNOIR},
-                                {EVO_ITEM, ITEM_REAPER_CLOTH, SPECIES_DUSKNOIR}),
+                                {EVO_ITEM, ITEM_REAPER_CLOTH, SPECIES_DUSKNOIR},
+                                {EVO_LEVEL, 44, SPECIES_DUSKNOIR}),
     },
 
 #if P_GEN_4_CROSS_EVOS
     [SPECIES_DUSKNOIR] =
     {
-        .baseHP        = 45,
+        .baseHP        = 50,
         .baseAttack    = 100,
         .baseDefense   = 135,
         .baseSpeed     = 45,

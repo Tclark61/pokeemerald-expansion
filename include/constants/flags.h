@@ -1248,11 +1248,11 @@
 #define FLAG_CHASE_MEOWTH2                                          0x4AE // Chasing Meowth in Rustboro
 #define FLAG_CHASE_MEOWTH3                                          0x4AF // Chasing Meowth in Rustboro
 #define FLAG_GOT_ITEMFINDER                                         0x4B0 // Unused Flag
-#define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
-#define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
-#define FLAG_UNUSED_0x4B3                                           0x4B3 // Unused Flag
-#define FLAG_UNUSED_0x4B4                                           0x4B4 // Unused Flag
-#define FLAG_UNUSED_0x4B5                                           0x4B5 // Unused Flag
+#define FLAG_MEOWTH_PLEASED                                         0x4B1 // Unused Flag
+#define FLAG_MEOWTH_HUNGRY                                          0x4B2 // Unused Flag
+#define FLAG_CREEPY_GIRL_TALKED                                     0x4B3 // Unused Flag
+#define FLAG_MAN_TALKED_ABOUT_SHADOW                                0x4B4 // Unused Flag
+#define FLAG_CREEPY_GIRL_BEATEN                                     0x4B5 // Unused Flag
 #define FLAG_UNUSED_0x4B6                                           0x4B6 // Unused Flag
 #define FLAG_UNUSED_0x4B7                                           0x4B7 // Unused Flag
 #define FLAG_UNUSED_0x4B8                                           0x4B8 // Unused Flag

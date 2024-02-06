@@ -3188,7 +3188,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                 ( (GetMonData(mon, MON_DATA_LEVEL, NULL) < sLevelCaps[3]) && FlagGet(sLevelCapFlags[2])) ||
                 ( (GetMonData(mon, MON_DATA_LEVEL, NULL) < sLevelCaps[4]) && FlagGet(sLevelCapFlags[3])) ||
                 ( (GetMonData(mon, MON_DATA_LEVEL, NULL) < sLevelCaps[5]) && FlagGet(sLevelCapFlags[4])) ||
-                ( ( FlagGet(sLevelCapFlags[5]))) )
+                ( (GetMonData(mon, MON_DATA_LEVEL, NULL) < 70 && FlagGet(sLevelCapFlags[5]))) )
                 {
                     u8 param = ItemId_GetHoldEffectParam(item);
                     dataUnsigned = 0;

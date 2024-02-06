@@ -27,6 +27,7 @@ RustboroCity_Mart_Pokemart_Basic:
 	.2byte ITEM_LIGHT_CLAY
 	.2byte ITEM_PECHA_BERRY
 	.2byte ITEM_CHERI_BERRY
+	.2byte ITEM_WEPEAR_BERRY
 	.2byte ITEM_NONE
 	release
 	end
@@ -70,10 +71,9 @@ RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish:
 	.string "in PETALBURG WOODS.$"
 
 RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead:
-	.string "My POKéMON evolved.\n"
-	.string "It has a lot of HP now.\p"
-	.string "I should buy SUPER POTIONS for it\n"
-	.string "instead of ordinary POTIONS.$"
+	.string "I once saw a wild MEOWTH.\n"
+	.string "It looked hungry, so I gave it food.\p"
+	.string "I think its favorite was a WEPEAR BERRY.$"
 
 RustboroCity_Mart_Text_GettingEscapeRopeJustInCase:
 	.string "I'm getting an ESCAPE ROPE just in\n"

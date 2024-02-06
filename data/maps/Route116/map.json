@@ -336,6 +336,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route116_EventScript_Thief",
       "flag": "FLAG_HIDE_LILYCOVE_MOTEL_GAME_DESIGNERS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HEX_MANIAC",
+      "x": 55,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route116_EventScript_CreepyGirl",
+      "flag": "FLAG_CREEPY_GIRL_BEATEN"
     }
   ],
   "warp_events": [
@@ -419,15 +432,15 @@
     },
     {
       "type": "secret_base",
-      "x": 56,
-      "y": 6,
+      "x": 58,
+      "y": 3,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_BLUE_CAVE3_2"
     },
     {
       "type": "secret_base",
-      "x": 55,
-      "y": 15,
+      "x": 61,
+      "y": 3,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_BLUE_CAVE4_2"
     },

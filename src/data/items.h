@@ -9197,7 +9197,7 @@ const struct Item gItems[] =
 
     [ITEM_SAPPHIRE] =
     {
-        .name = _("Sapphire"),
+        .name = _("DARK SHARD"),
         .price = 0,
         .description = sSapphireDesc,
         .importance = 1,
@@ -9605,9 +9605,9 @@ const struct Item gItems[] =
         .name = _("BlackAugurite"),
         .price = 8000,
         .description = sBlackAuguriteDesc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
     },
 

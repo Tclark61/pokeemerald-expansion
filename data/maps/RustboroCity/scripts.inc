@@ -1059,6 +1059,200 @@ RustboroCity_EventScript_WeightTrainer::
 
 RustboroCity_EventScript_WeightTrainerGivesUp::
 	msgbox RustboroCity_Text_WeightTrainerGivesUp, MSGBOX_NPC
+	end
+
+RustboroCity_EventScript_Meowth::
+	goto_if_unset FLAG_MEOWTH_PLEASED, RustboroCity_EventScript_Meowth_New
+	faceplayer
+	lock
+	msgbox RustboroCity_Text_Meowth_LooksAtYou_Curiously, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_Meowth_Pet
+	msgbox RustboroCity_Text_Meowth_LooksPleased, MSGBOX_DEFAULT
+	setflag FLAG_MEOWTH_PLEASED
+	goto RustboroCity_EventScript_Meowth_Moves
+
+RustboroCity_EventScript_Meowth_New::
+	faceplayer
+	lock
+	msgbox RustboroCity_Text_Meowth_LooksAtYou_Suspicious, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_Meowth_Pet
+	msgbox RustboroCity_Text_Meowth_LooksPleased, MSGBOX_DEFAULT
+	setflag FLAG_MEOWTH_PLEASED
+	goto RustboroCity_EventScript_Meowth_Moves
+
+RustboroCity_EventScript_Meowth_Pet::
+	goto_if_set FLAG_MEOWTH_PLEASED, RustboroCity_EventScript_Meowth_SuccessfulPet
+	msgbox RustboroCity_Text_Meowth_Distrustful, MSGBOX_NPC
+	clearflag FLAG_MEOWTH_HUNGRY
+	goto RustboroCity_EventScript_Meowth_Moves
+
+RustboroCity_EventScript_Meowth_SuccessfulPet::
+	msgbox RustboroCity_Text_Meowth_GetsPet, MSGBOX_NPC
+	goto_if_set FLAG_MEOWTH_HUNGRY, RustboroCity_EventScript_Meowth_BegForFood
+	setflag FLAG_MEOWTH_HUNGRY
+	goto RustboroCity_EventScript_Meowth_Moves
+
+RustboroCity_EventScript_Meowth_BegForFood::
+	lockall
+	msgbox RustboroCity_Text_Meowth_Hungry, MSGBOX_NPC
+	checkitem ITEM_WEPEAR_BERRY
+	goto_if_eq VAR_RESULT, TRUE, RustboroCity_EventScript_Meowth_FeedBerry
+	msgbox RustboroCity_Text_Meowth_HangryRage, MSGBOX_NPC
+	clearflag FLAG_MEOWTH_PLEASED
+	clearflag FLAG_MEOWTH_HUNGRY
+	releaseall
+	goto RustboroCity_EventScript_Meowth_Moves
+
+RustboroCity_EventScript_Meowth_FeedBerry::
+	msgbox RustboroCity_Text_Meowth_DoYouGiveBerry, MSGBOX_YESNO
+	removeitem ITEM_WEPEAR_BERRY
+	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_Meowth_GetMeowth
+	msgbox RustboroCity_Text_Meowth_HangryRage, MSGBOX_NPC
+	clearflag FLAG_MEOWTH_PLEASED
+	clearflag FLAG_MEOWTH_HUNGRY
+	releaseall
+	goto RustboroCity_EventScript_Meowth_Moves
+
+RustboroCity_EventScript_Meowth_GetMeowth::
+	msgbox RustboroCity_Text_Meowth_GiveMeowthBerry, MSGBOX_NPC
+	setvar VAR_TEMP_1, SPECIES_MEOWTH
+	givemon SPECIES_MEOWTH, 24
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, RustboroCity_EventScript_SendMeowthParty
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, RustboroCity_EventScript_SendMeowthPC
+	goto Common_EventScript_NoMoreRoomForPokemon
+	end
+
+RustboroCity_EventScript_SendMeowthParty::
+	call RustboroCity_EventScript_ReceivedMeowthFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_EventScript_ReceivedMeowth
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto RustboroCity_EventScript_ReceivedMeowth
+	end
+
+RustboroCity_EventScript_SendMeowthPC::
+	call RustboroCity_EventScript_ReceivedMeowthFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_EventScript_MeowthTransferredToPC
+	call Common_EventScript_NameReceivedBoxMon
+	goto RustboroCity_EventScript_MeowthTransferredToPC
+	end
+
+RustboroCity_EventScript_ReceivedMeowthFanfare::
+	bufferspeciesname STR_VAR_2, SPECIES_MEOWTH
+	playfanfare MUS_OBTAIN_ITEM
+	message RustboroCity_Text_ObtainedMeowth
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_MEOWTH
+	return
+
+RustboroCity_EventScript_MeowthTransferredToPC::
+	call Common_EventScript_TransferredToPC
+	goto RustboroCity_EventScript_ReceivedMeowth
+	end
+
+RustboroCity_EventScript_ReceivedMeowth::
+	msgbox RustboroCity_Text_ExcitedMeowth, MSGBOX_NPC
+	setflag FLAG_CHASE_MEOWTH1
+	setflag FLAG_CHASE_MEOWTH2
+	setflag FLAG_CHASE_MEOWTH3
+	fadescreen FADE_TO_BLACK
+	removeobject 17
+	removeobject 18
+	removeobject 19
+	fadescreen FADE_FROM_BLACK
+	releaseall
+	end
+
+RustboroCity_EventScript_Meowth_Moves::
+	msgbox RustboroCity_Text_MeowthMoves, MSGBOX_NPC
+	goto_if_unset FLAG_CHASE_MEOWTH3, RustboroCity_EventScript_Meowth_Moves_ToFirstLocation
+	goto_if_unset FLAG_CHASE_MEOWTH2, RustboroCity_EventScript_Meowth_Moves_ToThirdLocation
+	goto RustboroCity_EventScript_Meowth_Moves_ToSecondLocation
+
+RustboroCity_EventScript_Meowth_Moves_ToFirstLocation::
+	setflag FLAG_CHASE_MEOWTH3
+	clearflag FLAG_CHASE_MEOWTH1
+	fadescreen FADE_TO_BLACK
+	removeobject 18
+	addobject 17
+	fadescreen FADE_FROM_BLACK
+	release
+	end
+
+RustboroCity_EventScript_Meowth_Moves_ToSecondLocation::
+	setflag FLAG_CHASE_MEOWTH1
+	clearflag FLAG_CHASE_MEOWTH2
+	fadescreen FADE_TO_BLACK
+	removeobject 17
+	addobject 19
+	fadescreen FADE_FROM_BLACK
+	release
+	end
+
+RustboroCity_EventScript_Meowth_Moves_ToThirdLocation::
+	setflag FLAG_CHASE_MEOWTH2
+	clearflag FLAG_CHASE_MEOWTH3
+	fadescreen FADE_TO_BLACK
+	removeobject 19
+	addobject 18
+	fadescreen FADE_FROM_BLACK
+	release
+	end
+
+RustboroCity_Text_Meowth_LooksAtYou_Curiously:
+	.string "The MEOWTH looks at you...\n"
+	.string "It seems curious about you.\p"
+	.string "Try to pet MEOWTH?$"
+
+RustboroCity_Text_Meowth_LooksAtYou_Suspicious:
+	.string "The MEOWTH looks at you...\n"
+	.string "It seems suspicious of you.\p"
+	.string "Try to pet MEOWTH?$" 
+
+RustboroCity_Text_Meowth_LooksPleased:
+	.string "The MEOWTH looks pleased.\n"
+	.string "It starts purring.$"
+
+RustboroCity_Text_Meowth_Distrustful:
+	.string "MEOWTH doesn't trust you!\n"
+	.string "They take a step back.$"
+
+RustboroCity_Text_Meowth_GetsPet:
+	.string "MEOWTH seems to trust you more.\n"
+	.string "You pet MEOWTH!$"
+
+RustboroCity_Text_Meowth_Hungry:
+	.string "MEOWTH looks a little hungry.$"
+
+RustboroCity_Text_Meowth_HangryRage:
+	.string "You try to feed it, but you\n"
+	.string "don't have any suitable food.\p"
+	.string "MEOWTH feels betrayed, even though\n"
+	.string "you haven't done anything wrong.$"
+
+RustboroCity_Text_Meowth_GiveMeowthBerry:
+	.string "You take an WEPEAR BERRY from your\n"
+	.string "bag and hand it to MEOWTH.\p"
+	.string "This goes very well, and now\n"
+	.string "you and MEOWTH are best friends.$"
+
+RustboroCity_Text_Meowth_DoYouGiveBerry:
+	.string "It seems like it wants an\n"
+	.string "WEPEAR BERRY from your bag.\p"
+	.string "Give MEOWTH an WEPEAR BERRY?$"
+
+RustboroCity_Text_ObtainedMeowth:
+	.string "MEOWTH is ready to join your party!$"
+
+RustboroCity_Text_ExcitedMeowth:
+	.string "MEOWTH excitedly jumps into a\n"
+	.string "POKEBALL of its own choice!$"
+
+RustboroCity_Text_MeowthMoves:
+	.string "MEOWTH leaps away!$"
 
 RustboroCity_Text_WeightTrainerGivesUp:
 	.string "Now that I don't have that\n"

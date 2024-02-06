@@ -1301,9 +1301,9 @@ static const u8 sEverstoneDesc[] = _(
     "evolution.");
 
 static const u8 sBlackAuguriteDesc[] = _(
-    "A black stone that\n"
-    "makes some Pokémon\n"
-    "evolve.");;
+    "A deep black gem\n"
+    "that symbolizes\n"
+    "the void.");
 
 static const u8 sLinkingCordDesc[] = _(
     "A mysterious string\n"
@@ -3826,7 +3826,7 @@ static const u8 sRubyDesc[] = _(
 static const u8 sSapphireDesc[] = _(
     "A brilliant blue gem\n"
     "that symbolizes\n"
-    "honesty.");
+    "space.");
 
 static const u8 sAbilityShieldDesc[] = _(
     "Ability changes are\n"

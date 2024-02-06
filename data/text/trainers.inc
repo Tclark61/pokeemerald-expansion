@@ -2189,16 +2189,14 @@ Route116_Text_ClarkPostBattle:
 	.string "To a HIKER, mountains are roads!$"
 
 Route116_Text_JoeyIntro:
-	.string "My POKéMON rule!\n"
-	.string "Check them out!$"
+	.string "Be consumed by shadows!!!$"
 
 Route116_Text_JoeyDefeat:
-	.string "Ouch! A scrape!\n"
-	.string "I have to put on a bandage!$"
+	.string "I was defeated?! Master, wait!\n"
+	.string "Master, you must understand!!!$"
 
 Route116_Text_JoeyPostBattle:
-	.string "Bandages are signs of toughness!\n"
-	.string "I've got another one!$"
+	.string "Please, no! Stop!!!$"
 
 Route116_Text_JoseIntro:
 	.string "My BUG POKéMON are tough!\n"

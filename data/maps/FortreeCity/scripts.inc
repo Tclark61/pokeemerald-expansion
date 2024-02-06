@@ -13,6 +13,13 @@ FortreeCity_OnResume:
 
 FortreeCity_EventScript_Man::
 	msgbox FortreeCity_Text_SawGiganticPokemonInSky, MSGBOX_NPC
+	setflag FLAG_MAN_TALKED_ABOUT_SHADOW
+	goto_if_set FLAG_CREEPY_GIRL_TALKED, FortreeCity_EventScript_Man_Shadow
+	end
+
+FortreeCity_EventScript_Man_Shadow::
+	applymovement 1, Common_Movement_ExclamationMark
+	msgbox FortreeCity_Text_Man_Shadow, MSGBOX_NPC
 	end
 
 FortreeCity_EventScript_Woman::
@@ -99,13 +106,17 @@ FortreeCity_Text_Jigglypuff_Waiting:
 	.string "Who knows what for.$"
 
 FortreeCity_Text_SawGiganticPokemonInSky:
-	.string "No one believes me, but I saw this\n"
-	.string "gigantic POKéMON in the sky.\p"
-	.string "It seemed to squirm as it flew toward\n"
-	.string "ROUTE 131.\p"
-	.string "By the way… Sniff…\n"
-	.string "Um… You, uh…smell singed.\p"
-	.string "Were you at a volcano or something?$"
+	.string "No one believes me, but there's a\n"
+	.string "gigantic POKéMON in the shadows.\p"
+	.string "It's been following me for days.\n"
+	.string "Last time I saw it was ROUTE 116.$"
+
+FortreeCity_Text_Man_Shadow:
+	.string "You saw something strange on 116?\n"
+	.string "Thank goodness, I'm not crazy.\p"
+	.string "Hopefully someone strong deals\n"
+	.string "with it soon...\p"
+	.string "Maybe if someone had all 8 badges.$"
 
 FortreeCity_Text_SomethingBlockingGym:
 	.string "I want to go to the POKéMON GYM,\n"
@@ -138,8 +149,9 @@ FortreeCity_Text_BugPokemonComeThroughWindow:
 	.string "It can be really startling.$"
 
 FortreeCity_Text_PokemonThatEvolveWhenTraded:
-	.string "There are POKéMON that evolve when\n"
-	.string "you trade them! That's what I heard.$"
+	.string "Wow, another stranger!\p"
+	.string "You're the third to arrive recently.\n"
+	.string "I heard the KECLEON keep people away.$"
 
 FortreeCity_Text_SomethingUnseeable:
 	.string "Something unseeable is in the way.$"
