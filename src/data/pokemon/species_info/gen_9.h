@@ -1563,7 +1563,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .baseAttack    = 60,
         .baseDefense   = 100,
         .baseSpeed     = 75,
-        .baseSpAttack  = 125,
+        .baseSpAttack  = 105,
         .baseSpDefense = 80,
         .types = { TYPE_FIRE, TYPE_PSYCHIC },
         .catchRate = 25,
@@ -1607,7 +1607,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_CERULEDGE] =
     {
         .baseHP        = 75,
-        .baseAttack    = 125,
+        .baseAttack    = 105,
         .baseDefense   = 80,
         .baseSpeed     = 85,
         .baseSpAttack  = 60,

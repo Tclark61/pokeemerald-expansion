@@ -207,7 +207,7 @@
       "width": 40,
       "height": 80,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
+      "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route105/border.bin",
       "blockdata_filepath": "data/layouts/Route105/map.bin"
     },
@@ -1844,8 +1844,8 @@
     {
       "id": "LAYOUT_NEW_MAUVILLE_INSIDE",
       "name": "NewMauville_Inside_Layout",
-      "width": 41,
-      "height": 41,
+      "width": 51,
+      "height": 51,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_BikeShop",
       "border_filepath": "data/layouts/NewMauville_Inside/border.bin",
@@ -4420,6 +4420,36 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/PetalburgWoods_1F/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgWoods_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE105_CATCHING_MASTER_HOUSE",
+      "name": "Route105_CatchingMasterHouse_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route105_CatchingMasterHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route105_CatchingMasterHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_LABORATORY_LABYRINTH",
+      "name": "LaboratoryLabyrinth_Layout",
+      "width": 62,
+      "height": 62,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/LaboratoryLabyrinth/border.bin",
+      "blockdata_filepath": "data/layouts/LaboratoryLabyrinth/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUSTBORO_CITY_RICHMOND_VOLLEYBALL_CLUB",
+      "name": "RustboroCity_RichmondVolleyballClub_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/RustboroCity_RichmondVolleyballClub/border.bin",
+      "blockdata_filepath": "data/layouts/RustboroCity_RichmondVolleyballClub/map.bin"
     }
   ]
 }

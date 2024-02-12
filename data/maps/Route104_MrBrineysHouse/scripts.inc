@@ -104,13 +104,13 @@ Route104_MrBrineysHouse_EventScript_Pikachu::
 Route104_MrBrineysHouse_EventScript_TerrainMaster::
 	lock
 	faceplayer
-	goto_if_unset FLAG_DELIVERED_STEVEN_LETTER, Route104_MrBrineysHouse_EventScript_TerrainMasterFirstIntro
+	goto_if_unset FLAG_MET_TERRAIN_MASTER, Route104_MrBrineysHouse_EventScript_TerrainMasterFirstIntro
 	goto Route104_MrBrineysHouse_EventScript_TerrainMasterExplains
 
 
 Route104_MrBrineysHouse_EventScript_TerrainMasterFirstIntro::
 	msgbox Route104_MrBrineysHouse_Text_TerrainMasterFirstIntro, MSGBOX_NPC
-	setflag FLAG_DELIVERED_STEVEN_LETTER
+	setflag FLAG_MET_TERRAIN_MASTER
 
 
 

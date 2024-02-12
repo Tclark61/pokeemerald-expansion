@@ -161,23 +161,24 @@
 #define MAP_MAUVILLE_CITY_MART              (7 | (10 << 8))
 
 // gMapGroup_IndoorRustboro
-#define MAP_RUSTBORO_CITY_DEVON_CORP_1F     (0 | (11 << 8))
-#define MAP_RUSTBORO_CITY_DEVON_CORP_2F     (1 | (11 << 8))
-#define MAP_RUSTBORO_CITY_DEVON_CORP_3F     (2 | (11 << 8))
-#define MAP_RUSTBORO_CITY_GYM               (3 | (11 << 8))
-#define MAP_RUSTBORO_CITY_POKEMON_SCHOOL    (4 | (11 << 8))
-#define MAP_RUSTBORO_CITY_POKEMON_CENTER_1F (5 | (11 << 8))
-#define MAP_RUSTBORO_CITY_POKEMON_CENTER_2F (6 | (11 << 8))
-#define MAP_RUSTBORO_CITY_MART              (7 | (11 << 8))
-#define MAP_RUSTBORO_CITY_FLAT1_1F          (8 | (11 << 8))
-#define MAP_RUSTBORO_CITY_FLAT1_2F          (9 | (11 << 8))
-#define MAP_RUSTBORO_CITY_HOUSE1            (10 | (11 << 8))
-#define MAP_RUSTBORO_CITY_CUTTERS_HOUSE     (11 | (11 << 8))
-#define MAP_RUSTBORO_CITY_HOUSE2            (12 | (11 << 8))
-#define MAP_RUSTBORO_CITY_FLAT2_1F          (13 | (11 << 8))
-#define MAP_RUSTBORO_CITY_FLAT2_2F          (14 | (11 << 8))
-#define MAP_RUSTBORO_CITY_FLAT2_3F          (15 | (11 << 8))
-#define MAP_RUSTBORO_CITY_HOUSE3            (16 | (11 << 8))
+#define MAP_RUSTBORO_CITY_DEVON_CORP_1F            (0 | (11 << 8))
+#define MAP_RUSTBORO_CITY_DEVON_CORP_2F            (1 | (11 << 8))
+#define MAP_RUSTBORO_CITY_DEVON_CORP_3F            (2 | (11 << 8))
+#define MAP_RUSTBORO_CITY_GYM                      (3 | (11 << 8))
+#define MAP_RUSTBORO_CITY_POKEMON_SCHOOL           (4 | (11 << 8))
+#define MAP_RUSTBORO_CITY_POKEMON_CENTER_1F        (5 | (11 << 8))
+#define MAP_RUSTBORO_CITY_POKEMON_CENTER_2F        (6 | (11 << 8))
+#define MAP_RUSTBORO_CITY_MART                     (7 | (11 << 8))
+#define MAP_RUSTBORO_CITY_FLAT1_1F                 (8 | (11 << 8))
+#define MAP_RUSTBORO_CITY_FLAT1_2F                 (9 | (11 << 8))
+#define MAP_RUSTBORO_CITY_HOUSE1                   (10 | (11 << 8))
+#define MAP_RUSTBORO_CITY_CUTTERS_HOUSE            (11 | (11 << 8))
+#define MAP_RUSTBORO_CITY_HOUSE2                   (12 | (11 << 8))
+#define MAP_RUSTBORO_CITY_FLAT2_1F                 (13 | (11 << 8))
+#define MAP_RUSTBORO_CITY_FLAT2_2F                 (14 | (11 << 8))
+#define MAP_RUSTBORO_CITY_FLAT2_3F                 (15 | (11 << 8))
+#define MAP_RUSTBORO_CITY_HOUSE3                   (16 | (11 << 8))
+#define MAP_RUSTBORO_CITY_RICHMOND_VOLLEYBALL_CLUB (17 | (11 << 8))
 
 // gMapGroup_IndoorFortree
 #define MAP_FORTREE_CITY_HOUSE1            (0 | (12 << 8))
@@ -268,6 +269,7 @@
 // gMapGroup_IndoorRoute104
 #define MAP_ROUTE104_MR_BRINEYS_HOUSE         (0 | (17 << 8))
 #define MAP_ROUTE104_PRETTY_PETAL_FLOWER_SHOP (1 | (17 << 8))
+#define MAP_ROUTE105_CATCHING_MASTER_HOUSE    (2 | (17 << 8))
 
 // gMapGroup_IndoorRoute111
 #define MAP_ROUTE111_WINSTRATE_FAMILYS_HOUSE (0 | (18 << 8))
@@ -401,6 +403,7 @@
 #define MAP_ALTERING_CAVE                            (106 | (24 << 8))
 #define MAP_METEOR_FALLS_STEVENS_CAVE                (107 | (24 << 8))
 #define MAP_PETALBURG_WOODS_1F                       (108 | (24 << 8))
+#define MAP_LABORATORY_LABYRINTH                     (109 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

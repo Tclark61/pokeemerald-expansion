@@ -1,0 +1,203 @@
+Route105_CatchingMasterHouse_MapScripts::
+	.byte 0
+
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster::
+	faceplayer
+	goto_if_set FLAG_CAPTURE_HEAD_CHARGE, Route105_CatchingMasterHouse_EventScript_CatchingMaster_AllDone
+	goto_if_set FLAG_CAPTURE_FLORAL_HEALING, Route105_CatchingMasterHouse_EventScript_CatchingMaster_HeadCharge_Challenge
+	goto_if_set FLAG_CAPTURE_ELECTROWEB, Route105_CatchingMasterHouse_EventScript_CatchingMaster_FloralHealing_Challenge
+	goto_if_set FLAG_CAPTURE_TAILWIND, Route105_CatchingMasterHouse_EventScript_CatchingMaster_ElectroWeb_Challenge
+	goto_if_set FLAG_CAPTURE_NEEDLE_ARM, Route105_CatchingMasterHouse_EventScript_CatchingMaster_Tailwind_Challenge
+	goto_if_set FLAG_CAPTURE_SPLASH, Route105_CatchingMasterHouse_EventScript_CatchingMaster_NeedleArm_Challenge
+	goto_if_set FLAG_CAPTURE_INTRODUCTION, Route105_CatchingMasterHouse_EventScript_CatchingMaster_Splash_Challenge
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_Introduction, MSGBOX_NPC
+	setflag FLAG_CAPTURE_INTRODUCTION
+	end
+
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_Splash_Challenge::
+	buffermovename STR_VAR_2, MOVE_SPLASH
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_LookingForMove, MSGBOX_NPC
+	checkpartymove MOVE_SPLASH
+	goto_if_eq VAR_RESULT, PARTY_SIZE, Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeFailed
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	goto Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeSuccessful_Splash
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_NeedleArm_Challenge::
+	buffermovename STR_VAR_2, MOVE_NEEDLE_ARM
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_LookingForMove, MSGBOX_NPC
+	checkpartymove MOVE_NEEDLE_ARM
+	goto_if_eq VAR_RESULT, PARTY_SIZE, Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeFailed
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	goto Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeSuccessful_NeedleArm
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_Tailwind_Challenge::
+	goto_if_unset FLAG_CAPTURE_RECEIVED_LARVITAR, Route105_CatchingMasterHouse_EventScript_CatchingMaster_NeedleArm_GiveLarvitarEgg
+	buffermovename STR_VAR_2, MOVE_TAILWIND
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_LookingForMove, MSGBOX_NPC
+	checkpartymove MOVE_TAILWIND
+	goto_if_eq VAR_RESULT, PARTY_SIZE, Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeFailed
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	goto Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeSuccessful_Tailwind
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_ElectroWeb_Challenge::
+	buffermovename STR_VAR_2, MOVE_ELECTROWEB
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_LookingForMove, MSGBOX_NPC
+	checkpartymove MOVE_ELECTROWEB
+	goto_if_eq VAR_RESULT, PARTY_SIZE, Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeFailed
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	goto Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeSuccessful_Electroweb
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_FloralHealing_Challenge::
+	buffermovename STR_VAR_2, MOVE_FLORAL_HEALING
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_LookingForMove, MSGBOX_NPC
+	checkpartymove MOVE_FLORAL_HEALING
+	goto_if_eq VAR_RESULT, PARTY_SIZE, Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeFailed
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	goto Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeSuccessful_FloralHealing
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_HeadCharge_Challenge::
+	buffermovename STR_VAR_2, MOVE_HEAD_CHARGE
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_LookingForMove, MSGBOX_NPC
+	checkpartymove MOVE_HEAD_CHARGE
+	goto_if_eq VAR_RESULT, PARTY_SIZE, Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeFailed
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	goto Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeSuccessful_HeadCharge
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_AllDone::
+	goto_if_unset FLAG_CAPTURE_RECEIVED_PHIONE, Route105_CatchingMasterHouse_EventScript_CatchingMaster_HeadCharge_GivePhioneEgg
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_AllDone, MSGBOX_NPC
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_NeedleArm_GiveLarvitarEgg::
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_GivingRareEgg, MSGBOX_DEFAULT
+	getpartysize
+	goto_if_eq VAR_RESULT, PARTY_SIZE, Route105_CatchingMasterHouse_EventScript_CatchingMaster_NoRoomForEgg
+	setflag FLAG_CAPTURE_RECEIVED_LARVITAR
+	playfanfare MUS_OBTAIN_ITEM
+	message GraniteCave_B2F_Text_ReceivedTheEgg
+	waitfanfare
+	giveegg SPECIES_LARVITAR
+	release
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_HeadCharge_GivePhioneEgg::
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_GivingRareEgg, MSGBOX_DEFAULT
+	getpartysize
+	goto_if_eq VAR_RESULT, PARTY_SIZE, Route105_CatchingMasterHouse_EventScript_CatchingMaster_NoRoomForEgg
+	setflag FLAG_CAPTURE_RECEIVED_PHIONE
+	playfanfare MUS_OBTAIN_ITEM
+	message GraniteCave_B2F_Text_ReceivedTheEgg
+	waitfanfare
+	giveegg SPECIES_PHIONE
+	release
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_NoRoomForEgg::
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_NoRoomForEgg, MSGBOX_NPC
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeSuccessful::
+	applymovement 1, Common_Movement_ExclamationMark 
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_ChallengeSuccessful, MSGBOX_DEFAULT
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeSuccessful_Splash::
+	applymovement 1, Common_Movement_ExclamationMark 
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_ChallengeSuccessful, MSGBOX_DEFAULT
+	setflag FLAG_CAPTURE_SPLASH
+	giveitem ITEM_RARE_CANDY 10
+	giveitem ITEM_REVIVE
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeSuccessful_NeedleArm::
+	applymovement 1, Common_Movement_ExclamationMark 
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_ChallengeSuccessful, MSGBOX_DEFAULT
+	setflag FLAG_CAPTURE_NEEDLE_ARM
+	giveitem ITEM_RARE_CANDY 10
+	goto Route105_CatchingMasterHouse_EventScript_CatchingMaster_NeedleArm_GiveLarvitarEgg
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeSuccessful_Electroweb::
+	applymovement 1, Common_Movement_ExclamationMark 
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_ChallengeSuccessful, MSGBOX_DEFAULT
+	setflag FLAG_CAPTURE_ELECTROWEB
+	giveitem ITEM_RARE_CANDY 10
+	giveitem ITEM_TM_LIGHT_SCREEN
+	giveitem ITEM_TM_REFLECT
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeSuccessful_Tailwind::
+	applymovement 1, Common_Movement_ExclamationMark 
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_ChallengeSuccessful, MSGBOX_DEFAULT
+	setflag FLAG_CAPTURE_TAILWIND
+	giveitem ITEM_RARE_CANDY 10
+	giveitem ITEM_AERODACTYLITE
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeSuccessful_FloralHealing::
+	applymovement 1, Common_Movement_ExclamationMark 
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_ChallengeSuccessful, MSGBOX_DEFAULT
+	setflag FLAG_CAPTURE_FLORAL_HEALING
+	giveitem ITEM_RARE_CANDY 10
+	giveitem ITEM_AGGRONITE
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeSuccessful_HeadCharge::
+	applymovement 1, Common_Movement_ExclamationMark 
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_ChallengeSuccessful, MSGBOX_DEFAULT
+	setflag FLAG_CAPTURE_HEAD_CHARGE
+	giveitem ITEM_RARE_CANDY 20
+	goto Route105_CatchingMasterHouse_EventScript_CatchingMaster_HeadCharge_GivePhioneEgg
+	end
+
+Route105_CatchingMasterHouse_EventScript_CatchingMaster_ChallengeFailed::
+	msgbox Route105_CatchingMasterHouse_Text_CatchingMaster_ChallengeFailed, MSGBOX_DEFAULT
+	end
+
+Route105_CatchingMasterHouse_Text_CatchingMaster_AllDone:
+	.string "Egads! I'm all out of challenges!\n"
+	.string "Congratulations, you're a master catcher.\p"
+	.string "I trust you to take it from here!\n"
+	.string "Keep exploring, child.$"
+
+Route105_CatchingMasterHouse_Text_CatchingMaster_NoRoomForEgg:
+	.string "Aw, you have 6 POKéMON already...\n"
+	.string "You don't have room for the egg.\p"
+	.string "Come back later.$"
+
+Route105_CatchingMasterHouse_Text_CatchingMaster_LookingForMove:
+	.string "I'm looking for the move {STR_VAR_2}!\n"
+	.string "Do you have a POKéMON that knows it?\p"
+	.string "I'll make it worth your while!$"
+
+Route105_CatchingMasterHouse_Text_CatchingMaster_GivingRareEgg:
+	.string "As an extra present, I have here an egg!\n"
+	.string "Inside is a very rare POKéMON. Enjoy!$"
+
+Route105_CatchingMasterHouse_Text_CatchingMaster_ChallengeFailed:
+	.string "So far, none of your POKéMON know it.\n"
+	.string "Return if they know {STR_VAR_2}!$"
+
+Route105_CatchingMasterHouse_Text_CatchingMaster_ChallengeSuccessful:
+	.string "Yes, well done! Looking carefully, your\n"
+	.string "{STR_VAR_1} does know {STR_VAR_2}!\p"
+	.string "Here is your reward!$"
+
+Route105_CatchingMasterHouse_Text_CatchingMaster_Introduction:
+	.string "Hello, and welcome! I am the CATCH MASTER.\n"
+	.string "I specialize in rare and exotic POKéMON.\p"
+	.string "My greatest desire is to share my passion\n"
+	.string "for the obscure and amazing!\p"
+	.string "Whenever you're ready, there's a\n"
+	.string "challenge to test your training ability.\p"
+	.string "If you can find a POKéMON with the move\n"
+	.string "that I'm looking for, I'll give a reward!$"
+

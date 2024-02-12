@@ -20,6 +20,7 @@ RustboroCity_Mart_EventScript_PokemartBasic::
 RustboroCity_Mart_Pokemart_Basic:
 	.2byte ITEM_MASTER_BALL
 	.2byte ITEM_RARE_CANDY
+	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_GRASSY_SEED
 	.2byte ITEM_PSYCHIC_SEED
 	.2byte ITEM_MISTY_SEED

@@ -71,10 +71,17 @@ Route105_EventScript_AndresRegisterMatchCallAfterBattle::
 	release
 	end
 
+Route105_EventScript_Sign::
+	msgbox Route105_Text_Sign, MSGBOX_SIGN
+	end
+
 Route105_EventScript_AndresRematch::
 	trainerbattle_rematch TRAINER_ANDRES_1, Route105_Text_AndresRematchIntro, Route105_Text_AndresRematchDefeated
 	msgbox Route105_Text_AndresRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+Route105_Text_Sign:
+	.string "Sandy Sands Island$"
 
 Route104_Text_DadPokenavCall:
 	.string "… … … … … …\n"

@@ -3199,24 +3199,24 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         ICON(Milcery, 1),
         .footprint = gMonFootprint_Milcery,
         LEARNSETS(Milcery),
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_ALCREMIE_STRAWBERRY_VANILLA_CREAM},
-                                {EVO_LEVEL, 0, SPECIES_ALCREMIE_STRAWBERRY_RUBY_CREAM},
-                                {EVO_LEVEL, 0, SPECIES_ALCREMIE_STRAWBERRY_MATCHA_CREAM},
-                                {EVO_LEVEL, 0, SPECIES_ALCREMIE_STRAWBERRY_MINT_CREAM},
-                                {EVO_LEVEL, 0, SPECIES_ALCREMIE_STRAWBERRY_LEMON_CREAM},
-                                {EVO_LEVEL, 0, SPECIES_ALCREMIE_STRAWBERRY_SALTED_CREAM},
-                                {EVO_LEVEL, 0, SPECIES_ALCREMIE_STRAWBERRY_RUBY_SWIRL},
-                                {EVO_LEVEL, 0, SPECIES_ALCREMIE_STRAWBERRY_CARAMEL_SWIRL},
-                                {EVO_LEVEL, 0, SPECIES_ALCREMIE_STRAWBERRY_RAINBOW_SWIRL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_ALCREMIE_STRAWBERRY_VANILLA_CREAM},
+                                {EVO_LEVEL, 24, SPECIES_ALCREMIE_STRAWBERRY_RUBY_CREAM},
+                                {EVO_LEVEL, 25, SPECIES_ALCREMIE_STRAWBERRY_MATCHA_CREAM},
+                                {EVO_LEVEL, 26, SPECIES_ALCREMIE_STRAWBERRY_MINT_CREAM},
+                                {EVO_LEVEL, 27, SPECIES_ALCREMIE_STRAWBERRY_LEMON_CREAM},
+                                {EVO_LEVEL, 28, SPECIES_ALCREMIE_STRAWBERRY_SALTED_CREAM},
+                                {EVO_LEVEL, 29, SPECIES_ALCREMIE_STRAWBERRY_RUBY_SWIRL},
+                                {EVO_LEVEL, 30, SPECIES_ALCREMIE_STRAWBERRY_CARAMEL_SWIRL},
+                                {EVO_LEVEL, 31, SPECIES_ALCREMIE_STRAWBERRY_RAINBOW_SWIRL}),
     },
 
 #define ALCREMIE_MISC_INFO(color)                                               \
-        .baseHP        = 65,                                                    \
+        .baseHP        = 70,                                                    \
         .baseAttack    = 60,                                                    \
         .baseDefense   = 75,                                                    \
         .baseSpeed     = 64,                                                    \
         .baseSpAttack  = 110,                                                   \
-        .baseSpDefense = 121,                                                   \
+        .baseSpDefense = 125,                                                   \
         .types = { TYPE_FAIRY, TYPE_FAIRY },                                    \
         .catchRate = 100,                                                       \
         .expYield = 173,                                                        \

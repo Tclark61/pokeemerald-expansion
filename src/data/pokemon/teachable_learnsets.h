@@ -478,6 +478,7 @@ static const u16 sButterfreeTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_HEADBUTT,
+    MOVE_ROOST,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_CATERPIE
@@ -19430,6 +19431,7 @@ static const u16 sTurtwigTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
 
@@ -19463,6 +19465,7 @@ static const u16 sGrotleTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
 
@@ -19502,6 +19505,7 @@ static const u16 sTorterraTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TURTWIG
@@ -25603,6 +25607,7 @@ static const u16 sDucklettTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
+    MOVE_ROOST,
     MOVE_UNAVAILABLE,
 };
 
@@ -25632,6 +25637,7 @@ static const u16 sSwannaTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
+    MOVE_ROOST,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_DUCKLETT
@@ -27197,6 +27203,7 @@ static const u16 sRuffletTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
+    MOVE_ROOST,
     MOVE_UNAVAILABLE,
 };
 
@@ -27227,6 +27234,7 @@ static const u16 sBraviaryTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
+    MOVE_ROOST,
     MOVE_UNAVAILABLE,
 };
 
@@ -27267,6 +27275,7 @@ static const u16 sVullabyTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
+    MOVE_ROOST,
     MOVE_UNAVAILABLE,
 };
 
@@ -27300,6 +27309,7 @@ static const u16 sMandibuzzTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
+    MOVE_ROOST,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_VULLABY

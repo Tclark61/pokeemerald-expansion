@@ -195,6 +195,16 @@ RustboroCity_CuttersHouse_EventScript_Lass::
 	msgbox RustboroCity_CuttersHouse_Text_Creamie, MSGBOX_NPC
 	end
 
+RustboroCity_CuttersHouse_EventScript_Woman::
+	msgbox RustboroCity_CuttersHouse_Text_CreamieEvolve, MSGBOX_NPC
+	end
+
+RustboroCity_CuttersHouse_Text_CreamieEvolve:
+	.string "ALCREMIE evolves differently, from\n"
+	.string "level 23 all the way to 31.\p"
+	.string "Isn't it fun to see all the\n"
+	.string "different colors a POKéMON takes?$"
+
 RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse:
 	.string "That determined expression…\n"
 	.string "That limber way you move…\l"
@@ -226,9 +236,9 @@ RustboroCity_CuttersHouse_Text_Creamie:
 
 RustboroCity_IceCreamParlor_Text_WhichDrinkWouldYouLike:
 	.string "MAGLIO: Grumble grumble...\n"
-	.string "Welcome to Magliogogliani's famous\p"
-	.string "ice cream parlor. Whattya want\n"
-	.string "to order today?$"
+	.string "Welcome to Magliogogliani's ice cream.\p"
+	.string "Best ice cream parlor in town.\n"
+	.string "Whattya want to order today?$"
 
 RustboroCity_IceCreamParlor_Text_CanOfDrinkDroppedDown:
 	.string "MAGLIO: Order up for {PLAYER}!\p"

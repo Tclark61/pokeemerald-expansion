@@ -30,6 +30,29 @@ EverGrandeCity_EventScript_SetVisitedEverGrande::
 	setvar VAR_TEMP_1, 1
 	end
 
+EverGrandeCity_EventScript_Zach::
+	trainerbattle_single TRAINER_ZACH_2, EverGrandeCity_Text_ZachIntroText, EverGrandeCity_Text_ZachDefeatText
+	msgbox EverGrandeCity_Text_Zach_PostFight, MSGBOX_DEFAULT
+	release
+	end
+
+EverGrandeCity_Text_ZachIntroText:
+	.string "Coincidence seeing you here!\n"
+	.string "Last time I saw you was in the WOODS!\p"
+	.string "I've become stronger since then, though.\n"
+	.string "Don't worry, my moves are still the exact same.\p"
+	.string "No tricks, only damage!$"
+
+EverGrandeCity_Text_ZachDefeatText:
+	.string "That's an A level team you've built!\n"
+	.string "You have some strong moves!$"
+
+EverGrandeCity_Text_Zach_PostFight:
+	.string "Hey, do me a favor. If you see\n"
+	.string "a guy named GEOFF or TYLER up ahead,\p"
+	.string "break their kneecaps for me.\n"
+	.string "Don't worry, they'll understand.$"
+
 EverGrandeCity_Text_Congrats:
 	.string "You made it! Congratulations!$"
 

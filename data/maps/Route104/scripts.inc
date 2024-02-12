@@ -325,13 +325,13 @@ Route104_EventScript_Boy1::
 Route104_EventScript_Woman::
 	checkitem ITEM_OAKS_PARCEL
 	goto_if_eq VAR_RESULT, FALSE, Route104_EventScript_WomanMissesParcel
-	applymovement 4, Common_Movement_ExclamationMark
+	applymovement 2, Common_Movement_ExclamationMark
 	msgbox Route104_Text_WomanLeaves, MSGBOX_NPC
 	removeitem ITEM_OAKS_PARCEL
 	giveitem ITEM_EVIOLITE
-	applymovement 4, Route104_EventScript_WomanEntersForest
+	applymovement 2, Route104_EventScript_WomanEntersForest
 	waitmovement 0
-	removeobject 4
+	removeobject 2
 	setflag FLAG_FOUND_PARCEL
 	release
 	end

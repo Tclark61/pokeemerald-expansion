@@ -103,7 +103,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_TORTERRA] =
     {
-        .baseHP        = 95,
+        .baseHP        = 105,
         .baseAttack    = 109,
         .baseDefense   = 105,
         .baseSpeed     = 56,
@@ -119,7 +119,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_GRASS },
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_SHELL_ARMOR },
+        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_NONE, ABILITY_SHELL_ARMOR },
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
         .speciesName = _("Torterra"),
@@ -424,9 +424,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_WATER_1, EGG_GROUP_FIELD },
         #if P_UPDATED_ABILITIES >= GEN_9
-            .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_COMPETITIVE },
+            .abilities = { ABILITY_COMPETITIVE, ABILITY_NONE, ABILITY_COMPETITIVE },
         #else
-            .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_DEFIANT },
+            .abilities = { ABILITY_DEFIANT, ABILITY_NONE, ABILITY_DEFIANT },
         #endif
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Empoleon"),
@@ -2783,7 +2783,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         ICON(Riolu, 2),
         .footprint = gMonFootprint_Riolu,
         LEARNSETS(Riolu),
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP_DAY, 0, SPECIES_LUCARIO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_LUCARIO}),
     },
 
 #define LUCARIO_MISC_INFO                                       \
@@ -4239,7 +4239,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .expYield = 216,
         .evYield_HP = 1,
         .genderRatio = MON_GENDERLESS,
-        .eggCycles = 40,
+        .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = { EGG_GROUP_WATER_1, EGG_GROUP_FAIRY },
@@ -4273,6 +4273,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         ICON(Phione, 0),
         .footprint = gMonFootprint_Phione,
         LEARNSETS(Phione),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_MANAPHY}),
     },
 
     [SPECIES_MANAPHY] =

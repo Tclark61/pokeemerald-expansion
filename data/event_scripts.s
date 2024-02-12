@@ -1067,5 +1067,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
-
 	.include "data/maps/PetalburgWoods_1F/scripts.inc"
+	.include "data/maps/Route105_CatchingMasterHouse/scripts.inc"
+
+	.include "data/maps/LaboratoryLabyrinth/scripts.inc"
+
+	.include "data/maps/RustboroCity_RichmondVolleyballClub/scripts.inc"

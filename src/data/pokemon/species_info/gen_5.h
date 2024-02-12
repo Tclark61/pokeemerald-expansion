@@ -1882,7 +1882,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseDefense   = 86,
         .baseSpeed     = 50,
         .baseSpAttack  = 60,
-        .baseSpDefense = 86,
+        .baseSpDefense = 120,
         .types = { TYPE_NORMAL, TYPE_NORMAL },
         .expYield = 390,
         .abilities = { ABILITY_HEALER, ABILITY_REGENERATOR, ABILITY_KLUTZ },
@@ -3468,12 +3468,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_MARACTUS
     [SPECIES_MARACTUS] =
     {
-        .baseHP        = 75,
+        .baseHP        = 110,
         .baseAttack    = 86,
-        .baseDefense   = 67,
+        .baseDefense   = 80,
         .baseSpeed     = 60,
         .baseSpAttack  = 106,
-        .baseSpDefense = 67,
+        .baseSpDefense = 90,
         .types = { TYPE_GRASS, TYPE_GRASS },
         .catchRate = 255,
         .expYield = 161,
@@ -3484,7 +3484,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_GRASS, EGG_GROUP_GRASS },
-        .abilities = { ABILITY_WATER_ABSORB, ABILITY_CHLOROPHYLL, ABILITY_STORM_DRAIN },
+        .abilities = { ABILITY_STORM_DRAIN, ABILITY_CHLOROPHYLL, ABILITY_STORM_DRAIN },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Maractus"),
         .cryId = CRY_MARACTUS,
@@ -4839,7 +4839,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_DUCKLETT
     [SPECIES_DUCKLETT] =
     {
-        .baseHP        = 62,
+        .baseHP        = 70,
         .baseAttack    = 44,
         .baseDefense   = 50,
         .baseSpeed     = 55,
@@ -4882,17 +4882,17 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Ducklett, 0),
         .footprint = gMonFootprint_Ducklett,
         LEARNSETS(Ducklett),
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_SWANNA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_SWANNA}),
     },
 
     [SPECIES_SWANNA] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 87,
-        .baseDefense   = 63,
-        .baseSpeed     = 98,
+        .baseHP        = 80,
+        .baseAttack    = 90,
+        .baseDefense   = 68,
+        .baseSpeed     = 108,
         .baseSpAttack  = 87,
-        .baseSpDefense = 63,
+        .baseSpDefense = 68,
         .types = { TYPE_WATER, TYPE_FLYING },
         .catchRate = 45,
         .expYield = 166,
@@ -4946,6 +4946,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .catchRate = 255,
         .expYield = 61,
         .evYield_SpAttack = 1,
+        .itemCommon = ITEM_NEVER_MELT_ICE,
         .itemRare = ITEM_NEVER_MELT_ICE,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
@@ -4980,7 +4981,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Vanillite, 0),
         .footprint = gMonFootprint_Vanillite,
         LEARNSETS(Vanillite),
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_VANILLISH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_VANILLISH}),
     },
 
     [SPECIES_VANILLISH] =
@@ -5029,7 +5030,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Vanillish, 2),
         .footprint = gMonFootprint_Vanillish,
         LEARNSETS(Vanillish),
-        .evolutions = EVOLUTION({EVO_LEVEL, 47, SPECIES_VANILLUXE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 43, SPECIES_VANILLUXE}),
     },
 
     [SPECIES_VANILLUXE] =
@@ -7397,7 +7398,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Rufflet, 2),
         .footprint = gMonFootprint_Rufflet,
         LEARNSETS(Rufflet),
-        .evolutions = EVOLUTION({EVO_LEVEL, 54, SPECIES_BRAVIARY},
+        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_BRAVIARY},
                                 {EVO_NONE, 0, SPECIES_BRAVIARY_HISUIAN}),
     },
 
@@ -7426,7 +7427,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpDefense = 75,
         .types = { TYPE_NORMAL, TYPE_FLYING },
         .evYield_Attack = 2,
-        .abilities = { ABILITY_KEEN_EYE, ABILITY_SHEER_FORCE, ABILITY_DEFIANT },
+        .abilities = { ABILITY_DEFIANT, ABILITY_SHEER_FORCE, ABILITY_DEFIANT },
         .bodyColor = BODY_COLOR_RED,
         .categoryName = _("Valiant"),
         .height = 15,
