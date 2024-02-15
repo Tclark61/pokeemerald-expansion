@@ -196,6 +196,7 @@ Route119_EventScript_ItemElixir2::
 
 Route120_EventScript_ItemNugget::
 	finditem ITEM_NUGGET
+	finditem ITEM_RARE_CANDY 10
 	end
 
 Route120_EventScript_ItemFullHeal::
@@ -477,7 +478,7 @@ AbandonedShip_HiddenFloorRooms_EventScript_ItemTMRainDance::
 	end
 
 ScorchedSlab_EventScript_ItemTMSunnyDay::
-	finditem ITEM_TM_SUNNY_DAY
+	finditem ITEM_TM_DRAGON_CLAW
 	end
 
 SafariZone_Northwest_EventScript_ItemTMSolarBeam::

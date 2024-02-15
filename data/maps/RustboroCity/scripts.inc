@@ -1519,8 +1519,8 @@ RustboroCity_Text_GymSign:
 	.string "Those words have been crossed out.\n"
 	.string "LEADER: LARRY--\p"
 	.string "Shockingly, those words have also\n"
-	.string "been crossed out. Nothing takes\p"
-	.string "its place. Curious.$"
+	.string "been crossed out.\p"
+	.string "Nothing takes its place. Curious.$"
 
 RustboroCity_Text_DevonCorpBranchOfficeSign:
 	.string "DEVON CORP. BRANCH OFFICE\p"

@@ -7771,8 +7771,8 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_BEAUTY,
         .trainerName = _("JOHANNA"),
         .items = {},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_SETUP_FIRST_TURN,
         .party = TRAINER_PARTY(sParty_Johanna),
     },
 

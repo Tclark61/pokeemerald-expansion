@@ -271,9 +271,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     {
         TYPHLOSION_MISC_INFO,
         .baseHP        = 78,
-        .baseAttack    = 84,
+        .baseAttack    = 90,
         .baseDefense   = 78,
-        .baseSpeed     = 100,
+        .baseSpeed     = 105,
         .baseSpAttack  = 109,
         .baseSpDefense = 85,
         .types = { TYPE_FIRE, TYPE_FIRE },

@@ -9115,9 +9115,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_SEAKING] =
     {
         .baseHP        = 80,
-        .baseAttack    = 92,
+        .baseAttack    = 108,
         .baseDefense   = 65,
-        .baseSpeed     = 68,
+        .baseSpeed     = 90,
         .baseSpAttack  = 65,
         .baseSpDefense = 80,
         .types = { TYPE_WATER, TYPE_WATER },

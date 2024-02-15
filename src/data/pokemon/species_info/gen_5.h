@@ -297,9 +297,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 
     [SPECIES_EMBOAR] =
     {
-        .baseHP        = 110,
-        .baseAttack    = 123,
-        .baseDefense   = 65,
+        .baseHP        = 120,
+        .baseAttack    = 113,
+        .baseDefense   = 90,
         .baseSpeed     = 65,
         .baseSpAttack  = 100,
         .baseSpDefense = 65,
@@ -312,7 +312,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD },
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_RECKLESS },
+        .abilities = { ABILITY_RECKLESS, ABILITY_NONE, ABILITY_RECKLESS },
         .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
         .speciesName = _("Emboar"),
@@ -1919,7 +1919,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseDefense   = 126,
         .baseSpeed     = 50,
         .baseSpAttack  = 80,
-        .baseSpDefense = 126,
+        .baseSpDefense = 146,
         .types = { TYPE_NORMAL, TYPE_FAIRY },
         .expYield = 425,
         .abilities = { ABILITY_HEALER, ABILITY_HEALER, ABILITY_HEALER },
@@ -7595,7 +7595,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_HEATMOR
     [SPECIES_HEATMOR] =
     {
-        .baseHP        = 85,
+        .baseHP        = 95,
         .baseAttack    = 97,
         .baseDefense   = 66,
         .baseSpeed     = 65,

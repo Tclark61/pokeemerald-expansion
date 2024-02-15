@@ -1954,12 +1954,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_MASQUERAIN] =
     {
-        .baseHP        = 70,
+        .baseHP        = 90,
         .baseAttack    = 60,
         .baseDefense   = 62,
         .baseSpDefense = 82,
         #if P_UPDATED_STATS >= GEN_7
-            .baseSpeed     = 80,
+            .baseSpeed     = 90,
             .baseSpAttack  = 100,
         #else
             .baseSpeed     = 60,
@@ -4511,7 +4511,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_SPINDA
     [SPECIES_SPINDA] =
     {
-        .baseHP        = 60,
+        .baseHP        = 90,
         .baseAttack    = 60,
         .baseDefense   = 60,
         .baseSpeed     = 60,
@@ -4526,7 +4526,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE },
-        .abilities = { ABILITY_OWN_TEMPO, ABILITY_TANGLED_FEET, ABILITY_CONTRARY },
+        .abilities = { ABILITY_TANGLED_FEET, ABILITY_TANGLED_FEET, ABILITY_CONTRARY },
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
         .speciesName = _("Spinda"),

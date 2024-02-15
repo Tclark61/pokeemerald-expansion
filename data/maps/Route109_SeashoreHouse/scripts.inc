@@ -152,16 +152,17 @@ Route109_SeashoreHouse_Text_DwaynePostBattle:
 	.string "hot battles and ice-cold SODA POP!$"
 
 Route109_SeashoreHouse_Text_JohannaIntro:
-	.string "Boring battles aren't worth the effort.\p"
-	.string "Fiery hot battles are what toughen up\n"
-	.string "TRAINERS and POKéMON!$"
+	.string "Popular POKéMON are boring!\p"
+	.string "I got here only using my favorites.\n"
+	.string "Let me show them all to you!$"
 
 Route109_SeashoreHouse_Text_JohannaDefeated:
-	.string "That's hot!$"
+	.string "Your POKéMON are cool too!$"
 
 Route109_SeashoreHouse_Text_JohannaPostBattle:
-	.string "Whew, I'm all thirsty.\n"
-	.string "Maybe I'll have a SODA POP.$"
+	.string "Just because a POKéMON has\n"
+	.string "a reputation for being weak,\p"
+	.string "doesn't mean it's always like that.$" 
 
 Route109_SeashoreHouse_Text_SimonIntro:
 	.string "I'm going to show you how great\n"

@@ -22677,6 +22677,7 @@ static const u16 sTepigTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
+    MOVE_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
 
@@ -22713,6 +22714,7 @@ static const u16 sPigniteTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_THUNDER_PUNCH,
+    MOVE_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
 
@@ -22752,6 +22754,7 @@ static const u16 sEmboarTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_THUNDER_PUNCH,
+    MOVE_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TEPIG
