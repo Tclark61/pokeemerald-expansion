@@ -48,6 +48,7 @@ EverGrandeCity_PokemonLeague_1F_Pokemart:
 	.2byte ITEM_TM_BULLET_SEED
 	.2byte ITEM_AUSPICIOUS_ARMOR
 	.2byte ITEM_MALICIOUS_ARMOR
+	.2byte ITEM_METAL_COAT
 	.2byte ITEM_NONE
 	release
 	end

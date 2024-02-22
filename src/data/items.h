@@ -5376,7 +5376,7 @@ const struct Item gItems[] =
     [ITEM_METAL_COAT] =
     {
         .name = _("Metal Coat"),
-        .price = 1000,
+        .price = 8000,
         .holdEffect = HOLD_EFFECT_STEEL_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = sMetalCoatDesc,

@@ -8315,8 +8315,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Koffing, 2),
         .footprint = gMonFootprint_Koffing,
         LEARNSETS(Koffing),
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_WEEZING},
-                                {EVO_NONE, 0, SPECIES_WEEZING_GALARIAN}),
+        .evolutions = EVOLUTION({EVO_NONE, 35, SPECIES_WEEZING},
+                                {EVO_LEVEL, 35, SPECIES_WEEZING_GALARIAN}),
     },
 
 #define WEEZING_MISC_INFO                                           \
@@ -8383,7 +8383,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         WEEZING_MISC_INFO,
         .types = { TYPE_POISON, TYPE_FAIRY },
         .itemRare = ITEM_MISTY_SEED,
-        .abilities = { ABILITY_LEVITATE, ABILITY_NEUTRALIZING_GAS, ABILITY_MISTY_SURGE },
+        .abilities = { ABILITY_NEUTRALIZING_GAS, ABILITY_MISTY_SURGE, ABILITY_MISTY_SURGE },
         .bodyColor = BODY_COLOR_GRAY,
         .isGalarianForm = TRUE,
         .height = 30,
@@ -9109,7 +9109,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Goldeen, 0),
         .footprint = gMonFootprint_Goldeen,
         LEARNSETS(Goldeen),
-        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_SEAKING}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_SEAKING}),
     },
 
     [SPECIES_SEAKING] =
@@ -9118,7 +9118,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseAttack    = 108,
         .baseDefense   = 65,
         .baseSpeed     = 90,
-        .baseSpAttack  = 65,
+        .baseSpAttack  = 70,
         .baseSpDefense = 80,
         .types = { TYPE_WATER, TYPE_WATER },
         .catchRate = 60,
@@ -9130,7 +9130,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_WATER_2, EGG_GROUP_WATER_2 },
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_WATER_VEIL, ABILITY_LIGHTNING_ROD },
+        .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Seaking"),
         .cryId = CRY_SEAKING,
@@ -10627,13 +10627,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_JOLTEON},
                                 {EVO_ITEM, ITEM_WATER_STONE, SPECIES_VAPOREON},
                                 {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_FLAREON},
-                                {EVO_FRIENDSHIP_DAY, 0, SPECIES_ESPEON},
-                                {EVO_FRIENDSHIP_NIGHT, 0, SPECIES_UMBREON},
+                                {EVO_ITEM, ITEM_MOON_STONE, SPECIES_ESPEON},
+                                {EVO_ITEM, ITEM_SUN_STONE, SPECIES_UMBREON},
                                 {EVO_SPECIFIC_MAP, MAP_PETALBURG_WOODS, SPECIES_LEAFEON},
                                 {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_LEAFEON},
                                 {EVO_SPECIFIC_MAP, MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM, SPECIES_GLACEON},
                                 {EVO_ITEM, ITEM_ICE_STONE, SPECIES_GLACEON},
-                                {EVO_FRIENDSHIP_MOVE_TYPE, TYPE_FAIRY, SPECIES_SYLVEON}),
+                                {EVO_ITEM, ITEM_SHINY_STONE, SPECIES_SYLVEON}),
     },
 
 #if P_GIGANTAMAX_FORMS

@@ -45,5 +45,7 @@ GraniteCave_B1F_Text_ZanderDefeat:
 GraniteCave_B1F_Text_ZanderPostBattle:
 	.string "I get freaked out every time I see\n"
 	.string "anything move…\p"
+	.string "Just now, I saw a tentacle wiggle...\n"
+	.string "I bet it would grab me if I got close!\p"
 	.string "I shouldn't have come here to train…$"
 

@@ -57,8 +57,8 @@ static const u8 sViseGripDescription[] = _(
     "powerful pincers.");
 
 static const u8 sGuillotineDescription[] = _(
-    "A powerful pincer attack\n"
-    "that may cause fainting.");
+    "Does double damage to foes\n"
+    "with half HP.");
 
 static const u8 sRazorWindDescription[] = _(
     "A 2-turn move that strikes\n"
@@ -137,8 +137,8 @@ static const u8 sFuryAttackDescription[] = _(
     "with sharp horns, etc.");
 
 static const u8 sHornDrillDescription[] = _(
-    "A one-hit KO attack that\n"
-    "uses a horn like a drill.");
+    "A high speed horn attack\n"
+    "that can cause flinching.");
 
 static const u8 sTackleDescription[] = _(
     "Charges the foe with a full-\n"
@@ -658,7 +658,7 @@ static const u8 sHyperFangDescription[] = _(
 
 static const u8 sSharpenDescription[] = _(
     "Reduces the polygon count\n"
-    "and raises Attack.");
+    "and raises SpA and Atk.");
 
 static const u8 sConversionDescription[] = _(
     "Changes the user's type\n"
