@@ -191,6 +191,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .priority = 0,
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
+        .slicingMove = TRUE,
         .makesContact = TRUE,
     },
 
@@ -206,6 +207,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .priority = 0,
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
+        .slicingMove = TRUE,
         .makesContact = TRUE,
     },
 
@@ -1267,7 +1269,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
             .pp = 10,
         #endif
         .effect = EFFECT_ABSORB,
-        .power = 40,
+        .power = 50,
         .type = TYPE_GRASS,
         .accuracy = 100,
         .secondaryEffectChance = 0,
@@ -1585,13 +1587,13 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_FISSURE] =
     {
-        .effect = EFFECT_OHKO,
-        .power = 1,
+        .effect = EFFECT_RECOIL_25,
+        .power = 120,
         .type = TYPE_GROUND,
-        .accuracy = 30,
-        .pp = 5,
+        .accuracy = 90,
+        .pp = 10,
         .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_SELECTED,
+        .target = MOVE_TARGET_FOES_AND_ALLY,
         .priority = 0,
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
@@ -2866,7 +2868,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 20,
-        .secondaryEffectChance = 30,
+        .secondaryEffectChance = 33,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_SPECIAL,
@@ -5698,11 +5700,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     [MOVE_SILVER_WIND] =
     {
         .effect = EFFECT_ALL_STATS_UP_HIT,
-        .power = 60,
+        .power = 70,
         .type = TYPE_BUG,
         .accuracy = 100,
-        .pp = 5,
-        .secondaryEffectChance = 10,
+        .pp = 10,
+        .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_SPECIAL,
@@ -5880,12 +5882,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_SHEER_COLD] =
     {
-        .effect = EFFECT_OHKO,
-        .power = 1,
+        .effect = EFFECT_FREEZE_HIT,
+        .power = 70,
         .type = TYPE_ICE,
-        .accuracy = 30,
+        .accuracy = 50,
         .pp = 5,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 50,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_SPECIAL,
@@ -6297,11 +6299,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     [MOVE_WATER_PULSE] =
     {
         .effect = EFFECT_CONFUSE_HIT,
-        .power = 60,
+        .power = 70,
         .type = TYPE_WATER,
         .accuracy = 100,
         .pp = 20,
-        .secondaryEffectChance = 20,
+        .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_SPECIAL,
@@ -9982,7 +9984,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     [MOVE_PARABOLIC_CHARGE] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_7
-            .power = 70,
+            .power = 80,
         #else
             .power = 50,
         #endif
@@ -12777,7 +12779,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .power = 70,
         .type = TYPE_FIRE,
         .accuracy = 100,
-        .pp = 5,
+        .pp = 10,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_BOTH,
         .priority = 0,
@@ -12792,7 +12794,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .power = 75,
         .type = TYPE_DARK,
         .accuracy = 100,
-        .pp = 5,
+        .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -12807,7 +12809,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .power = 110,
         .type = TYPE_GHOST,
         .accuracy = 90,
-        .pp = 5,
+        .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,

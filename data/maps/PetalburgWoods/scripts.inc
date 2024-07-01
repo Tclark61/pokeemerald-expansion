@@ -624,12 +624,7 @@ PetalburgWoods_Text_TrainerTipsExperience:
 	.string "the POKéMON will MEGA EVOLVE!$"
 
 PetalburgWoods_Text_TrainerTipsPP:
-	.string "TRAINER TIPS\p"
-	.string "In addition to Hit Points (HP), POKéMON\n"
-	.string "have Power Points (PP) that are used to\l"
-	.string "make moves during battle.\p"
-	.string "If a POKéMON runs out of PP, it must be\n"
-	.string "taken to a POKéMON CENTER.$"
+	.string "{UP_ARROW} FORTREE CITY$"
 
 PetalburgWoods_Text_WeirdBall:
 	.string "This isn't an item!\n"

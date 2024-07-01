@@ -4438,10 +4438,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     {
         SHAYMIN_MISC_INFO,
         .baseHP        = 100,
-        .baseAttack    = 103,
+        .baseAttack    = 110,
         .baseDefense   = 75,
-        .baseSpeed     = 127,
-        .baseSpAttack  = 120,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 90,
         .baseSpDefense = 75,
         .types = { TYPE_GRASS, TYPE_FLYING },
         .abilities = { ABILITY_SERENE_GRACE, ABILITY_NONE },

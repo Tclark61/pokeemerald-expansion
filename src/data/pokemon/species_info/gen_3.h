@@ -4672,7 +4672,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseDefense   = 80,
         .baseSpeed     = 100,
         .baseSpAttack  = 80,
-        .baseSpDefense = 80,
+        .baseSpDefense = 90,
         .types = { TYPE_GROUND, TYPE_DRAGON },
         .catchRate = 45,
         .expYield = 234,
@@ -4687,7 +4687,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         #else
             .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG },
         #endif
-        .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE },
+        .abilities = { ABILITY_SAND_STREAM, ABILITY_NONE, ABILITY_LEVITATE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Flygon"),
         .cryId = CRY_FLYGON,
@@ -5317,10 +5317,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_CRAWDAUNT] =
     {
-        .baseHP        = 63,
+        .baseHP        = 90,
         .baseAttack    = 120,
         .baseDefense   = 85,
-        .baseSpeed     = 55,
+        .baseSpeed     = 70,
         .baseSpAttack  = 90,
         .baseSpDefense = 55,
         .types = { TYPE_WATER, TYPE_DARK },
@@ -6125,7 +6125,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Duskull, 0),
         .footprint = gMonFootprint_Duskull,
         LEARNSETS(Duskull),
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_DUSCLOPS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_DUSCLOPS}),
     },
 
     [SPECIES_DUSCLOPS] =
@@ -6242,7 +6242,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseDefense   = 83,
         .baseSpeed     = 51,
         .baseSpAttack  = 80,
-        .baseSpDefense = 87,
+        .baseSpDefense = 100,
         .types = { TYPE_GRASS, TYPE_FLYING },
         .catchRate = 200,
         .expYield = 161,
@@ -7031,8 +7031,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseHP        = 43,
         .baseAttack    = 30,
         .baseDefense   = 55,
-        .baseSpeed     = 97,
-        .baseSpAttack  = 40,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 70,
         .baseSpDefense = 65,
         .types = { TYPE_WATER, TYPE_WATER },
         .catchRate = 225,

@@ -260,9 +260,10 @@ Route104_Movement_RivalExitBrineysCottage:
 Route104_EventScript_ExpertF::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_CHESTO_BERRY_ROUTE_104, Route104_EventScript_ReceivedBerry
+	checkitem ITEM_WEPEAR_BERRY
+	goto_if_eq VAR_RESULT, TRUE, Route104_EventScript_ReceivedBerry
 	msgbox Route104_Text_PlantBerriesInSoilTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_CHESTO_BERRY
+	giveitem ITEM_WEPEAR_BERRY
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_CHESTO_BERRY_ROUTE_104
 	msgbox Route104_Text_TrainersOftenMakeMonHoldBerries, MSGBOX_DEFAULT
@@ -958,13 +959,10 @@ Route104_EventScript_RematchWinston::
 	end
 
 Route104_EventScript_Cindy::
-	trainerbattle_single TRAINER_CINDY_1, Route104_Text_CindyIntro, Route104_Text_CindyDefeat, Route104_EventScript_TryRegisterCindyAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route104_EventScript_RematchCindy
-	setvar VAR_0x8004, TRAINER_CINDY_1
-	specialvar VAR_RESULT, IsTrainerRegistered
-	goto_if_eq VAR_RESULT, FALSE, Route104_EventScript_TryRegisterCindy
+	trainerbattle_single TRAINER_CINDY_1, Route104_Text_CindyIntro, Route104_Text_CindyDefeat
 	msgbox Route104_Text_CindyPostBattle, MSGBOX_DEFAULT
+	cleartrainerflag(TRAINER_CINDY_1)
+	giveitem ITEM_PEARL
 	release
 	end
 
@@ -1018,6 +1016,10 @@ Route104_EventScript_LevelCapSign::
 	msgbox Route104_Text_LevelCapSign, MSGBOX_SIGN
 	end
 
+Route104_EventScript_BattleThisTrainerSign::
+	msgbox Route104_Text_BattleThisTrainerSign, MSGBOX_SIGN
+	end
+
 Route104_EventScript_Gina::
 	trainerbattle_double TRAINER_GINA_AND_MIA_1, Route104_Text_GinaIntro, Route104_Text_GinaDefeat, Route104_Text_GinaNotEnoughMons
 	special GetPlayerBigGuyGirlString
@@ -1037,9 +1039,12 @@ Route104_EventScript_Darian::
 	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route104_Text_BattleThisTrainerSign:
+	.string "This trainer can be re-battled.\n"
+	.string "The reason is money.$"
+
 Route104_Text_LevelCapSign:
-	.string "The level cap is raised!\n"
-	.string "It's now 27!$"
+	.string "The level cap is raised!$"
 
 Route104_Text_ForestSign:
 	.string " --  Petalburg Forest  -- \n"
@@ -1079,7 +1084,7 @@ Route104_Text_ThrowBallAtWeakenedPokemon:
 	.string "If you get stuck at a hard fight,\n"
 	.string "it can feel impossible to keep going.\p"
 	.string "But sometimes trying a new strategy,\n"
-	.string "or checking your bag for different TMs\p"
+	.string "or checking your TMs again\p"
 	.string "can make all the difference!$"
 
 Route104_Text_WomanLeaves:

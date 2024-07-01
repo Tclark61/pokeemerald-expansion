@@ -3453,17 +3453,18 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .footprint = gMonFootprint_Phantump,
         LEARNSETS(Phantump),
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_TREVENANT},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_TREVENANT}),
+                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_TREVENANT},
+                                {EVO_LEVEL, 32, SPECIES_TREVENANT}),
     },
 
     [SPECIES_TREVENANT] =
     {
-        .baseHP        = 85,
+        .baseHP        = 90,
         .baseAttack    = 110,
-        .baseDefense   = 76,
+        .baseDefense   = 90,
         .baseSpeed     = 56,
         .baseSpAttack  = 65,
-        .baseSpDefense = 82,
+        .baseSpDefense = 90,
         .types = { TYPE_GHOST, TYPE_GRASS },
         .catchRate = 60,
         .expYield = 166,

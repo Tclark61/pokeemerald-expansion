@@ -8520,6 +8520,7 @@ static const u16 sMoltresTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_ROOST,
     MOVE_UNAVAILABLE,
 };
 

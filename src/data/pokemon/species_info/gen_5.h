@@ -4349,7 +4349,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         PALETTES(Zorua),
         ICON(Zorua, 0),
         LEARNSETS(Zorua),
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ZOROARK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ZOROARK},
+                                {EVO_ITEM, ITEM_DUSK_STONE, SPECIES_ZOROARK_HISUIAN}),
     },
 
     [SPECIES_ZOROARK] =
@@ -7882,7 +7883,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Larvesta, 0),
         .footprint = gMonFootprint_Larvesta,
         LEARNSETS(Larvesta),
-        .evolutions = EVOLUTION({EVO_LEVEL, 59, SPECIES_VOLCARONA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_VOLCARONA}),
     },
 
     [SPECIES_VOLCARONA] =
@@ -7891,7 +7892,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseAttack    = 60,
         .baseDefense   = 65,
         .baseSpeed     = 100,
-        .baseSpAttack  = 135,
+        .baseSpAttack  = 120,
         .baseSpDefense = 105,
         .types = { TYPE_BUG, TYPE_FIRE },
         .catchRate = 15,

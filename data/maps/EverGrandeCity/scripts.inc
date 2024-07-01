@@ -40,7 +40,7 @@ EverGrandeCity_Text_ZachIntroText:
 	.string "Coincidence seeing you here!\n"
 	.string "Last time I saw you was in the WOODS!\p"
 	.string "I've become stronger since then, though.\n"
-	.string "Don't worry, my moves are still the exact same.\p"
+	.string "Don't worry, my moves are still the same.\p"
 	.string "No tricks, only damage!$"
 
 EverGrandeCity_Text_ZachDefeatText:

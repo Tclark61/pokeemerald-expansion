@@ -423,6 +423,19 @@ RusturfTunnel_EventScript_Mike::
 	msgbox RusturfTunnel_Text_MikePostBattle, MSGBOX_AUTOCLOSE
 	end
 
+RusturfTunnel_EventScript_Moltres::
+	lock
+	faceplayer
+	playmoncry SPECIES_MOLTRES, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_MOLTRES, 40
+	dowildbattle
+	setflag FLAG_BATTLED_MOLTRES
+	removeobject 11
+	release
+	end
+
 RusturfTunnel_Text_ComeAndGetSome:
 	.string "What, are you coming?\n"
 	.string "Come and get some, then!$"

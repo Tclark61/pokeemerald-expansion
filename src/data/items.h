@@ -8345,7 +8345,7 @@ const struct Item gItems[] =
     [ITEM_HM_CUT] =
     {
         .name = _("HM01"),
-        .price = 0,
+        .price = 1500,
         .description = sHM01Desc,
         .importance = 1,
         .pocket = POCKET_TM_HM,

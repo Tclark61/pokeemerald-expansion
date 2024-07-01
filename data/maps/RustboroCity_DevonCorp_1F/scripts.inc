@@ -32,6 +32,12 @@ RustboroCity_DevonCorp_1F_EventScript_GoodsRecovered::
 	release
 	end
 
+RustboroCity_DevonCorp_1F_EventScript_StairGuardPostGame::
+	lock
+	faceplayer
+	release
+	end
+
 RustboroCity_DevonCorp_1F_EventScript_StairGuard::
 	lock
 	faceplayer

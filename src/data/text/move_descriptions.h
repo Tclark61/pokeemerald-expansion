@@ -381,8 +381,8 @@ static const u8 sEarthquakeDescription[] = _(
     "no effect on flying foes.");
 
 static const u8 sFissureDescription[] = _(
-    "A one-hit KO move that\n"
-    "drops the foe in a fissure.");
+    "A devastating move that\n"
+    "inflicts recoil damage.");
 
 static const u8 sDigDescription[] = _(
     "Digs underground the first\n"
@@ -1346,7 +1346,7 @@ static const u8 sSandTombDescription[] = _(
 
 static const u8 sSheerColdDescription[] = _(
     "A chilling attack that\n"
-    "causes fainting if it hits.");
+    "has a high freeze chance.");
 
 static const u8 sMuddyWaterDescription[] = _(
     "Attacks with muddy water.\n"

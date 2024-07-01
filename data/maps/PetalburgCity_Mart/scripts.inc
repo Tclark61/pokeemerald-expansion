@@ -20,6 +20,7 @@ PetalburgCity_Mart_Pokemart_Basic:
 	.2byte ITEM_TM_RAIN_DANCE
 	.2byte ITEM_TM_SUNNY_DAY
 	.2byte ITEM_TM_HEADBUTT
+	.2byte ITEM_HM_CUT
 	.2byte ITEM_REPEL
 	.2byte ITEM_LEAF_STONE
 	.2byte ITEM_SHINY_STONE

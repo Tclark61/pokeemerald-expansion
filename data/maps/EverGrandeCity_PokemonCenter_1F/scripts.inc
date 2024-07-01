@@ -89,8 +89,8 @@ EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon:
 	.string "out all of HOENN.\p"
 	.string "If you wish to find those remnants, I can\n"
 	.string "provide some assistance.\p"
-	.string "One is in a secluded area in PETALBURG WOODS.\n"
-	.string "One is in a cave guarded by a crazed woman.\p"
+	.string "One is a secluded area in PETALBURG WOODS.\n"
+	.string "One is a cave guarded by a crazed woman.\p"
 	.string "The last is all the way back in OLDALE.\n"
 	.string "Good luck if you wish to find them!$"
 

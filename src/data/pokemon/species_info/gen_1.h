@@ -2013,6 +2013,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         //.backAnimId = BACK_ANIM_NONE,
         PALETTES(PikachuAlolaCap),
         ICON(PikachuAlolaCap, 0),
+        .isAlolanForm = TRUE,
+        .evolutions = EVOLUTION({EVO_MOVE, MOVE_SURF, SPECIES_RAICHU_ALOLAN}),
     },
 
     [SPECIES_PIKACHU_PARTNER_CAP] =
@@ -3598,11 +3600,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_VENONAT
     [SPECIES_VENONAT] =
     {
-        .baseHP        = 60,
+        .baseHP        = 85,
         .baseAttack    = 55,
         .baseDefense   = 50,
         .baseSpeed     = 45,
-        .baseSpAttack  = 40,
+        .baseSpAttack  = 70,
         .baseSpDefense = 55,
         .types = { TYPE_BUG, TYPE_POISON },
         .catchRate = 190,
@@ -3613,7 +3615,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG },
-        .abilities = { ABILITY_COMPOUND_EYES, ABILITY_TINTED_LENS, ABILITY_RUN_AWAY },
+        .abilities = { ABILITY_COMPOUND_EYES, ABILITY_NONE, ABILITY_RUN_AWAY },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Venonat"),
         .cryId = CRY_VENONAT,
@@ -3642,16 +3644,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Venonat, 2),
         .footprint = gMonFootprint_Venonat,
         LEARNSETS(Venonat),
-        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_VENOMOTH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_VENOMOTH}),
     },
 
     [SPECIES_VENOMOTH] =
     {
-        .baseHP        = 70,
+        .baseHP        = 100,
         .baseAttack    = 65,
         .baseDefense   = 60,
         .baseSpeed     = 90,
-        .baseSpAttack  = 90,
+        .baseSpAttack  = 100,
         .baseSpDefense = 75,
         .types = { TYPE_BUG, TYPE_POISON },
         .catchRate = 75,
@@ -7739,7 +7741,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Exeggcute,
         LEARNSETS(Exeggcute),
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_EXEGGUTOR},
-                                {EVO_NONE, 0, SPECIES_EXEGGUTOR_ALOLAN}),
+                                {EVO_ITEM, ITEM_DRAGON_SCALE, SPECIES_EXEGGUTOR_ALOLAN}),
     },
 
 #define EXEGGUTOR_MISC_INFO                                 \
@@ -7806,7 +7808,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpAttack  = 125,
         .baseSpDefense = EXEGGUTOR_SP_DEF,
         .types = { TYPE_GRASS, TYPE_DRAGON },
-        .abilities = { ABILITY_FRISK, ABILITY_NONE, ABILITY_HARVEST },
+        .abilities = { ABILITY_HARVEST, ABILITY_NONE, ABILITY_HARVEST },
         .height = 109,
         .weight = 4156,
         .description = COMPOUND_STRING(
@@ -7882,7 +7884,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .footprint = gMonFootprint_Cubone,
         LEARNSETS(Cubone),
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MAROWAK},
-                                {EVO_NONE, 0, SPECIES_MAROWAK_ALOLAN}),
+                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_MAROWAK_ALOLAN}),
     },
 
 #define MAROWAK_MISC_INFO                                       \
@@ -9120,7 +9122,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 90,
         .baseSpAttack  = 70,
         .baseSpDefense = 80,
-        .types = { TYPE_WATER, TYPE_WATER },
+        .types = { TYPE_WATER, TYPE_FLYING },
         .catchRate = 60,
         .expYield = 158,
         .evYield_Attack = 2,
@@ -10092,7 +10094,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_PINSIR] =
     {
         PINSIR_MISC_INFO,
-        .baseHP        = 65,
+        .baseHP        = 85,
         .baseAttack    = 125,
         .baseDefense   = 100,
         .baseSpeed     = 85,
@@ -10100,7 +10102,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpDefense = 70,
         .types = { TYPE_BUG, TYPE_BUG },
         .expYield = 175,
-        .abilities = { ABILITY_HYPER_CUTTER, ABILITY_MOLD_BREAKER, ABILITY_MOXIE },
+        .abilities = { ABILITY_SHARPNESS, ABILITY_SHARPNESS, ABILITY_MOXIE },
         .cryId = CRY_PINSIR,
         .height = 15,
         .weight = 550,
@@ -10627,8 +10629,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_JOLTEON},
                                 {EVO_ITEM, ITEM_WATER_STONE, SPECIES_VAPOREON},
                                 {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_FLAREON},
-                                {EVO_ITEM, ITEM_MOON_STONE, SPECIES_ESPEON},
-                                {EVO_ITEM, ITEM_SUN_STONE, SPECIES_UMBREON},
+                                {EVO_ITEM, ITEM_SUN_STONE, SPECIES_ESPEON},
+                                {EVO_ITEM, ITEM_MOON_STONE, SPECIES_UMBREON},
                                 {EVO_SPECIFIC_MAP, MAP_PETALBURG_WOODS, SPECIES_LEAFEON},
                                 {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_LEAFEON},
                                 {EVO_SPECIFIC_MAP, MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM, SPECIES_GLACEON},

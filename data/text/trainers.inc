@@ -1239,19 +1239,22 @@ Route110_Text_KalebPostBattle:
 	.string "could, my pretties.$"
 
 Route111_Text_DrewIntro:
-	.string "Oh, hey! Those GO-GOGGLES suit you.\n"
-	.string "But I think they look better on me.\p"
-	.string "Let's decide who they look better on\n"
-	.string "with a battle!$"
+	.string "Oh, hey! Do you have a HORSEA?\n"
+	.string "I bet mine is better.\p"
+	.string "Let's decide who would train a\n"
+	.string "HORSEA better, with a battle!$"
 
 Route111_Text_DrewDefeat:
-	.string "I couldn't see what was happening at\n"
-	.string "my sides because of the GO-GOGGLES.$"
+	.string "Okay, okay, you could be a good\n"
+	.string "HORSEA trainer.$"
 
 Route111_Text_DrewPostBattle:
-	.string "The GO-GOGGLES make it possible to\n"
-	.string "get through sandstorms.\l"
-	.string "That makes me happy!$"
+	.string "HORSEA carry DRAGON SCALES.\p"
+	.string "When they get strong enough,\n"
+	.string "They evolve into SEADRA.\p"
+	.string "That SEADRA then evolves by using\n"
+	.string "The SCALE it carried as a HORSEA!\p"
+	.string "That makes me happy.$"
 
 Route111_Text_HeidiIntro:
 	.string "I'm having a picnic in the desert.\p"

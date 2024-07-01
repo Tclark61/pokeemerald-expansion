@@ -46,7 +46,7 @@ EverGrandeCity_DrakesRoom_EventScript_Drake::
 	trainerbattle_no_intro TRAINER_DRAKE, EverGrandeCity_DrakesRoom_Text_Defeat
 	giveitem ITEM_RARE_CANDY 8
 	giveitem ITEM_BIG_PEARL
-	giveitem ITEM_HYPER_POTION
+	giveitem ITEM_HYPER_POTION 3
 	goto EverGrandeCity_DrakesRoom_EventScript_Defeated
 	end
 
@@ -66,7 +66,7 @@ EverGrandeCity_DrakesRoom_EventScript_Defeated::
 
 EverGrandeCity_DrakesRoom_Text_IntroSpeech:
 	.string "Well done, {PLAYER}!\n"
-	.string "I am the last trainer standing\p"
+	.string "I am the first trainer standing\p"
 	.string "between you and the CHAMPION.\n"
 	.string "Tell me, do you feel accomplished?\p"
 	.string "Do you feel as though you've learned?\n"
@@ -92,5 +92,5 @@ EverGrandeCity_DrakesRoom_Text_PostBattleSpeech:
 	.string "They touch the good hearts of\p"
 	.string "TRAINERS and grow strong.\n"
 	.string "Go! Go onwards!\p"
-	.string "The CHAMPION is waiting!$"
+	.string "The next TRAINER is waiting!$"
 

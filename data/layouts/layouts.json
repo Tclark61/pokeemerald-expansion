@@ -4446,8 +4446,8 @@
       "name": "RustboroCity_RichmondVolleyballClub_Layout",
       "width": 20,
       "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/RustboroCity_RichmondVolleyballClub/border.bin",
       "blockdata_filepath": "data/layouts/RustboroCity_RichmondVolleyballClub/map.bin"
     }

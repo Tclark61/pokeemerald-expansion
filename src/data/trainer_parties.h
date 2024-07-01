@@ -1410,9 +1410,16 @@ static const struct TrainerMon sParty_Valerie5[] = {
 
 static const struct TrainerMon sParty_Cindy1[] = {
     {
-    .lvl = 7,
-    .species = SPECIES_ZIGZAGOON,
-    .heldItem = ITEM_NUGGET
+    .lvl = 20,
+    .species = SPECIES_AIPOM,
+    .heldItem = ITEM_NUGGET,
+    .moves = {MOVE_FURY_SWIPES},
+    },
+    {
+    .lvl = 20,
+    .species = SPECIES_CHIMECHO,
+    .heldItem = ITEM_NUGGET,
+    .moves = {MOVE_CONFUSION, MOVE_HELPING_HAND},
     }
 };
 
@@ -2466,10 +2473,23 @@ static const struct TrainerMon sParty_Bernie5[] = {
 
 static const struct TrainerMon sParty_Drew[] = {
     {
-    .lvl = 23,
-    .species = SPECIES_SANDSHREW,
-    .moves = {MOVE_DIG, MOVE_SAND_ATTACK, MOVE_POISON_STING, MOVE_SLASH}
+    .lvl = 26,
+    .species = SPECIES_HORSEA,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_DISABLE, MOVE_SUBSTITUTE, MOVE_OCTAZOOKA, MOVE_FLASH_CANNON}
+    },
+    {
+    .lvl = 28,
+    .species = SPECIES_EXEGGCUTE,
+    .heldItem = ITEM_EVIOLITE,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_EXTRASENSORY, MOVE_LEECH_SEED, MOVE_SLEEP_POWDER}
+    },
+    {
+    .lvl = 30,
+    .species = SPECIES_PINSIR,
+    .heldItem = ITEM_LUM_BERRY,
     }
+
 };
 
 static const struct TrainerMon sParty_Beau[] = {
@@ -3119,14 +3139,14 @@ static const struct TrainerMon sParty_Sidney[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 37,
+    .lvl = 38,
     .species = SPECIES_CHARIZARD,
     .heldItem = ITEM_CHARCOAL,
     .moves = {MOVE_FLAMETHROWER, MOVE_EARTHQUAKE, MOVE_DOUBLE_EDGE, MOVE_FOCUS_BLAST}
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 41,
+    .lvl = 42,
     .species = SPECIES_TROPIUS,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_DRACO_METEOR, MOVE_DRAGON_DANCE, MOVE_FLOWER_TRICK, MOVE_DUAL_WINGBEAT}
@@ -3212,42 +3232,42 @@ static const struct TrainerMon sParty_Glacia[] = {
 static const struct TrainerMon sParty_Drake[] = {
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 33,
+    .lvl = 35,
     .species = SPECIES_GABITE,
     .heldItem = ITEM_EVIOLITE,
     .moves = {MOVE_STEALTH_ROCK, MOVE_BULLDOZE, MOVE_DRAGON_TAIL, MOVE_CRUNCH}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 36,
+    .lvl = 37,
     .species = SPECIES_VESPIQUEN,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_DEFEND_ORDER, MOVE_ATTACK_ORDER, MOVE_HEAL_ORDER, MOVE_ANCIENT_POWER}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 33,
+    .lvl = 36,
     .species = SPECIES_FLAPPLE,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_DRAGON_DANCE, MOVE_GRAV_APPLE, MOVE_ACROBATICS, MOVE_LEECH_SEED}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 35,
+    .lvl = 37,
     .species = SPECIES_DRAGONAIR,
     .heldItem = ITEM_DRAGON_GEM,
     .moves = {MOVE_DRAGON_TAIL, MOVE_THUNDER_WAVE, MOVE_THUNDER, MOVE_AQUA_TAIL}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 35,
+    .lvl = 37,
     .species = SPECIES_MAROWAK_ALOLAN,
     .heldItem = ITEM_THICK_CLUB,
     .moves = {MOVE_SHADOW_BONE, MOVE_BONE_RUSH, MOVE_FLAME_WHEEL, MOVE_SWORDS_DANCE}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 38,
+    .lvl = 39,
     .species = SPECIES_FLYGON,
     .heldItem = ITEM_DRAGON_GEM,
     .moves = {MOVE_FLAMETHROWER, MOVE_CRUNCH, MOVE_DRAGON_BREATH, MOVE_EARTHQUAKE}
@@ -4347,28 +4367,28 @@ static const struct TrainerMon sParty_Wallace[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 41,
-    .species = SPECIES_LUXRAY,
+    .lvl = 38,
+    .species = SPECIES_BELLIBOLT,
     .heldItem = ITEM_MAGNET,
-    .moves = {MOVE_THUNDER, MOVE_SNARL, MOVE_PROTECT, MOVE_CRUNCH}
+    .moves = {MOVE_THUNDERBOLT, MOVE_CHILLING_WATER, MOVE_ACID_SPRAY, MOVE_WEATHER_BALL}
     },
     {
-    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 38,
+    .iv = TRAINER_PARTY_IVS(8, 31, 31, 31, 31, 31),
+    .lvl = 36,
     .species = SPECIES_JIRACHI,
     .heldItem = ITEM_WEAKNESS_POLICY,
     .moves = {MOVE_LIFE_DEW, MOVE_METEOR_MASH, MOVE_COSMIC_POWER, MOVE_ZEN_HEADBUTT}
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 40,
+    .lvl = 39,
     .species = SPECIES_KYOGRE,
     .heldItem = ITEM_DAMP_ROCK,
     .moves = {MOVE_CALM_MIND, MOVE_ICE_BEAM, MOVE_HYPER_BEAM, MOVE_SURF}
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 44,
+    .lvl = 43,
     .species = SPECIES_MILOTIC,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_RECOVER, MOVE_SURF, MOVE_ICE_BEAM, MOVE_LIGHT_SCREEN}
@@ -8024,38 +8044,38 @@ static const struct TrainerMon sParty_Zach1[] = {
 static const struct TrainerMon sParty_Zach2[] = {
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
-    .lvl = 28, 
+    .lvl = 30, 
     .species = SPECIES_MACHOKE,
     .heldItem = ITEM_CHOICE_BAND,
     .moves = {MOVE_SUPERPOWER, MOVE_DYNAMIC_PUNCH}
     },
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
-    .lvl = 31,
+    .lvl = 32,
     .species = SPECIES_SNORLAX,
     .moves = {MOVE_HYPER_BEAM, MOVE_SELF_DESTRUCT}
     },
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
-    .lvl = 30,
+    .lvl = 35,
     .species = SPECIES_HARIYAMA,
     .moves = {MOVE_DOUBLE_EDGE, MOVE_HEADLONG_RUSH}
     },
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
-    .lvl = 31,
-    .species = SPECIES_MONFERNO,
+    .lvl = 36,
+    .species = SPECIES_INFERNAPE,
     .moves = {MOVE_CLOSE_COMBAT, MOVE_FLARE_BLITZ}
     },
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
-    .lvl = 30,
+    .lvl = 35,
     .species = SPECIES_COMBUSKEN,
     .moves = {MOVE_HIGH_JUMP_KICK, MOVE_FLARE_BLITZ}
     },
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
-    .lvl = 36,
+    .lvl = 38,
     .species = SPECIES_CHARIZARD,
     .moves = {MOVE_OVERHEAT, MOVE_TAKE_DOWN, MOVE_SUBMISSION}
     }
@@ -8411,28 +8431,34 @@ static const struct TrainerMon sParty_KiraAndDan5[] = {
 
 static const struct TrainerMon sParty_Johanna[] = {
     {
-    .lvl = 32,
+    .lvl = 36,
     .species = SPECIES_DELIBIRD,
     .moves = {MOVE_TAILWIND, MOVE_PRESENT, MOVE_DRILL_PECK, MOVE_FOLLOW_ME}
     },
     {
-    .lvl = 30,
+    .lvl = 33,
     .species = SPECIES_ABSOL,
     .moves = {MOVE_HOWL, MOVE_BITTER_BLADE, MOVE_NIGHT_SLASH, MOVE_DETECT}
     },
     {
-    .lvl = 33,
+    .lvl = 35,
     .species = SPECIES_JUMPLUFF,
+    .heldItem = ITEM_WIDE_LENS,
     .moves = {MOVE_WHIRLWIND, MOVE_SLEEP_POWDER, MOVE_GIGA_DRAIN, MOVE_LEECH_SEED}
     },
     {
-    .lvl = 35,
+    .lvl = 37,
+    .species = SPECIES_SEAKING,
+    .moves = {MOVE_MEGAHORN, MOVE_HORN_DRILL, MOVE_SUPERSONIC, MOVE_FLIP_TURN}
+    },
+    {
+    .lvl = 37,
     .species = SPECIES_AGGRON,
     .heldItem = ITEM_ASSAULT_VEST,
     .moves = {MOVE_REVERSAL, MOVE_THUNDERBOLT, MOVE_IRON_TAIL, MOVE_ROCK_SLIDE}
     },
     {
-    .lvl = 33,
+    .lvl = 38,
     .species = SPECIES_AUDINO,
     .moves = {MOVE_HEAL_PULSE, MOVE_TRICK_ROOM, MOVE_HYPER_VOICE, MOVE_HELPING_HAND}
     }
@@ -8534,6 +8560,7 @@ static const struct TrainerMon sParty_Ashley[] = {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 26,
     .species = SPECIES_NINETALES_ALOLAN,
+    .moves = {MOVE_SHEER_COLD, MOVE_CONFUSE_RAY, MOVE_ICY_WIND, MOVE_GRUDGE}
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -9777,30 +9804,39 @@ static const struct TrainerMon sParty_Devan[] = {
     .moves = {MOVE_TRICK_ROOM, MOVE_HEAL_PULSE, MOVE_WISH, MOVE_SURF}
     },
     {
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 55,
+    .species = SPECIES_COALOSSAL,
+    .heldItem = ITEM_WEAKNESS_POLICY,
+    .moves = {MOVE_HEAT_WAVE, MOVE_POWER_GEM, MOVE_PROTECT, MOVE_SCORCHING_SANDS}
+    },
+    {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 48,
-    .species = SPECIES_NOCTOWL,
-    .moves = {MOVE_AIR_SLASH, MOVE_NASTY_PLOT, MOVE_PSYCHIC, MOVE_ROOST}
+    .species = SPECIES_TORKOAL,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_ERUPTION, MOVE_EARTH_POWER, MOVE_HEAT_WAVE, MOVE_SOLAR_BEAM}
     },
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 42,
+    .lvl = 50,
     .species = SPECIES_AMOONGUSS,
-    .moves = {MOVE_SPORE, MOVE_RAGE_POWDER, MOVE_POLLEN_PUFF, MOVE_SYNTHESIS}
+    .moves = {MOVE_SPORE, MOVE_RAGE_POWDER, MOVE_POLLEN_PUFF, MOVE_SUNNY_DAY}
     },
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-    .lvl = 55,
-    .species = SPECIES_ARMALDO,
-    .heldItem = ITEM_WEAKNESS_POLICY,
-    .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_KNOCK_OFF, MOVE_AQUA_JET}
+    .lvl = 48,
+    .species = SPECIES_LILLIGANT_HISUIAN,
+    .heldItem = ITEM_WIDE_LENS,
+    .moves = {MOVE_SLEEP_POWDER, MOVE_SUNNY_DAY, MOVE_SOLAR_BLADE, MOVE_GUILLOTINE}
     },
     {
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 47,
-    .species = SPECIES_CERULEDGE,
-    .moves = {MOVE_BITTER_BLADE, MOVE_FLAME_CHARGE, MOVE_ALLY_SWITCH, MOVE_PSYCHO_CUT}
-    }
+    .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+    .lvl = 50,
+    .species = SPECIES_VENOMOTH,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_SILVER_WIND, MOVE_BUG_BUZZ, MOVE_PSYCHIC, MOVE_SUPERSONIC}
+    },
 };
 
 static const struct TrainerMon sParty_Johnson[] = {
@@ -11340,8 +11376,8 @@ static const struct TrainerMon sParty_Steven[] = {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 80,
     .species = SPECIES_BUTTERFREE,
-    .heldItem = ITEM_CHOICE_SPECS,
-    .moves = {MOVE_HURRICANE, MOVE_QUIVER_DANCE, MOVE_PSYCHIC, MOVE_TAILWIND}
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_SILVER_WIND, MOVE_QUIVER_DANCE, MOVE_PSYCHIC, MOVE_TAILWIND}
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),

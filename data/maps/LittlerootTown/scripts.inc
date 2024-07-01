@@ -1055,31 +1055,30 @@ LittlerootTown_Text_GoodLuckCatchingPokemon:
 
 LittlerootTown_Text_FirstTutorial:
 	.string "Welcome! This is my attempt at trying\n"
-	.string "to show off the parts of pokemon\p"
+	.string "to show off the parts of POKéMON\p"
 	.string "that I think are cool.\n"
 	.string "There's a few notable changes.\p"
 	.string "Firstly, there's no EXP gain.\n"
 	.string "If you want to level up,\p"
 	.string "use your Rare Candy!\n"
-	.string "In exchange, there's also\p"
-	.string "a level cap: It starts at 18\n"
-	.string "and goes up at milestones!$"
+	.string "There's also a level cap:\p"
+	.string "It raises at big milestones.$"
 
 LittlerootTown_Text_SecondTutorial:
-	.string "Next, the game has been shortened\n"
-	.string "to be beaten in a few hours.\p"
-	.string "As such, the path is streamlined\n"
-	.string "and battles are carefully planned.$"
+	.string "Next, the game has been altered,\n"
+	.string "So many POKéMON have different stats.\p"
+	.string "Trainer battles are less frequent,\n"
+	.string "but in exchange the difficulty is high.$"
 
 LittlerootTown_Text_ThirdTutorial:
 	.string "Most obstacles in this game\n"
 	.string "are puzzle-esque: If you're stuck\p"
 	.string "try examining your surroundings,\n"
-	.string "or seeing if a different pokemon\p"
+	.string "or seeing if a different POKéMON\p"
 	.string "could help the situation!$"
 
 LittlerootTown_Text_FourthTutorial:
-	.string "On that note, be careful! If you \n"
+	.string "On that note, be careful! If you\n"
 	.string "spend your resources carelessly,\p"
 	.string "you might find yourself stuck!\n"
 	.string "Consider saving before decisions.$"

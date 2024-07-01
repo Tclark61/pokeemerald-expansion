@@ -167,7 +167,7 @@ Route119_EventScript_ItemSuperRepel::
 	end
 
 Route119_EventScript_ItemZinc::
-	finditem ITEM_ZINC
+	finditem ITEM_TM_WATER_PULSE
 	end
 
 Route119_EventScript_ItemElixir::
@@ -418,7 +418,7 @@ MeteorFalls_B1F_2R_EventScript_ItemTMDragonClaw::
 	end
 
 NewMauville_Inside_EventScript_ItemUltraBall::
-	finditem ITEM_ULTRA_BALL
+	finditem ITEM_MAGNET
 	end
 
 NewMauville_Inside_EventScript_ItemEscapeRope::

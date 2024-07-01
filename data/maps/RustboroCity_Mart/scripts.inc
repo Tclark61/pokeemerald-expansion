@@ -28,7 +28,6 @@ RustboroCity_Mart_Pokemart_Basic:
 	.2byte ITEM_LIGHT_CLAY
 	.2byte ITEM_PECHA_BERRY
 	.2byte ITEM_CHERI_BERRY
-	.2byte ITEM_WEPEAR_BERRY
 	.2byte ITEM_NONE
 	release
 	end

@@ -1264,7 +1264,7 @@
 #define FLAG_CAPTURE_RECEIVED_LARVITAR                              0x4BE // Unused Flag
 #define FLAG_MET_TERRAIN_MASTER                                     0x4BF // Unused Flag
 #define FLAG_CAPTURE_RECEIVED_PHIONE                                0x4C0 // Unused Flag
-#define FLAG_UNUSED_0x4C1                                           0x4C1 // Unused Flag
+#define FLAG_BATTLED_MOLTRES                                        0x4C1 // Unused Flag
 #define FLAG_UNUSED_0x4C2                                           0x4C2 // Unused Flag
 #define FLAG_UNUSED_0x4C3                                           0x4C3 // Unused Flag
 #define FLAG_UNUSED_0x4C4                                           0x4C4 // Unused Flag
